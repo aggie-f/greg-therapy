@@ -14,13 +14,29 @@
 }
 
 /* Place text in the middle of the image */
-.banner-text {
-  text-align: center;
+.banner-title {
+  text-align: left;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 10%;
+  left: 10%;
   color: white;
+}
+
+.banner-title h2 {
+  font-size: 40px;
+  font-weight: 300;
+  margin-top: 20px;
+
+}
+.banner-text {
+  text-align: left;
+  position: absolute;
+  top: 77%;
+  left: 10%;
+  color: white;
+  font-size: 20px;
+  font-weight: 200;
+  width: fit-content;
 }
 
 .banner-text h1 {
