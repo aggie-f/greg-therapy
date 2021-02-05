@@ -14,3 +14,35 @@ body {
   background: #4e4190;
   margin-bottom: 50px;
 }
+
+
+.about-me-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-top: 30px;
+  // box-sizing: border-box;
+  // padding: 0 0.5em;
+  // text-align: center;
+  // font-weight: 400;
+  // line-height: 1.4rem;
+}
+
+.about-me-section-text {
+   align-self: center;
+   padding-right: 30px;
+
+}
+
+.about-me-section img {
+  display: block;
+  object-fit: cover;
+  width: 100%;
+}
+
+.about-me-section-text p {
+  margin-top: 50px;
+}
+
+.about-me-section-text .btn-cards {
+  margin-top: 30px;
+}
