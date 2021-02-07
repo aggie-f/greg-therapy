@@ -1,0 +1,16 @@
+.about-me-page {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  margin-top: 40px;
+}
+
+.about-me-page img {
+  display: block;
+  object-fit: cover;
+  width: 80%;
+  border-radius: 50%;
+}
+
+.about-me-page h1 {
+  margin-bottom: 10px;
+}
