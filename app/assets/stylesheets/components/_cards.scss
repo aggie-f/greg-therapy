@@ -1,13 +1,13 @@
 .cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  column-gap: 30px;
-  padding-top: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  column-gap: 40px;
 }
 
 .card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  border-radius: 5px;
+  // box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  // border-radius: 5px;
+  border-color: #fff;
 }
 
 // .card :hover {
@@ -34,7 +34,7 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 60%;
+  width: 50%;
   padding: 30px;
 }
 
