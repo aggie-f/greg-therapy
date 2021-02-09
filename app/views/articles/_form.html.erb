@@ -1,0 +1,17 @@
+<%= simple_form_for(@article) do |f| %>
+
+  <!-- [...] -->
+
+  <div class="form-inputs">
+    <%= f.input :title %>
+  </div>
+
+  <!-- insert these three line of code below -->
+  <div class="form-inputs">
+    <%= f.rich_text_area :rich_body %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>
