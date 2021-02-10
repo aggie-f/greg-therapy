@@ -10,10 +10,16 @@ class ArticlesController < ApplicationController
   def show
   end
 
+  # GET /articles/new
   def new
     @article = Article.new
   end
 
+  # GET /articles/1/edit
+  def edit
+  end
+
+  # POST /articles
   def create
     @article = Article.new(article_params)
 
@@ -23,6 +29,22 @@ class ArticlesController < ApplicationController
       render :new
     end
   end
+
+  # PATCH/PUT /articles/1
+  def update
+    if @article.update(article_params)
+      redirect_to @article, notice: 'Article was successfully updated.'
+    else
+      render :edit
+    end
+  end
+
+  # DELETE /articles/1
+  def destroy
+    @article.destroy
+    redirect_to root_path, notice: 'Article was successfully destroyed.'
+  end
+
 
   private
 
