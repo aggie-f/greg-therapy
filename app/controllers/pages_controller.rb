@@ -10,4 +10,10 @@ class PagesController < ApplicationController
   def services
   end
 
+  def konsultacja
+  end
+
+  def terapia
+  end
+
 end
