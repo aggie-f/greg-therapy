@@ -11,7 +11,7 @@
 </p>
 
 <% @article.photos.each do |photo| %>
-  <% cl_image_tag photo.key, height: 300, width: 400, crop: :fill %>
+  <%= cl_image_tag photo.key, height: 300, width: 400, crop: :fill %>
 <% end %>
 
 <%= link_to 'Edit', edit_article_path(@article) %> |
