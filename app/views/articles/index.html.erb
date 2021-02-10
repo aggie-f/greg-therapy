@@ -1,0 +1,40 @@
+<div class="container-fluid">
+  <p id="notice"><%= notice %></p>
+
+  <h1>Articles</h1>
+  <div>
+    <div class="articles">
+      <% @articles.each do |article| %>
+        <div class="card-article">
+          <div class="article-card-photo">
+            <% if article.photos.attached? %>
+              <%= cl_image_tag article.photos[0].key, height: 300, width: 400, crop: :fill %>
+            <% end %>
+          </div>
+          <div class=article-card-title>
+            <h2><%= article.title %></h2>
+            <p><%= truncate(strip_tags(article.rich_body.to_s), lenght: 50) %></p>
+            <div>
+            <% if user_signed_in? %>
+            <%= link_to 'Show', article %>
+            <%= link_to 'Edit', edit_article_path(article) %>
+            <%= link_to 'Destroy', article, method: :delete, data: { confirm: 'Are you sure?' } %>
+            <% end %>
+            </div>
+          </div>
+        </div>
+      <% end %>
+  </div>
+
+
+  <br>
+  <br>
+  <br>
+  <%= link_to 'New Article', new_article_path %>
+
+  </div>
+</div>
+
+
+
+

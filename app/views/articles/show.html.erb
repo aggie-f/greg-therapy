@@ -1,0 +1,21 @@
+<div class="container">
+<p id="notice"><%= notice %></p>
+
+  <div>
+    <h2><%= @article.title %></h2>
+  </div>
+
+  <div>
+    <% @article.photos.each do |photo| %>
+      <%= cl_image_tag photo.key, height: 300, width: 400, crop: :fill %>
+    <% end %>
+    <p><%= @article.rich_body %></p>
+  </div>
+
+  <% if user_signed_in? %>
+  <%= link_to 'Edit', edit_article_path(@article) %> |
+  <%= link_to 'Back', root_path %>
+  <% end %>
+
+</div>
+
