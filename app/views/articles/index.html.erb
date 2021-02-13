@@ -13,18 +13,20 @@
           </div>
           <div class=article-card-title>
             <h2><%= article.title %></h2>
-            <p><%= truncate(strip_tags(article.rich_body.to_s), lenght: 50) %></p>
-            <div>
+            <p><%= article.tagline %></p>
             <% if user_signed_in? %>
-            <%= link_to 'Show', article %>
-            <%= link_to 'Edit', edit_article_path(article) %>
-            <%= link_to 'Destroy', article, method: :delete, data: { confirm: 'Are you sure?' } %>
-            <% end %>
+            <div>
+              <%= link_to 'Show', article %>
+              <%= link_to 'Edit', edit_article_path(article) %>
+              <%= link_to 'Destroy', article, method: :delete, data: { confirm: 'Are you sure?' } %>
             </div>
+            <% end %>
           </div>
         </div>
       <% end %>
+    </div>
   </div>
+</div>
 
 
   <br>
