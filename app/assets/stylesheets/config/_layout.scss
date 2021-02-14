@@ -12,11 +12,11 @@ body {
   flex-direction: column;
 }
 
-header,
+// header,
 section {
   padding: 3rem 0;
   @media (min-width: 40em) {
-    header,
+    // header,
     section {
       padding: 7rem 0;
     }
