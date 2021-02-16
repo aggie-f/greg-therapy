@@ -4,10 +4,13 @@ Rails.application.routes.draw do
 
   resources :articles
 
-  get 'about', to: 'pages#about'
-  get 'services', to: 'pages#services'
-  get 'services/konsultacja', to: 'pages#konsultacja'
-  get 'services/terapia', to: 'pages#terapia'
+  get 'o_mnie', to: 'pages#o_mnie'
+  get 'oferta', to: 'pages#oferta'
+  get 'oferta/konsultacja', to: 'pages#konsultacja'
+  get 'oferta/terapia', to: 'pages#terapia'
+  get 'cennik', to: 'pages#cennik'
+  get 'blog', to: 'pages#articles'
+  get 'kontakt', to: 'pages#kontakt'
 
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
