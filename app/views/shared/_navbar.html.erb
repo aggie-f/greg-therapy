@@ -7,13 +7,11 @@
     <span class="bar"></span>
     <span class="bar"></span>
   </a>
-  <div class="navbar-links">
-    <ul>
-      <li><a href="#">O mnie</a></li>
-      <li><a href="#">Oferta</a></li>
-      <li><a href="#">Cennik</a></li>
-      <li><a href="#">Blog</a></li>
-      <li><a href="#">Kontakt</a></li>
-    </ul>
+  <div class="navbar-menu">
+    <%= link_to "O mnie", o_mnie_path, class: "btn menu-item" %>
+    <%= link_to "Oferta", oferta_path, class: "btn menu-item" %>
+    <%= link_to "Cennik", oferta_path, class: "btn menu-item" %>
+    <%= link_to "Blog", articles_path, class: "btn menu-item" %>
+    <%= link_to "Kontakt", kontakt_path, class: "btn menu-item" %>
   </div>
 </nav>
