@@ -1,29 +1,37 @@
 <div class="footer">
-  <div class="footer-column">
+  <div class="footer-column container">
+    <div class="footer-menu">
+      <h2>GABINET POMOCY PSYCHOLOGICZNEJ<br>I PSYCHOTERAPI</h2>
+      <ul>
+        <li><%= link_to "Psychoterpia Indywidualna", oferta_path %></li>
+        <li><%= link_to "Konsultacja Psychologiczna", oferta_path %></li>
+        <li><%= link_to "Pomoc Kryzysowa", oferta_path %></li>
+      </ul>
+
+    </div>
     <div class="footer-contact">
-      <p>GRZEGORZ SZCZEBLEWSKI</p>
-      <p>Gabinet Pomocy Psycholicznej i Psychoterapi</p>
-      <p><a href="tel://+48663061717"><i class="fas fa-phone-alt"></i>+48663061717</a></p>
-      <p><a href="mailto:gabinet@psycho-terapeutyczny.pl"><i class="far fa-envelope"></i>gabinet@psycho-terapeutyczny.pl</a></p>
-      <p><a href="https://goo.gl/maps/dHAgUrewkDeaVZkb8"><i class="fas fa-map-marker-alt"></i>Znajdz nas</a></p>
+      <h2>KONTAKT</h2>
+      <p><a href="tel://+48663061717"><i class="fas fa-phone-alt"></i> +48663061717</a></p>
+      <p><a href="mailto:gabinet@psycho-terapeutyczny.pl"><i class="far fa-envelope"></i> gabinet@psycho-terapeutyczny.pl</a></p>
+      <p><a href="https://goo.gl/maps/dHAgUrewkDeaVZkb8"><i class="fas fa-map-marker-alt"></i> Znajdz nas</a></p>
     </div>
     <div class="footer-menu">
+      <h2>NAJNOWSZE ARTYKUŁY</h2>
       <ul>
-        <p><u>Na skróty</u></p>
+        <% articles = Article.all %>
+        <% articles.last(3).sort.reverse.each do |article| %>
+          <li><%= link_to article.title, article %></li>
+        <% end %>
+      </ul>
+    </div>
+    <div class="footer-menu">
+      <h2>MENU</h2>
+      <ul>
         <li><%= link_to "O mnie", o_mnie_path %></li>
         <li><%= link_to "Oferta", oferta_path %></li>
         <li><%= link_to "Cennik", cennik_path %></li>
         <li><%= link_to "Blog", articles_path %></li>
         <li><%= link_to "Umów wizytę", kontakt_path %></li>
-      </ul>
-    </div>
-    <div class="footer-menu">
-      <ul>
-        <p><u>Ostatnio na blogu</u></p>
-        <% articles = Article.all %>
-        <% articles.last(3).sort.reverse.each do |article| %>
-        <li><%= link_to article.title, article %></li>
-        <% end %>
       </ul>
     </div>
   </div>
