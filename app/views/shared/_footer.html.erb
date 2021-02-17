@@ -1,18 +1,30 @@
 <div class="footer">
   <div class="footer-column">
     <div class="footer-contact">
-      <a href="tel://+48663061717"><i class="fas fa-phone-alt"></i>+48663061717</a>
-      <br>
-      <a href="mailto:gabinet@psycho-terapeutyczny.pl"><i class="far fa-envelope"></i>gabinet@psycho-terapeutyczny.pl</a>
-      <br>
-      <a href="https://goo.gl/maps/dHAgUrewkDeaVZkb8"><i class="fas fa-map-marker-alt"></i>Znajdz nas</a>
+      <p>GRZEGORZ SZCZEBLEWSKI</p>
+      <p>Gabinet Pomocy Psycholicznej i Psychoterapi</p>
+      <p><a href="tel://+48663061717"><i class="fas fa-phone-alt"></i>+48663061717</a></p>
+      <p><a href="mailto:gabinet@psycho-terapeutyczny.pl"><i class="far fa-envelope"></i>gabinet@psycho-terapeutyczny.pl</a></p>
+      <p><a href="https://goo.gl/maps/dHAgUrewkDeaVZkb8"><i class="fas fa-map-marker-alt"></i>Znajdz nas</a></p>
     </div>
-    <div class = "footer-menu">
-      <a href="#"> / O MNIE </a>
-      <br>
-      <a href="#"> / OFERTA </a>
-      <br>
-      <a href="#"> / BLOG </a>
+    <div class="footer-menu">
+      <ul>
+        <p><u>Na skróty</u></p>
+        <li><%= link_to "O mnie", o_mnie_path %></li>
+        <li><%= link_to "Oferta", oferta_path %></li>
+        <li><%= link_to "Cennik", cennik_path %></li>
+        <li><%= link_to "Blog", articles_path %></li>
+        <li><%= link_to "Umów wizytę", kontakt_path %></li>
+      </ul>
+    </div>
+    <div class="footer-menu">
+      <ul>
+        <p><u>Ostatnio na blogu</u></p>
+        <% articles = Article.all %>
+        <% articles.last(3).sort.reverse.each do |article| %>
+        <li><%= link_to article.title, article %></li>
+        <% end %>
+      </ul>
     </div>
   </div>
 </div>
