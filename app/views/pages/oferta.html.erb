@@ -25,14 +25,14 @@
             <li>są niezadowolone z jakości swojego życia</li>
             <li>chcą się rozwijać – lepiej zrozumieć siebie i swoje zachowania</li>
           </ul>
-          <p>Przeczytaj wiecej →</p>
+          <%= link_to "Przeczytaj więcej →", oferta_terapia_path %>
         </div>
         <div>
         <img src="/assets/konsultacja.jpg" alt="">
         </div>
       </div>
     <div class="offer-btn">
-      <button class="btn-cards">Umow sie na wityte</button>
+      <%= link_to "Umów się na witytę", kontakt_path, class: "btn-cards" %>
     </div>
   </div>
 </section>
@@ -55,11 +55,11 @@
             <li>czujesz, że potrzebujesz pomocy, ale nie wiesz jaka forma będzie dla Ciebie najkorzystniejsza, tzn. czy wybrać psychoterapię indywidualną, grupową czy może wcześniej udać się do lekarza psychiatry</li>
             <li>czujesz, że chciałbyś coś zmienić w swoim życiu, ale nie potrafisz tego nazwać i nie wiesz od czego zacząć.</li>
           </ul>
-          <p>Przeczytaj wiecej →</p>
+           <%= link_to "Przeczytaj więcej →", oferta_konsultacja_path %>
         </div>
       </div>
       <div class="offer-btn">
-        <button class="btn-cards">Umow sie na wityte</button>
+        <%= link_to "Umów się na witytę", kontakt_path, class: "btn-cards" %>
       </div>
   </div>
 </section>
@@ -85,18 +85,18 @@
             <li>są niezadowolone z jakości swojego życia</li>
             <li>chcą się rozwijać – lepiej zrozumieć siebie i swoje zachowania</li>
           </ul>
-          <p>Przeczytaj wiecej →</p>
+          <%= link_to "Przeczytaj więcej →", oferta_path %>
         </div>
         <div>
         <img src="/assets/konsultacja.jpg" alt="">
         </div>
       </div>
       <div class="offer-btn">
-        <button class="btn-cards">Umow sie na wityte</button>
+       <%= link_to "Umów się na witytę", kontakt_path, class: "btn-cards" %>
       </div>
   </div>
 </section>
-        
+
 
 
 
