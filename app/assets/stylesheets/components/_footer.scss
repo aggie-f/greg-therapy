@@ -15,15 +15,11 @@
     margin-bottom: 8px;
   }
 
-  a {
+  a, a:hover {
     text-decoration: none;
     color: white;
     font-weight: 200;
     line-height: 1.6;
-  }
-
-  a:hover {
-    text-decoration: none;
   }
 
 }
