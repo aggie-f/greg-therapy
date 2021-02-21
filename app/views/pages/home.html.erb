@@ -79,8 +79,23 @@
         <%= link_to "WIĘCEJ", o_mnie_path, class: "btn-cards" %>
       </div>
       <div>
-        <img src="/assets/Grzegorz_Szczeblewski.jpg" alt="Grzegorz_Szczeblewski">
+        <%= image_tag "grzegorz.jpg", alt: "Grzegorz_Szczeblewski" %>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- Bootstrap Image Carousel -->
+<section>
+  <div class="container">
+    <div class="work-section">
+      <div class="section-titles">
+        <h2>NASZE BIURA</h2>
+        <hr/>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing, elit. Beatae officiis voluptatibus ab aliquam est adipisci a laudantium maxime cumque eius reiciendis sint, iste rem veniam delectus quis fuga aliquid? Provident.
+        Ipsa suscipit ea vel et, magni, ducimus consequuntur. Molestias delectus nam eum rem corporis enim suscipit nostrum et possimus aut, quo, voluptate, facilis. Est, ex aliquid. Error alias, iusto molestias.</p>
+      </div>
+      <%= render 'shared/carousel' %>
     </div>
   </div>
 </section>
