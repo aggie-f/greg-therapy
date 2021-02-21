@@ -7,10 +7,12 @@
 html, body {
   height: 100%;
 }
+
 body {
   display: flex;
   flex-direction: column;
 }
+
 
 // header,
 section {
@@ -57,7 +59,7 @@ section {
   }
 }
 
-ul { 
-	display: inline-block; 
-	text-align: left; 
+ul {
+	display: inline-block;
+	text-align: left;
 	}

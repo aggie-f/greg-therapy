@@ -11,8 +11,8 @@
       <hr>
     </div>
       <div class="split offer-text">
-        <div>
-          <p>Ta forma pomocy skierowana jest do osób, które:</p>
+        <div class="split-columns">
+          <p class="text-center">Ta forma pomocy skierowana jest do osób, które:</p>
           <ul>
             <li>doświadczają problemów w relacjach z innymi ludźmi</li>
             <li>doświadczają smutku, lęku, wahań nastroju, konfliktów wewnętrznych</li>
@@ -25,13 +25,14 @@
             <li>są niezadowolone z jakości swojego życia</li>
             <li>chcą się rozwijać – lepiej zrozumieć siebie i swoje zachowania</li>
           </ul>
-          <%= link_to "Przeczytaj więcej →", oferta_terapia_path %>
+          <p class="text-center"><%= link_to "Przeczytaj więcej →", oferta_terapia_path %></p>
         </div>
-        <div>
+        <div class="split-columns">
         <img src="/assets/konsultacja.jpg" alt="">
         </div>
       </div>
     <div class="offer-btn">
+      <br>
       <%= link_to "Umów się na witytę", kontakt_path, class: "btn-cards" %>
     </div>
   </div>
@@ -44,18 +45,19 @@
       <hr>
     </div>
       <div class="split offer-text">
-        <div>
+        <div class="split-columns">
         <img src="/assets/konsultacja.jpg" alt="">
         </div>
-        <div>
-          <p>Ta forma pomocy sprawdzi się gdy:</p>
+        <div class="split-columns">
+          <p class="text-center">Ta forma pomocy sprawdzi się gdy:</p>
           <ul>
             <li>znalazłeś się w sytuacji, z którą nie potrafisz sobie poradzić i potrzebujesz wsparcia</li>
             <li>masz trudną sytuację i chcesz się zastanowić, co dalej</li>
             <li>czujesz, że potrzebujesz pomocy, ale nie wiesz jaka forma będzie dla Ciebie najkorzystniejsza, tzn. czy wybrać psychoterapię indywidualną, grupową czy może wcześniej udać się do lekarza psychiatry</li>
             <li>czujesz, że chciałbyś coś zmienić w swoim życiu, ale nie potrafisz tego nazwać i nie wiesz od czego zacząć.</li>
           </ul>
-           <%= link_to "Przeczytaj więcej →", oferta_konsultacja_path %>
+          <br>
+          <p class="text-center"><%= link_to "Przeczytaj więcej →", oferta_konsultacja_path %></p>
         </div>
       </div>
       <div class="offer-btn">
@@ -67,27 +69,24 @@
 <section>
   <div class="offer-sections container">
     <div class="section-titles">
-      <h3>Psychoterapia indywidualna</h3>
+      <h3>Pomoc w sytuacji kryzysu</h3>
       <hr>
     </div>
       <div class="split offer-text">
-        <div>
-          <p>Ta forma pomocy skierowana jest do osób, które:</p>
+        <div class="split-columns">
+          <p class="text-center">Ta forma pomocy skierowana jest do osób, które przeżyły:</p>
           <ul>
-            <li>doświadczają problemów w relacjach z innymi ludźmi</li>
-            <li>doświadczają smutku, lęku, wahań nastroju, konfliktów wewnętrznych</li>
-            <li>nie radzą sobie ze złością i agresją</li>
-            <li>mają niskie poczucie własnej wartości</li>
-            <li>mają dolegliwości psychosomatyczne; np. bóle głowy, problemy ze snem, choroby układu krążenia</li>
-            <li>doświadczają trudności w pracy</li>
-            <li>stoją przed ważnymi i trudnymi wyborami życiowymi</li>
-            <li>doświadczają problemów egzystencjalnych (myśli samobójcze, poczucie bezsensu, samotność)</li>
-            <li>są niezadowolone z jakości swojego życia</li>
-            <li>chcą się rozwijać – lepiej zrozumieć siebie i swoje zachowania</li>
+            <li>śmierć bliskiej osoby</li>
+            <li>chorobę własnej lub choroby bliskiej osoby</li>
+            <li>wypadek</li>
+            <li>rozpadu związku</li>
+            <li>utratę pracy</li>
+            <li>bardzo silny stres</li>
           </ul>
-          <%= link_to "Przeczytaj więcej →", oferta_path %>
+          <br>
+          <p class="text-center"><%= link_to "Przeczytaj więcej →", oferta_path %></p>
         </div>
-        <div>
+        <div class="split-columns">
         <img src="/assets/konsultacja.jpg" alt="">
         </div>
       </div>
