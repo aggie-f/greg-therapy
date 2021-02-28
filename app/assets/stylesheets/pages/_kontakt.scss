@@ -1,7 +1,35 @@
+.contact-icons {
+  justify-content: space-between;
+
+}
+
 .contact-way {
+  text-align: center;
+  padding: 10px;
+
+  p {
+    font-weight: 200;
+  }
 
   i {
     color: #4e4190;
     font-size: 30px;
+    margin-bottom: 24px;
+  }
+
+  a {
+    color: black;
+  }
+
+  a:hover {
+    text-decoration: none;
+    cursor: pointer;
+  }
+}
+
+@media only screen and (max-width: 690px) {
+  .contact-way {
+    width: 100%;
+    margin-bottom: 25px;
   }
 }
