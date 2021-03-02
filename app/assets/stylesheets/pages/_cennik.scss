@@ -1,0 +1,21 @@
+#cennik {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#cennik td, #cennik th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#cennik tr:nth-child(even){background-color: #f3f3f3;}
+
+// #cennik tr:hover {background-color: #ddd;}
+
+#cennik th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #424190;
+  color: white;
+}
