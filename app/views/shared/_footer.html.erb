@@ -1,12 +1,17 @@
 <div class="footer">
   <div class="footer-column container">
     <div class="footer-menu">
-      <h2>GABINET POMOCY PSYCHOLOGICZNEJ<br>I PSYCHOTERAPI</h2>
-      <ul>
+      <!-- <h2>GABINET POMOCY PSYCHOLOGICZNEJ<br>I PSYCHOTERAPI</h2> -->
+      <div class="footer-logo">
+        <%= link_to root_path do %>
+          <%= image_tag 'logo.png' %>
+        <% end %>
+      </div>
+      <!-- <ul>
         <li><%= link_to "Psychoterpia Indywidualna", oferta_path %></li>
         <li><%= link_to "Konsultacja Psychologiczna", oferta_path %></li>
         <li><%= link_to "Pomoc Kryzysowa", oferta_path %></li>
-      </ul>
+      </ul> -->
 
     </div>
     <div class="footer-contact">
