@@ -1,21 +1,69 @@
-<div class="container">
-<p id="notice"><%= notice %></p>
+<section class="container">
+  <div class=blog-show>
+    <p id="notice"><%= notice %></p>
+    <div class="blog-title">
+      <h2><%= @article.title %></h2>
+      <!-- <p><small><%= @article.created_at.strftime("%d/%m/%Y") %></small></p> -->
+    </div>
 
-  <div>
-    <h2><%= @article.title %></h2>
+    <div class="blog-grid">
+      <div class="blog-grid__main">
+        <div class="blog-image">
+          <% @article.photos.each do |photo| %>
+            <%= cl_image_tag photo.key %>
+          <% end %>
+        </div>
+        <div class="blog-text">
+          <p><%= @article.rich_body %></p>
+        </div>
+
+        <% if user_signed_in? %>
+        <%= link_to 'Edit', edit_article_path(@article) %> |
+        <%= link_to 'Back', articles_path %>
+        <% end %>
+      </div>
+
+      <div class="blog-grid__side">
+        <div>
+          <h4>O mnie</h4>
+          <p>W kontakcie z drugim człowiekiem ważne jest dla mnie nawiązanie szczerej i pełnej empatii relacji.
+          Towarzyszę swoim klientom w kłopotach i kryzysach, które nie pozwalają im w pełni cieszyć się życiem.
+          Odnajduję prawdziwą radość i satysfakcję pomagając w rozwoju oraz budowaniu nowych rozwiązań.</p>
+        </div>
+
+        <div class="blog-grid__side__services">
+          <h4>W czym mogę pomóc</h4>
+          <ul>
+            <li><%= link_to "Psychoterpia Indywidualna", oferta_path %></li>
+            <li><%= link_to "Konsultacja Psychologiczna", oferta_path %></li>
+            <li><%= link_to "Pomoc Kryzysowa", oferta_path %></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Kategorie</h4>
+          <p>Lorem</p>
+          <p>Lorem</p>
+          <p>Lorem</p>
+          <p>Lorem</p>
+          <p>Lorem</p>
+          <p>Lorem</p>
+        </div>
+
+        <div>
+          <h4>Umów się na wizytę</h4>
+          <div class="blog-grid__side__contact" >
+            <a href="tel://+48663061717"><i class="fas fa-phone"></i>Zadzwoń</a>
+          </div>
+          <div class="blog-grid__side__contact">
+            <a href="mailto:gabinet@psycho-terapeutyczny.pl"><i class="far fa-envelope"></i>Wyslij email</a>
+          </div>
+          <div class="blog-grid__side__contact">
+            <a href="https://www.znanylekarz.pl/grzegorz-szczeblewski/psycholog-psychoterapeuta-terapeuta/koszalin"><i class="far fa-calendar-check"></i>Zarezerwuj online</a>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-
-  <div>
-    <% @article.photos.each do |photo| %>
-      <%= cl_image_tag photo.key, height: 300, width: 400, crop: :fill %>
-    <% end %>
-    <p><%= @article.rich_body %></p>
-  </div>
-
-  <% if user_signed_in? %>
-  <%= link_to 'Edit', edit_article_path(@article) %> |
-  <%= link_to 'Back', articles_path %>
-  <% end %>
-
-</div>
+</section>
 
