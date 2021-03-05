@@ -1,0 +1,19 @@
+.blog-grid {
+  display: grid;
+  grid-template-columns: 800px 1fr;
+  grid-gap: 30px;
+}
+.blog-grid__main {
+
+
+  img {
+  width: 100%;
+  height: 400px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px 0;
+  }
+}
+
+
