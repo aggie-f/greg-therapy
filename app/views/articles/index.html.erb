@@ -4,12 +4,10 @@
   </div>
 </section>
 
-<div class="container-fluid">
-  <p id="notice"><%= notice %></p>
-
-  <h1>Articles</h1>
-  <div>
-    <div class="articles">
+<section>
+  <div class="container">
+    <!-- <p id="notice"><%= notice %></p> -->
+    <div class="articles-items">
       <% @articles.each do |article| %>
         <div class="card-article">
           <div class="article-card-photo">
@@ -18,8 +16,8 @@
             <% end %>
           </div>
           <div class=article-card-title>
-            <h2><%= article.title %></h2>
-            <p><%= article.tagline %></p>
+            <h4><%= article.title %></h4>
+            <!-- <p><%= article.tagline %></p> -->
             <% if user_signed_in? %>
             <div>
               <%= link_to 'Show', article %>
@@ -30,9 +28,12 @@
           </div>
         </div>
       <% end %>
+
+
     </div>
   </div>
-</div>
+
+</section>
 
 
   <br>
