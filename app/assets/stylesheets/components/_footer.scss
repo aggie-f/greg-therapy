@@ -8,7 +8,7 @@
 
   h2 {
     font-size: 16px;
-    margin-bottom: 20px;
+    margin: 20px 0;
     line-height: 1.2;
     }
 
@@ -25,9 +25,8 @@
 }
 
 .footer-column {
-  display: flex;
   align-items: start;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 .footer-contact i {
@@ -35,11 +34,13 @@
 }
 
 .footer-menu {
+  text-align: left;
 
     ul {
         list-style-type: none;
         padding: 0;
         line-height: 1.6;
+        // text-align: center;
     }
 
 }
