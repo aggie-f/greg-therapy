@@ -1,8 +1,8 @@
 // .offer-sections {
 //   position: relative;
 // }
-.services {
-  img {
+.services img  {
+
     display: block;
     max-width: 100%;
     // background-size: cover;
@@ -12,7 +12,6 @@
   // box-shadow: 2px 1px rgba(0,0,0,0.1);
   }
 
-}
 
 .show_grid{
    display: grid;
@@ -62,10 +61,10 @@
   margin-top: 40px;
 }
 
-
 .read-more {
   color: #424190;
 }
+
 
 
 // @media only screen and (max-width: 600px) {
