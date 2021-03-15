@@ -33,6 +33,9 @@
         <li><%= link_to "Umów wizytę", kontakt_path %></li>
       </ul>
     </div>
+    <% if user_signed_in? %>
+        <p class="text-center"><%= link_to "Wyloguj", destroy_user_session_path, method: :delete %> </p>
+    <% end %>
   </div>
 </div>
 
