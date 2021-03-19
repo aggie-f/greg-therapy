@@ -7,7 +7,7 @@
   color: #373737;
 }
 
-.navbar-menu {
+.navbar-links {
   font-family:"Josefin Sans", "sans-serif";;
 }
 
@@ -58,14 +58,15 @@
   border-radius: 10px;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
   .navbar {
-      flex-direction: column;
-      align-items: flex-start;
+      // flex-direction: column;
+      // align-items: center;
   }
 
   .toggle-button {
       display: flex;
+      margin-top: 10px;
   }
 
   .navbar-links {
@@ -76,14 +77,17 @@
   .navbar-links ul {
       width: 100%;
       flex-direction: column;
+      margin-top: 30px;
+      align-items: center;
+
   }
 
   .navbar-links ul li {
-      text-align: center;
+      // text-align: center;
   }
 
   .navbar-links ul li a {
-      padding: .5rem 1rem;
+      // padding: .5rem 1rem;
   }
 
   .navbar-links.active {
