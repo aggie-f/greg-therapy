@@ -1,11 +1,19 @@
 class ReviewsController < ApplicationController
+  def index
+    @review = Review.all
+  end
+
   def new
     @review = Review.new
   end
 
   def create
     @review = Review.new(review_params)
-    @review.save
+    if @review.save
+      redirect_to reviews_path, notice: 'Review was successfully created.'
+    else
+      render :new
+    end
   end
 
   private

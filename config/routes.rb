@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   root to: 'pages#home'
 
   resources :articles
-  resources :reviews, only: [:new, :create]
+  resources :reviews, only: [:new, :create, :index]
 
   get 'o_mnie', to: 'pages#o_mnie'
   get 'oferta', to: 'pages#oferta'
