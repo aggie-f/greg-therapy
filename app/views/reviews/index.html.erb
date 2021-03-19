@@ -1,0 +1,6 @@
+<% if user_signed_in? %>
+  <% @reviews.each do |review| %>
+    <p><%= review.content %></p><%= link_to 'Destroy', review, method: :delete, data: { confirm: 'Are you sure?' } %>
+  <% end %>
+<% end %>
+
