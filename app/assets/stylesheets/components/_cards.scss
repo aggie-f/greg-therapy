@@ -1,7 +1,8 @@
 .cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   column-gap: 40px;
+  // justify-items: center;
 }
 
 .card {
@@ -9,7 +10,6 @@
   // border-radius: 5px;
   border-color: #fff;
 }
-
 
 .card-info {
   text-align: center;
@@ -30,7 +30,30 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  width: 150px;
   padding: 30px;
 }
 
+// @media (min-width: 640px){
+
+// ...
+
+// }
+
+// @media (min-width: 768px){
+
+// ...
+
+// }
+
+// @media (min-width: 1024px){
+
+// ...
+
+// }
+
+// @media (min-width: 1200px){
+
+// ...
+
+// }

@@ -23,20 +23,21 @@ body {
 .work-section {
   background-color: #f3f3f3;
   padding: 40px;
-
 }
 
 .about-me-section {
   display: grid;
   grid-template-columns: 1fr 1fr;
   // grid-template-columns: auto-fit, minmax(300px, 1fr);
-  padding-top: 30px;
 }
 
 .about-me-section-text {
    align-self: center;
    padding-right: 30px;
 
+   p {
+    margin-top: 70px;
+   }
 }
 
 .about-me-section img {
@@ -46,10 +47,28 @@ body {
 }
 
 
-.about-me-section-text p {
-  margin-top: 70px;
+.about-me-section-btn {
+  margin: 40px 0px;
 }
 
-.about-me-section-text .btn-cards {
-  margin-top: 40px;
+@media screen and (max-width: 1000px) {
+
+  .about-me-section {
+   grid-template-columns: 1fr;
+  }
+
+  .about-me-section-text {
+    text-align: center;
+    padding-right: 0px;
+
+
+    p {
+      margin-top: 10px;
+    }
+  }
+
+  .card {
+    padding-top: 20px;
+  }
+
 }
