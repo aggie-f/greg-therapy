@@ -44,5 +44,25 @@
 
 }
 
+@media screen and (max-width: 1000px) {
 
+}
+
+@media screen and (max-width: 576px) {
+  .footer {
+    padding-top: 0;
+  }
+
+  .footer-column {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  margin: 0 10px;
+  padding: 20px;
+  }
+
+  .footer-menu {
+    padding-top: 40px;
+  }
+}
 

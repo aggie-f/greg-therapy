@@ -53,13 +53,17 @@ body {
 
 @media screen and (max-width: 1000px) {
 
+  // .section {
+  // padding-top: 3rem;
+  // }
+
   .about-me-section {
    grid-template-columns: 1fr;
   }
 
   .about-me-section-text {
     text-align: center;
-    padding-right: 0px;
+    padding: 10px;
 
 
     p {
@@ -71,4 +75,31 @@ body {
     padding-top: 20px;
   }
 
+}
+
+@media screen and (max-width: 576px) {
+
+  .banner-img  {
+    height: auto;
+  }
+
+  .banner-text {
+    display: none;
+  }
+
+  .banner-title h1 {
+    font-size: 2rem;
+  }
+
+  .section-titles h1 {
+    font-size: 2rem;
+  }
+
+  .work-section {
+    padding: 30px 15px;
+  }
+
+  .carousel-item img {
+    height: auto;
+  }
 }

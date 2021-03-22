@@ -6,6 +6,8 @@
 
 html, body {
   height: 100%;
+  margin: auto;
+  overflow-x: hidden;
 }
 
 body {
@@ -17,12 +19,19 @@ body {
 // header,
 section {
   padding: 3rem 0;
-  @media (min-width: 40em) {
-    // header,
-    section {
-      padding: 7rem 0;
-    }
+
+  @media screen and (max-width: 576px) {
+  section {
+  padding-top: 3rem;
   }
+
+  }
+  // @media (min-width: 40em) {
+  //   // header,
+  //   section {
+  //     padding: 7rem 0;
+  //   }
+  // }
 }
 
 .text-center {
@@ -35,10 +44,10 @@ section {
   flex-shrink: 0;
 }
 
-// .container {
-//   margin-inline: auto;
-//   width: calc(min(90%, 70.5rem));
-// }
+.container {
+  // margin-inline: auto;
+  // width: calc(min(90%, 70.5rem));
+}
 
 .split {
   display: flex;

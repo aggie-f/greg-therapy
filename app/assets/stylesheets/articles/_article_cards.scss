@@ -1,8 +1,11 @@
 .articles-items {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 40px;
-  justify-content: center;
+  display: flex;
+  justify-content: space-around;
+  flex-flow: wrap;
+  // display: grid;
+  // grid-template-columns: 1fr 1fr 1fr;
+  // grid-gap: 40px;
+  // justify-content: center;
 
 }
 
@@ -23,3 +26,10 @@
   background-color: #f3f3f3;
 }
 
+@media screen and (max-width: 576px) {
+  .articles-items {
+    display: flex;
+    flex-direction: column;
+    flex-flow: wrap;
+  }
+}
