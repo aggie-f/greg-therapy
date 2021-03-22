@@ -62,3 +62,19 @@
 
 }
 
+@media screen and (max-width: 576px) {
+  .blog-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 30px;
+
+  }
+  .blog-title {
+    width: 100%;
+
+    h2 {
+    font-size: 1.25rem;
+    }
+
+  }
+}
