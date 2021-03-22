@@ -1,8 +1,24 @@
 .about-me-page {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr 1fr;
   margin-top: 40px;
+  grid-template-areas:
+   "doctor-image text_one"
+   "doctor-image text_two";
 }
+
+.about-me-page_text-1 {
+  grid-area: text_one;
+}
+
+.about-me-page_text-2 {
+  grid-area: text_two;
+}
+
+.about-me-page_img {
+  grid-area: doctor-image;
+}
+
 
 .about-me-page img {
   display: block;
@@ -13,4 +29,33 @@
 
 .about-me-page h1 {
   margin-bottom: 10px;
+}
+
+
+@media screen and (max-width: 576px) {
+  // .about-me-page {
+  // grid-template-columns: 1fr;
+  // padding: 20px;
+  // margin-top: 0px;
+  // text-align: center;
+  // }
+
+  .about-me-page {
+    margin-top: 0px;
+    padding: 0 20px;
+    text-align: center;
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+    grid-template-areas:
+    "text_one"
+    "doctor-image"
+    "text_two";
+     h1 {
+      padding-bottom: 20px;
+     }
+  }
+
+  .about-me-page img {
+    width: 100%;
+  }
 }
