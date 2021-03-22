@@ -6,6 +6,9 @@
 
 html, body {
   height: 100%;
+  margin: auto;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 body {
@@ -35,10 +38,10 @@ section {
   flex-shrink: 0;
 }
 
-// .container {
-//   margin-inline: auto;
-//   width: calc(min(90%, 70.5rem));
-// }
+.container {
+  margin-inline: auto;
+  width: calc(min(90%, 70.5rem));
+}
 
 .split {
   display: flex;
