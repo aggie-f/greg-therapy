@@ -110,14 +110,28 @@
   <div class="container">
     <div class="reviews">
       <div class="section-titles">
-        <h2>Reviews</h2>
+        <h2>Opinie</h2>
         <hr/>
 
-        <% @reviews.each do |review| %>
-          <p><%= review.content %></p>
-        <% end %>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing, elit. Beatae officiis voluptatibus ab aliquam est adipisci a laudantium maxime cumque eius reiciendis sint, iste rem veniam delectus quis fuga aliquid? Provident.
-        Ipsa suscipit ea vel et, magni, ducimus consequuntur. Molestias delectus nam eum rem corporis enim suscipit nostrum et possimus aut, quo, voluptate, facilis. Est, ex aliquid. Error alias, iusto molestias.</p>
+        <div class="slideshow-container">
+          <!-- Full-width slides/quotes -->
+          <% @reviews.each do |review| %>
+              <q><%= review.content %></q>
+          <% end %>
+            <div class="mySlides">
+            </div>
+
+          <!-- Next/prev buttons -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+
+        <!-- Dots/bullets/indicators -->
+        <div class="dot-container">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
       </div>
     </div>
   </div>
