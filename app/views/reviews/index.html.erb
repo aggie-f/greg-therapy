@@ -4,6 +4,10 @@
       <h1>Opinie Klientów</h1>
       <hr>
     </div>
+
+    <div class="reviews-buttons">
+      <%= link_to "DODAJ OPINIE", new_review_path, class: "btn-cards" %>
+    </div>
     <% if user_signed_in? %>
       <div class="review-list">
         <% @reviews.each do |review| %>
