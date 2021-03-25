@@ -3,6 +3,9 @@ class ReviewsController < ApplicationController
     @reviews = Review.all
   end
 
+  def show
+  end
+
   def new
     @review = Review.new
   end
@@ -17,14 +20,14 @@ class ReviewsController < ApplicationController
   end
 
   def edit
+    @review = Review.find(params[:id])
   end
 
   def update
     @review = Review.find(params[:id])
     @review.update(review_params)
-    redirect_to @review, notice: 'Review was successfully created.'
+    redirect_to reviews_path
   end
-
 
   def destroy
     @review = Review.find(params[:id])
