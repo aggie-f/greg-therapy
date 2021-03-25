@@ -16,6 +16,16 @@ class ReviewsController < ApplicationController
     end
   end
 
+  def edit
+  end
+
+  def update
+    @review = Review.find(params[:id])
+    @review.update(review_params)
+    redirect_to @review, notice: 'Review was successfully created.'
+  end
+
+
   def destroy
     @review = Review.find(params[:id])
     @review.delete

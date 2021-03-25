@@ -12,7 +12,12 @@
       <div class="review-list">
         <% @reviews.each do |review| %>
         <ul>
-          <li><%= review.content %></li><%= link_to 'Destroy', review, method: :delete, data: { confirm: 'Are you sure?' } %>
+          <li>
+            <%= review.content %>
+            <%= link_to 'Zmien', edit_review_path(review) %>
+            <%= link_to 'Usun', review_path(review), method: :delete, data: { confirm: 'Are you sure?' } %>
+
+          </li>
         </ul>
         <% end %>
       </div>
