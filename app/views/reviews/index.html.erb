@@ -14,9 +14,8 @@
         <ul>
           <li>
             <%= review.content %>
-            <%= link_to 'Zmien', edit_review_path(review) %>
-            <%= link_to 'Usun', review_path(review), method: :delete, data: { confirm: 'Are you sure?' } %>
-
+            <%= link_to 'Zmien', edit_review_path(review), class: "btn btn-primary" %>
+            <%= link_to 'Usun', review_path(review), method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-danger" %>
           </li>
         </ul>
         <% end %>
