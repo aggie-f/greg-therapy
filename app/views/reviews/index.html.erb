@@ -1,6 +1,18 @@
-<% if user_signed_in? %>
-  <% @reviews.each do |review| %>
-    <p><%= review.content %></p><%= link_to 'Destroy', review, method: :delete, data: { confirm: 'Are you sure?' } %>
-  <% end %>
-<% end %>
+<section>
+  <div class="container">
+    <div class="section-titles">
+      <h1>Opinie Klientów</h1>
+      <hr>
+    </div>
+    <% if user_signed_in? %>
+      <div class="review-list">
+        <% @reviews.each do |review| %>
+        <ul>
+          <li><%= review.content %></li><%= link_to 'Destroy', review, method: :delete, data: { confirm: 'Are you sure?' } %>
+        </ul>
+        <% end %>
+      </div>
+    <% end %>
+  </div>
+</section>
 
