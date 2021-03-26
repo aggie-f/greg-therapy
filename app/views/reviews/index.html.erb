@@ -1,6 +1,26 @@
 <% if user_signed_in? %>
-  <% @reviews.each do |review| %>
-    <p><%= review.content %></p><%= link_to 'Destroy', review, method: :delete, data: { confirm: 'Are you sure?' } %>
-  <% end %>
+  <section>
+    <div class="container">
+      <div class="section-titles">
+        <h1>Opinie Klientów</h1>
+        <hr>
+      </div>
+
+      <div class="reviews-buttons">
+        <%= link_to "DODAJ OPINIE", new_review_path, class: "btn-cards" %>
+      </div>
+
+      <div class="review-list">
+            <% @reviews.each do |review| %>
+            <div class="review-card">
+             <%= review.content %>
+          <div class="show-links">
+            <%= link_to 'Zmien', edit_review_path(review), class: "btn btn-primary" %>
+            <%= link_to 'Usun', review_path(review), method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-danger" %>
+          </div>
+      </div>
+        <% end %>
+    </div>
+  </section>
 <% end %>
 

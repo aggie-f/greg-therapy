@@ -1,0 +1,34 @@
+.review-list {
+  padding: 2rem 0;
+}
+
+.reviews-buttons {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.review-card {
+    border: 1px solid #B97F24;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+.show-links {
+  text-align: center;
+
+  .btn {
+  color: $white;
+  border: 1px solid $white;
+  border-radius: 5px;
+  background-color: #B97F24;
+  margin: 15px;
+
+  &:hover {
+      background-color: $purple;
+      color: white;
+      border: 1px solid $white;
+
+    }
+  }
+}

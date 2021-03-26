@@ -1,6 +1,11 @@
 class ReviewsController < ApplicationController
+  before_action :authenticate_user!
+
   def index
     @reviews = Review.all
+  end
+
+  def show
   end
 
   def new
@@ -14,6 +19,16 @@ class ReviewsController < ApplicationController
     else
       render :new
     end
+  end
+
+  def edit
+    @review = Review.find(params[:id])
+  end
+
+  def update
+    @review = Review.find(params[:id])
+    @review.update(review_params)
+    redirect_to reviews_path
   end
 
   def destroy
