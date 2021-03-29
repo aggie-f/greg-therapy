@@ -1,11 +1,12 @@
 /* The hero image */
 .banner-img {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("banner.jpg");
-  height: 100vh;
+  height: auto;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   padding: 100px 0;
+
 
 }
 
@@ -41,5 +42,41 @@
 
 }
 
+@media screen and (min-width: 1000px) {
+  .banner-img  {
+    height: 100vh;
+    position: relative;
+  }
 
+  .banner-text {
+    position: absolute;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+
+  // .section {
+  // padding-top: 3rem;
+  // }
+  // .banner-img  {
+  //   height: auto;
+  // }
+
+}
+
+@media screen and (max-width: 576px) {
+
+  // .banner-img  {
+  //   height: auto;
+  // }
+
+  .banner-text {
+    display: none;
+  }
+
+  .banner-title h1 {
+    font-size: 2rem;
+  }
+
+}
 
