@@ -33,6 +33,7 @@
     object-fit: cover;
     margin-left: auto;
     margin-right: auto;
+    padding: 20px 0
     }
   }
 }
@@ -90,7 +91,7 @@
     text-transform: uppercase;
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 1000px) {
   .blog-grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -104,5 +105,20 @@
     font-size: 1.25rem;
     }
 
+  }
+
+  .blog-grid__side {
+
+    &__about {
+      display: none;
+    }
+
+    &__services {
+      display: none;
+    }
+
+    &__contact {
+      display: none;
+    }
   }
 }
