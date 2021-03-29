@@ -50,8 +50,13 @@
     "text_one"
     "doctor-image"
     "text_two";
-     h1 {
-      padding-bottom: 20px;
+     h1, h4 {
+      padding-bottom: 10px;
+      font-weight: 400;
+     }
+
+     p {
+      margin-bottom: 0;
      }
   }
 

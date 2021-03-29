@@ -15,7 +15,7 @@
 </div>
 
 <!-- product offer section -->
-<section>
+<section class="top">
   <div class="container">
     <div class="section-titles">
       <h1>W CZYM MOGĘ POMÓC</h1>
@@ -58,14 +58,14 @@
         <h2>JAK PRACUJE</h2>
         <hr />
       </div>
-      <div class="container text-center">
+      <div>
         <p>Pracuję w podejściu psychodynamicznym, które zostało opracowane na podstawie dorobku współczesnej psychiatrii oraz uznanych koncepcji psychoanalitycznych. Psychoterapia psychodynamiczna toczy się w oparciu o relację terapeutyczną czyli więź, jaka rozwija się pomiędzy pacjentem a terapeutą w trakcie trwania leczenia.
         <br>
         <br>
         Psychoterapeuta psychodynamiczny nie daje dobrych rad lecz stara się pomóc pacjentowi w lepszym rozumieniu jego własnych myśli, zachowań, pragnień i uczuć. W tym procesie rolą psychoterapeuty jest towarzyszenie człowiekowi w poszukiwaniu lepszych sposobów rozwiązania jego problemów niż te, które do tej pory stosował, a także wskazywanie tego, czego sam nie mógł dostrzec.
         <br>
         <br>
-        Pacjent podczas terapii w gabinecie staje na drodze do lepszego poznania i zrozumienia siebie oraz wzmocnienia poczucia własnej wartości.Psychoterapia ma pomóc w przeżywaniu życia głębiej, bardziej świadomie, w doświadczaniu w pełni jego blasków i cieni.</p>
+        Pacjent podczas terapii w gabinecie staje na drodze do lepszego poznania i zrozumienia siebie oraz wzmocnienia poczucia własnej wartości. Psychoterapia ma pomóc w przeżywaniu życia głębiej, bardziej świadomie, w doświadczaniu w pełni jego blasków i cieni.</p>
       </div>
     </div>
   </div>
@@ -74,16 +74,20 @@
 <!-- about me section -->
 <section>
   <div class="container">
+    <div class="section-titles">
+      <h2>O MNIE</h2>
+      <hr/>
+    </div>
     <div class="about-me-section">
-      <div class="about-me-section-text">
-        <h2>GZEGORZ SZCZEBLEWSKI</h2>
-        <h4>Psycholog</h4>
+      <div class="about-me-section__text">
+        <h2>Grzegorz Szczeblewski</h2>
+        <h4>Psycholog & Psychoterapeuta</h4>
         <p>Jestem absolwentem Szkoły Wyższej Psychologii Społecznej Uniwersytetu Humanistycznospołecznego w Sopocie. Ukończyłem studia magisterskie na Wydziale Psychologii/specjalizacja kliniczna i zdrowia. Aktualnie jestem w trakcie szkolenia w Szkole Psychoterapii Psychodynamicznej  w Krakowskim Centrum Psychodynamicznym.</p>
-        <div class="about-me-section-btn">
+        <div class="about-me-section__btn">
           <%= link_to "WIĘCEJ", o_mnie_path, class: "btn-cards" %>
         </div>
       </div>
-      <div>
+      <div class="about-me-section__photo">
         <%= image_tag "grzegorz.jpg", alt: "Grzegorz_Szczeblewski" %>
       </div>
     </div>
@@ -93,13 +97,13 @@
 <!-- Bootstrap Image Carousel -->
 <section>
   <div class="container">
-    <div class="work-section">
+    <div class="offices-section">
       <div class="section-titles">
         <h2>NASZE BIURA</h2>
         <hr/>
+      </div>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing, elit. Beatae officiis voluptatibus ab aliquam est adipisci a laudantium maxime cumque eius reiciendis sint, iste rem veniam delectus quis fuga aliquid? Provident.
         Ipsa suscipit ea vel et, magni, ducimus consequuntur. Molestias delectus nam eum rem corporis enim suscipit nostrum et possimus aut, quo, voluptate, facilis. Est, ex aliquid. Error alias, iusto molestias.</p>
-      </div>
       <%= render 'shared/carousel' %>
     </div>
   </div>

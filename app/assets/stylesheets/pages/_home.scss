@@ -8,6 +8,11 @@ body {
 //   margin-bottom: 70px;
 // }
 
+//**titles**//
+.top {
+    margin-top: 40px;
+  }
+
 .section-titles {
   text-align: center;
   // padding-top: 2rem;
@@ -20,47 +25,55 @@ body {
   margin-bottom: 40px;
 }
 
+//**jak pracuje section**//
 .work-section {
   background-color: #f3f3f3;
   padding: 40px;
 }
 
+
+//**o mnie section**//
 .about-me-section {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  // grid-template-columns: auto-fit, minmax(300px, 1fr);
-}
+  padding: 40px 0;
+  align-self: center;
 
-.about-me-section-text {
-   align-self: center;
+  &__text {
+   // align-self: center;
    padding-right: 30px;
 
-   p {
+    p {
     margin-top: 70px;
-   }
+    }
+
+  }
+
+  &__photo {
+    img {
+    display: block;
+    object-fit: cover;
+    width: 100%;
+
+    }
+  }
+
+  &__btn {
+    margin: 40px 0px;
+  }
 }
 
-.about-me-section img {
-  display: block;
-  object-fit: cover;
-  width: 100%;
+//**biura section**//
+
+.offices-section {
+  background-color: #f3f3f3;
+  padding: 40px;
+
+  p {
+    margin-top: 0;
+    margin-bottom: 3rem;
+  }
 }
-
-
-.about-me-section-btn {
-  margin: 40px 0px;
-}
-
-
-
-// .reviews {
-//   background: #f3f3f3;
-
-//   p {
-//     padding: 0 100px;
-//   }
-// }
-
 
 .carousel-control-prev-icon {
  // background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
@@ -79,73 +92,73 @@ body {
 
 
 // review styling for grid//
-.reviews-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  column-gap: 20px;
-}
- .review * {
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-  }
+// .reviews-grid {
+//   display: grid;
+//   grid-template-columns: 1fr 1fr;
+//   column-gap: 20px;
+// }
+//  .review * {
+//     -webkit-box-sizing: border-box;
+//     box-sizing: border-box;
+//   }
 
-.review {
-  // font-family: 'Lato', Arial, sans-serif;
+// .review {
+//   // font-family: 'Lato', Arial, sans-serif;
 
-  position: relative;
-  display: inline-block;
-  overflow: hidden;
-  margin: 10px;
-  min-width: 250px;
-  // max-width: 310px;
-  width: 100%;
-  background-color: #000000;
-  color: #ffffff;
-  text-align: center;
-  font-size: 16px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+//   position: relative;
+//   display: inline-block;
+//   overflow: hidden;
+//   margin: 10px;
+//   min-width: 250px;
+//   // max-width: 310px;
+//   width: 100%;
+//   background-color: #000000;
+//   color: #ffffff;
+//   text-align: center;
+//   font-size: 16px;
+//   box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
 
 
-  &__photo {
-    max-width: 100%;
-    vertical-align: top;
-    opacity: 0.7;
-  }
+//   &__photo {
+//     max-width: 100%;
+//     vertical-align: top;
+//     opacity: 0.7;
+//   }
 
-  &__box {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding: 80px 10% 15%;
-    display: flex;
-    align-items: center;
+//   &__box {
+//     position: absolute;
+//     top: 0;
+//     bottom: 0;
+//     left: 0;
+//     right: 0;
+//     padding: 80px 10% 15%;
+//     display: flex;
+//     align-items: center;
 
-      &::before {
-        font-family: 'FontAwesome';
-        content: "\201C";
-        position: absolute;
-        font-size: 170px;
-        opacity: 0.35;
-        font-style: normal;
-        -webkit-transform: translateX(-50%);
-        transform: translateX(-50%);
-        // top: 0px;
-        // left: 50%;
-        top: 1.25rem;
-        left: 5rem;
-      }
-    }
+//       &::before {
+//         font-family: 'FontAwesome';
+//         content: "\201C";
+//         position: absolute;
+//         font-size: 170px;
+//         opacity: 0.35;
+//         font-style: normal;
+//         -webkit-transform: translateX(-50%);
+//         transform: translateX(-50%);
+//         // top: 0px;
+//         // left: 50%;
+//         top: 1.25rem;
+//         left: 5rem;
+//       }
+//     }
 
-  &__text {
-    padding: 0;
-    margin: 0;
-    font-style: italic;
-    font-size: 1em;
-    font-weight: 300;
-  }
-}
+//   &__text {
+//     padding: 0;
+//     margin: 0;
+//     font-style: italic;
+//     font-size: 1em;
+//     font-weight: 300;
+//   }
+// }
 //review styling for carousel//
 #review-carousel {
    img {
@@ -227,21 +240,28 @@ body {
   // .section {
   // padding-top: 3rem;
   // }
+
   .banner-img  {
     height: auto;
   }
 
   .about-me-section {
    grid-template-columns: 1fr;
+   padding: 0;
+   text-align: center;
+
+    &__text {
+      padding: 10px;
+    }
   }
 
-  .about-me-section-text {
-    text-align: center;
-    padding: 10px;
-
+  .about-me-section {
+    h2, h4 {
+      text-align: center;
+    }
 
     p {
-      margin-top: 10px;
+      margin-top: 20px;
     }
   }
 
@@ -249,9 +269,20 @@ body {
     padding-top: 20px;
   }
 
+  .carousel-item img {
+    height: auto;
+  }
 }
 
 @media screen and (max-width: 576px) {
+
+  section {
+    padding: 2rem 0;
+  }
+
+  .top {
+    margin-top: 40px;
+  }
 
   .banner-img  {
     height: auto;
@@ -270,12 +301,15 @@ body {
   }
 
   .work-section {
-    padding: 30px 15px;
+    background-color: #f3f3f3;
+    padding: 30px 20px;
+    text-align: left;
   }
 
-  .carousel-item img {
-    height: auto;
-  }
+  .about-me-section__text h4 {
+    font-weight: 200;
+   }
+
 
   .review-carousel__text {
     // margin: 0;
@@ -285,20 +319,4 @@ body {
     padding: 0 60px;
   }
 }
-// .snip1574 h3 {
-//   font-family: 'Oswald';
-//   text-transform: uppercase;
-//   font-size: 20px;
-//   font-weight: 400;
-//   line-height: 24px;
-//   margin: 3px 0;
-// }
-
-// .snip1574 h5 {
-//   font-weight: 400;
-//   margin: 0;
-//   text-transform: uppercase;
-//   color: #bbb;
-//   letter-spacing: 1px;
-// }
 
