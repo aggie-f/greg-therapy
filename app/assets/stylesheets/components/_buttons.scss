@@ -3,17 +3,17 @@
   padding: 8px 24px;
   border-radius: 4px;
   font-weight: bold;
-  background: #424190;
+  background: $primary-backround;
   transition: background 0.3s ease;
-  border: 1px solid #4e4190;
+  border: 1px solid $primary-backround;
   margin-bottom: 30px;
   cursor: pointer;
 }
 
 .btn-cards:hover {
   background: #fff;
-  color: #424190;
-  border: 1px solid #4e4190;
+  color: $primary-backround;
+  border: 1px solid $primary-backround;
   text-decoration: none;
   // opacity: 0.7;
 }
