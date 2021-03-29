@@ -106,18 +106,56 @@
 </section>
 
 <!-- Reviews -->
-<section class="reviews">
+<!-- <section class="reviews container">
+  <div class="section-titles">
+        <h2>OPINIE NASZYCH KLIENTÓW</h2>
+        <hr/>
+  </div>
+  <div class="reviews-grid">
+    <% @reviews.each do |review| %>
+    <figure class="review">
+      <%= image_tag "leaf.jpg", alt: "Grzegorz_Szczeblewski", class: "review__photo" %>
+      <figcaption class="review__box">
+        <blockquote class="review__text">
+          <p><%= review.content %></p>
+        </blockquote>
+      </figcaption>
+    </figure>
+    <% end %>
+  </div>
+</section> -->
+
+
+<section class="reviews-carousel container">
+  <div class="section-titles">
+    <h2>OPINIE NASZYCH KLIENTÓW</h2>
+    <hr/>
+  </div>
   <div>
     <div id="carouselContent" class="carousel slide" data-ride="carousel">
       <div class="carousel-inner" role="listbox">
-          <div class="carousel-item active text-center ">
-            <p><%= @reviews.first.content %></p>
+          <div class="carousel-item active text-center" id="review-carousel">
+            <figure class="review-carousel">
+              <%= image_tag "leaf.jpg", alt: "Grzegorz_Szczeblewski", class: "review__photo" %>
+              <figcaption class="review-carousel__box">
+                <blockquote class="review-carousel__text">
+                   <p>Bardzo fachowa, rzetelna obsługa sesje przebiegały bardzo szybko wręcz niekiedy brakowało czasu i chciałoby się domówić kolejną godzinę. Bardzo polecam.☆☆☆☆☆ chodziłem 2 miesiące i z pewnością za jakiś czas, wrócę tam z powrotem.</p>
+                </blockquote>
+              </figcaption>
+            </figure>
           </div>
-          <% @reviews.each_with_index do |review, index| %>
-          <div class="carousel-item text-center">
-            <p><%= review.content if index >= 1 %></p>
+          <% @reviews.each do |review| %>
+          <div class="carousel-item text-center" id="review-carousel">
+            <figure class="review-carousel">
+              <%= image_tag "leaf.jpg", alt: "Grzegorz_Szczeblewski", class: "review__photo" %>
+              <figcaption class="review-carousel__box">
+                <blockquote class="review-carousel__text">
+                  <p><%= review.content %></p>
+                </blockquote>
+              </figcaption>
+            </figure>
           </div>
-        <% end %>
+          <% end %>
       </div>
       <a class="carousel-control-prev" href="#carouselContent" role="button" data-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -130,8 +168,6 @@
     </div>
   </div>
 </section>
-
-
 
 
 
