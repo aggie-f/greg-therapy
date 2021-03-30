@@ -8,12 +8,27 @@
   border: 1px solid $primary-backround;
   margin-bottom: 30px;
   cursor: pointer;
+
+  &:hover {
+    background: #fff;
+    color: $primary-backround;
+    border: 1px solid $primary-backround;
+    text-decoration: none;
+    // opacity: 0.7;
+  }
 }
 
-.btn-cards:hover {
-  background: #fff;
+
+.back-btn {
+  background: #white;
   color: $primary-backround;
   border: 1px solid $primary-backround;
   text-decoration: none;
-  // opacity: 0.7;
+  padding: 8px 24px;
+
+  &:hover {
+    background: $primary-backround;
+    color: $white;
+    text-decoration: none;
+  }
 }
