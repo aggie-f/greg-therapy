@@ -1,13 +1,14 @@
 <section class="container">
   <div class=blog-show>
     <p id="notice"><%= notice %></p>
-    <div class="blog-title">
-      <h2><%= @article.title %></h2>
-      <!-- <p><small><%= @article.created_at.strftime("%d/%m/%Y") %></small></p> -->
-    </div>
 
     <div class="blog-grid">
       <div class="blog-grid__main">
+        <div class="blog-title">
+          <h2><%= @article.title %></h2>
+          <span class="entry-div"></span>
+          <!-- <p><small><%= @article.created_at.strftime("%d/%m/%Y") %></small></p> -->
+        </div>
         <div class="blog-image">
           <% @article.photos.each do |photo| %>
             <%= cl_image_tag photo.key %>
@@ -17,22 +18,29 @@
           <p><%= @article.rich_body %></p>
         </div>
 
+
+        <div>
+          <%= link_to '← Wszystkie Artykuly', articles_path, class:"back-btn"%>
+        </div>
+
         <% if user_signed_in? %>
+        <div class="mt-5">
         <%= link_to 'Edit', edit_article_path(@article) %> |
         <%= link_to 'Back', articles_path %>
         <% end %>
+        </div>
       </div>
 
       <div class="blog-grid__side">
-        <div>
-          <h4>O mnie</h4>
+        <div class="blog-grid__side__about">
+          <h4 class="widget-title">O mnie</h4>
           <p>W kontakcie z drugim człowiekiem ważne jest dla mnie nawiązanie szczerej i pełnej empatii relacji.
           Towarzyszę swoim klientom w kłopotach i kryzysach, które nie pozwalają im w pełni cieszyć się życiem.
           Odnajduję prawdziwą radość i satysfakcję pomagając w rozwoju oraz budowaniu nowych rozwiązań.</p>
         </div>
 
         <div class="blog-grid__side__services">
-          <h4>W czym mogę pomóc</h4>
+          <h4 class="widget-title">Oferta</h4>
           <ul>
             <li><%= link_to "Psychoterpia Indywidualna", oferta_path %></li>
             <li><%= link_to "Konsultacja Psychologiczna", oferta_path %></li>
@@ -40,8 +48,8 @@
           </ul>
         </div>
 
-        <div>
-          <h4>Kategorie</h4>
+        <div class="blog-grid__side__categories">
+          <h4 class="widget-title">Kategorie</h4>
           <p>Lorem</p>
           <p>Lorem</p>
           <p>Lorem</p>
@@ -50,9 +58,9 @@
           <p>Lorem</p>
         </div>
 
-        <div>
-          <h4>Umów się na wizytę</h4>
-          <div class="blog-grid__side__contact" >
+        <div class="blog-grid__side__contact">
+          <h4 class="widget-title">Umów się na wizytę</h4>
+          <div>
             <a href="tel://+48663061717"><i class="fas fa-phone"></i>Zadzwoń</a>
           </div>
           <div class="blog-grid__side__contact">
