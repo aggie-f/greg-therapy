@@ -1,5 +1,6 @@
 class PagesController < ApplicationController
   # skip_before_action :authenticate_user!, only: [ :home ]
+  before_action :authenticate_user!, only:  %i[ admin ]
 
   def home
     @reviews = Review.all
@@ -15,6 +16,11 @@ class PagesController < ApplicationController
   end
 
   def terapia
+  end
+
+  def admin
+    @reviews = Review.all
+    # @new_review = Review.new
   end
 
 end
