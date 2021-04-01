@@ -12,6 +12,7 @@ Rails.application.routes.draw do
   get 'cennik', to: 'pages#cennik'
   get 'blog', to: 'pages#articles'
   get 'kontakt', to: 'pages#kontakt'
+  get 'admin', to: 'pages#admin'
 
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
