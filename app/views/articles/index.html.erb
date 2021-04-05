@@ -4,29 +4,29 @@
   </div>
 </section>
 
+
 <section>
   <div class="container">
     <!-- <p id="notice"><%= notice %></p> -->
     <div class="articles-items">
       <% @articles.each do |article| %>
-        <div class="card-article">
-          <div class="article-card-photo">
-            <% if article.photos.attached? %>
-              <%= cl_image_tag article.photos[0].key, height: 300, width: 400, crop: :fill %>
-            <% end %>
-          </div>
-          <div class=article-card-title>
-            <h4><%= article.title %></h4>
+        <div class="article-card">
+          <% if article.photos.attached? %>
+            <%= cl_image_tag article.photos[0].key, height: 300, width: 400, crop: :fill, class: "article-card__photo" %>
+          <% end %>
+          <div class=article-card__title>
+            <h2><%= article.title %></h2>
+            <%= link_to 'Show', article, class: "btn-cards" %>
             <!-- <p><%= article.tagline %></p> -->
-            <% if user_signed_in? %>
-            <div>
-              <%= link_to 'Show', article %>
-              <%= link_to 'Edit', edit_article_path(article) %>
-              <%= link_to 'Destroy', article, method: :delete, data: { confirm: 'Are you sure?' } %>
-            </div>
-            <%= link_to 'New Article', new_article_path %>
-            <% end %>
           </div>
+          <% if user_signed_in? %>
+          <div class="article-card__links">
+            <%= link_to 'Show | ', article %>
+            <%= link_to 'Edit | ', edit_article_path(article) %>
+            <%= link_to 'Destroy | ', article, method: :delete, data: { confirm: 'Are you sure?' } %>
+            <%= link_to 'New Article ', new_article_path %>
+          </div>
+          <% end %>
         </div>
       <% end %>
     </div>
