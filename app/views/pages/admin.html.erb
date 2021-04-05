@@ -1,2 +1,27 @@
-<h1>test</h1>
-<% @review %>
+<% if user_signed_in? %>
+  <section class="container">
+    <div class="admin-grid">
+      <div class="admin-reviews">
+        <div class="section-titles">
+          <h1>Opinie Klientów</h1>
+          <hr>
+        </div>
+        <div class="reviews-buttons">
+          <%= link_to "DODAJ OPINIE", new_review_path, class: "btn-cards" %>
+          <%= link_to "WSZYSTKIE", reviews_path, class: "btn-cards" %>
+        </div>
+      </div>
+
+      <div class="admin-articles">
+        <div class="section-titles">
+          <h1>Blog</h1>
+          <hr>
+        </div>
+        <div class="reviews-buttons">
+          <%= link_to "WSZYSTKIE", articles_path, class: "btn-cards" %>
+          <%= link_to "DODAJ ARTYKUL", new_article_path, class: "btn-cards" %>
+        </div>
+      </div>
+    </div>
+  </section>
+<% end %>
