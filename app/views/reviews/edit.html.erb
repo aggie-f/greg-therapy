@@ -1,6 +1,10 @@
-<h1>Edycja Opinii</h1>
-
-<%= render 'form', review: @review %>
-
-<%= link_to 'Wszyskie Opinie', @review %>
-<%= link_to 'Wróć', review_path %>
+<section>
+  <div class="container">
+    <div class="section-titles">
+      <h1>Edycja Opinii</h1>
+      <hr>
+    </div>
+    <%= render 'form', review: @review %>
+    <%= link_to 'Wróć', review_path, class:"btn-back" %>
+  </div>
+</section>

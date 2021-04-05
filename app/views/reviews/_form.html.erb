@@ -1,10 +1,16 @@
-<%= simple_form_for(@review) do |f| %>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-8 offset-sm-2">
+      <%= simple_form_for(@review) do |f| %>
 
-  <div class="form-inputs">
-    <%= f.input :content %>
-  </div>
+        <div class="form-inputs">
+          <%= f.input :content %>
+        </div>
 
-  <div class="form-actions">
-    <%= f.button :submit, class: "btn btn-primary" %>
+        <div class="form-actions">
+          <%= f.button :submit, class: "btn-cards" %>
+        </div>
+      <% end %>
+    </div>
   </div>
-<% end %>
+</div>

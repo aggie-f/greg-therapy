@@ -1,5 +1,6 @@
 .form-login {
   max-width: 700px;
+  margin: 50px 0;
 }
 
 .simple_form {
@@ -7,8 +8,15 @@
   border-radius: 20px;
   background-color: $white;
   border: 1px solid $purple;
+  margin-bottom: 30px;
 
   a {
     color: #8e7f7f;
   }
+}
+
+
+.new_review {
+  max-width: 700px;
+  margin: 50px 0;
 }
