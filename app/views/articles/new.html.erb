@@ -1,5 +1,10 @@
-<h1>New Article</h1>
-
-<%= render 'form', article: @article %>
-
-<%= link_to 'Back', articles_path %>
+<section>
+  <div class="container">
+    <div class="section-titles">
+      <h1>Nowy Aktykuł</h1>
+      <hr>
+    </div>
+    <%= render 'form', article: @article %>
+    <%= link_to 'Wróć', articles_path, class:"btn-back" %>
+  </div>
+</section>

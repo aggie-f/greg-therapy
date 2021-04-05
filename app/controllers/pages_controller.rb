@@ -20,6 +20,7 @@ class PagesController < ApplicationController
 
   def admin
     @reviews = Review.all
+    @articles = Article.all
     # @new_review = Review.new
   end
 

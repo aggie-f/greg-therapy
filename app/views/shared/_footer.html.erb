@@ -34,7 +34,12 @@
       </ul>
     </div>
     <% if user_signed_in? %>
-        <p class="text-center"><%= link_to "Wyloguj", destroy_user_session_path, method: :delete %> </p>
+      <div class="footer-menu">
+        <ul>
+          <li><%= link_to "Admin", admin_path %></li>
+          <li><%= link_to "Wyloguj", destroy_user_session_path, method: :delete %> </li>
+        </ul>
+      </div>
     <% end %>
   </div>
 </div>
