@@ -9,7 +9,7 @@
     <!-- <p id="notice"><%= notice %></p> -->
     <div class="articles-items">
       <% @articles.each do |article| %>
-        <div class="article-card">
+        <div class="article-card hover-content shadow-hover">
           <% if article.photos.attached? %>
             <%= cl_image_tag article.photos[0].key, height: 300, width: 400, crop: :fill, class: "article-card__photo" %>
           <% end %>
