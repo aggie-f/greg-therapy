@@ -15,8 +15,10 @@
   align-items: center;
   align-content: space-around;
   background-color: #f3f3f3;
-  margin: 20px 10px;
+  margin: 3rem;
   text-align: center;
+  box-shadow: 0 0.125rem 0.25rem 0 rgba(0, 0, 0, 0.1);
+  transition: transform 1s ease;
   // height: 300px;
 
   &__title {
@@ -44,6 +46,31 @@
     padding: 20px;
   }
 
+}
+
+// Box Shadow on cards //
+.shadow-hover {
+  position: relative;
+}
+
+.shadow-hover::after {
+  position: absolute;
+  z-index:-1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  box-shadow: 0 0.5rem 3rem -0.25em rgba(0, 0, 0, 0.3);
+  transition: opacity 1s ease;
+}
+
+.shadow-hover:hover {
+  transform: translateY(-0.35em) scale(1.02);
+}
+
+.shadow-hover:hover::after {
+  opacity: 1;
 }
 
 
