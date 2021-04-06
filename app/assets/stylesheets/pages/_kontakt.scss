@@ -7,6 +7,11 @@
 .contact-way {
   text-align: center;
   padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+
+  transition: transform 1s ease;
 
   p {
     font-weight: 200;
@@ -15,7 +20,7 @@
   i {
     color: #4e4190;
     font-size: 30px;
-    margin-bottom: 24px;
+    margin: 20px;
   }
 
   a {
@@ -26,6 +31,34 @@
     text-decoration: none;
     cursor: pointer;
   }
+}
+
+// Box Shadow on cards //
+.shadow-contact {
+  position: relative;
+}
+
+.shadow-contact::after {
+  position: absolute;
+  z-index:-1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+
+  box-shadow: 0 0.5rem 3rem -0.25em rgba(0, 0, 0, 0.3);
+  transition: opacity 1s ease;
+}
+
+.shadow-contact:hover {
+  box-shadow: 0 0.5rem 3rem -0.25em rgba(0, 0, 0, 0.3);
+  // box-shadow: 0 0.125rem 0.25rem 0 rgba(0, 0, 0, 0.1);
+  transform: translateY(-0.35em) scale(1.02);
+}
+
+.shadow-contact:hover::after {
+  opacity: 1;
 }
 
 
