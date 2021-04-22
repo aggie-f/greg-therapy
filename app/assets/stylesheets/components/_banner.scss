@@ -1,82 +1,197 @@
-/* The hero image */
-.banner-img {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("banner.jpg");
-  height: auto;
+.banner-home {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image: url("banner.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 100px 0;
-
-
 }
 
-.banner-title {
+.banner-home::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 80%;
+  background: -webkit-linear-gradient(top,rgba(0,0,0,0) 0,rgba(0,0,0,.8) 80%,rgba(0,0,0,.8) 100%);
+  background: linear-gradient(to bottom,rgba(0,0,0,0) 0,rgba(0,0,0,.8) 80%,rgba(0,0,0,.8) 100%);
+}
 
+.banner-text {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  z-index: 2;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   color: white;
-  padding: 20px;
+  text-align: center;
+  width: 70%;
 
   h1 {
     font-size: 2.5rem;
   }
 
-  h2 {
-    font-size: 2rem;
-    font-weight: 300;
-    margin-top: 10px;
-  }
-}
-
-
-.banner-text {
-  // position: absolute;
-  top: 70%;
-  color: white;
-  padding: 20px;
-  width: 80%;
-  font-size: 1.15rem;
-  font-weight: 200;
-
   p {
-  margin-bottom: 0.5em;
+    padding-top: 250px;
+    line-height: 1.6;
+    font-size: 1.25rem;
   }
 
 }
 
-@media screen and (min-width: 1000px) {
-  .banner-img  {
-    height: 100vh;
-    position: relative;
+
+.btn-scroll a {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  z-index: 2;
+  display: inline-block;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  color: #fff;
+  font : normal 400 20px/1 'Josefin Sans', sans-serif;
+  letter-spacing: .1em;
+  text-decoration: none;
+  transition: opacity .3s;
+}
+
+.btn-scroll a:hover {
+  opacity: .5;
+}
+
+#section01 {
+  a {
+    padding-top: 60px;
   }
 
-  .banner-text {
+  a span {
     position: absolute;
+    top: 0;
+    left: 50%;
+    width: 24px;
+    height: 24px;
+    margin-left: -12px;
+    border-left: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -webkit-animation: sdb04 2s infinite;
+    animation: sdb04 2s infinite;
+    box-sizing: border-box;
+  }
+
+}
+
+
+@-webkit-keyframes sdb04 {
+  0% {
+    -webkit-transform: rotate(-45deg) translate(0, 0);
+  }
+  20% {
+    -webkit-transform: rotate(-45deg) translate(-10px, 10px);
+  }
+  40% {
+    -webkit-transform: rotate(-45deg) translate(0, 0);
   }
 }
+@keyframes sdb04 {
+  0% {
+    transform: rotate(-45deg) translate(0, 0);
+  }
+  20% {
+    transform: rotate(-45deg) translate(-10px, 10px);
+  }
+  40% {
+    transform: rotate(-45deg) translate(0, 0);
+  }
+}
+
+// /* The hero image */
+// .banner-img {
+//   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("banner.jpg");
+//   height: auto;
+//   background-position: center;
+//   background-repeat: no-repeat;
+//   background-size: cover;
+//   padding: 100px 0;
+
+
+// }
+
+// .banner-title {
+
+//   color: white;
+//   padding: 20px;
+
+//   h1 {
+//     font-size: 2.5rem;
+//   }
+
+//   h2 {
+//     font-size: 2rem;
+//     font-weight: 300;
+//     margin-top: 10px;
+//   }
+// }
+
+
+// .banner-text {
+//   // position: absolute;
+//   top: 70%;
+//   color: white;
+//   padding: 20px;
+//   width: 80%;
+//   font-size: 1.15rem;
+//   font-weight: 200;
+
+//   p {
+//   margin-bottom: 0.5em;
+//   }
+
+// }
+
+// @media screen and (min-width: 1000px) {
+//   .banner-img  {
+//     height: 100vh;
+//     position: relative;
+//   }
+
+//   .banner-text {
+//     position: absolute;
+//   }
+// }
 
 @media screen and (max-width: 1000px) {
+  .banner-text p {
+    padding-top: 200px;
+  }
 
-  // .section {
-  // padding-top: 3rem;
-  // }
-  // .banner-img  {
-  //   height: auto;
-  // }
+  .section {
+    padding-top: 3rem;
+  }
+
 
 }
 
 @media screen and (max-width: 576px) {
 
-  // .banner-img  {
-  //   height: auto;
-  // }
-
-  .banner-text {
+  #section01 a {
     display: none;
   }
 
-  .banner-title h1 {
-    font-size: 2rem;
+  .banner-text {
+    h1 {
+      font-size: 2rem;
+      text-align: center;
+    }
   }
 
-}
+  .banner-text__quote {
+    display: none;
+  }
+
+ }
 
