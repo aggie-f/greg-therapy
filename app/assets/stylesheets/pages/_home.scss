@@ -241,10 +241,6 @@ body {
   // padding-top: 3rem;
   // }
 
-  .banner-img  {
-    height: auto;
-  }
-
   .about-me-section {
    grid-template-columns: 1fr;
    padding: 0;
@@ -280,31 +276,21 @@ body {
     padding: 2rem 0;
   }
 
+  .section-titles h1 {
+    font-size: 2rem;
+  }
+
   .top {
     margin-top: 40px;
   }
 
-  .banner-img  {
-    height: auto;
-  }
-
-  .banner-text {
-    display: none;
-  }
-
-  .banner-title h1 {
-    font-size: 2rem;
-  }
-
-  .section-titles h1 {
-    font-size: 2rem;
-  }
 
   .work-section {
     background-color: #f3f3f3;
     padding: 30px 20px;
     text-align: left;
   }
+
 
   .about-me-section__text h4 {
     font-weight: 200;
