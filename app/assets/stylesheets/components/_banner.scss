@@ -1,3 +1,4 @@
+// /* The hero image */
 .banner-home {
   position: relative;
   width: 100%;
@@ -21,46 +22,56 @@
 
 .banner-text {
   position: absolute;
-  top: 40%;
+  top: 45%;
   left: 50%;
   z-index: 2;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   color: white;
-  text-align: center;
+  // text-align: center;
   width: 70%;
 
   h1 {
     font-size: 2.5rem;
   }
 
-  p {
-    padding-top: 250px;
+  h2 {
+    font-size: 2rem;
+    font-weight: 300;
+    margin-top: 10px;
+  }
+}
+
+.banner-text__quote {
+    padding-top: 150px;
     line-height: 1.6;
     font-size: 1.25rem;
   }
 
-}
 
 
-.btn-scroll a {
-  position: absolute;
-  bottom: 20px;
-  left: 50%;
-  z-index: 2;
-  display: inline-block;
-  -webkit-transform: translate(0, -50%);
-  transform: translate(0, -50%);
-  color: #fff;
-  font : normal 400 20px/1 'Josefin Sans', sans-serif;
-  letter-spacing: .1em;
-  text-decoration: none;
-  transition: opacity .3s;
-}
+.btn-scroll {
+  a {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    z-index: 2;
+    display: inline-block;
+    -webkit-transform: translate(0, -50%);
+    transform: translate(-50%, -50%);
+    color: white;
+    font : normal 400 20px/1 'Josefin Sans', sans-serif;
+    letter-spacing: .1em;
+    text-decoration: none;
+    transition: opacity .3s;
+  }
 
-.btn-scroll a:hover {
+  a:hover {
   opacity: .5;
+  }
+
 }
+
 
 #section01 {
   a {
@@ -79,14 +90,13 @@
     -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg);
     -webkit-animation: sdb04 2s infinite;
-    animation: sdb04 2s infinite;
+    animation: sdb01 2s infinite;
     box-sizing: border-box;
   }
 
 }
 
-
-@-webkit-keyframes sdb04 {
+@-webkit-keyframes sdb01 {
   0% {
     -webkit-transform: rotate(-45deg) translate(0, 0);
   }
@@ -97,7 +107,8 @@
     -webkit-transform: rotate(-45deg) translate(0, 0);
   }
 }
-@keyframes sdb04 {
+
+@keyframes sdb01 {
   0% {
     transform: rotate(-45deg) translate(0, 0);
   }
@@ -108,6 +119,35 @@
     transform: rotate(-45deg) translate(0, 0);
   }
 }
+
+
+@media screen and (max-width: 1000px) {
+  .banner-text__quote {
+    font-size: 1rem;
+    padding-top: 50px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+
+  #section01 a {
+    display: none;
+  }
+
+  .banner-home {
+    height: 100vh;
+  }
+
+  .banner-text h1 {
+    font-size: 1.75rem;
+    text-align: center;
+  }
+
+  .banner-text__quote {
+    display: none;
+  }
+
+ }
 
 // /* The hero image */
 // .banner-img {
@@ -163,35 +203,4 @@
 //     position: absolute;
 //   }
 // }
-
-@media screen and (max-width: 1000px) {
-  .banner-text p {
-    padding-top: 200px;
-  }
-
-  .section {
-    padding-top: 3rem;
-  }
-
-
-}
-
-@media screen and (max-width: 576px) {
-
-  #section01 a {
-    display: none;
-  }
-
-  .banner-text {
-    h1 {
-      font-size: 2rem;
-      text-align: center;
-    }
-  }
-
-  .banner-text__quote {
-    display: none;
-  }
-
- }
 
