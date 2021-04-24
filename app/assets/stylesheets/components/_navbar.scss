@@ -8,7 +8,7 @@
 }
 
 .navbar-links {
-  font-family:"Josefin Sans", "sans-serif";;
+  font-family:"Josefin Sans", "sans-serif";
 }
 
 .navbar-brand img {
@@ -18,25 +18,43 @@
 
 .navbar-links ul {
   display: flex;
-  // align-content: center;
   margin: 0;
   padding: 0;
-}
-
-.navbar-links li {
   list-style: none;
 }
 
-.navbar-links li a {
-  display: block;
-  text-decoration: none;
-  color: #373737;
-  padding: 1rem;
+.navbar-links li {
+  display: inline-block;
+  position: relative;
+  margin-left: 50px;
+  padding-top: 23px;
 }
 
-.navbar-links li:hover {
-  // background-color: #555;
+.navbar-links li a {
+  text-decoration: none;
+  color: $gray-light:;
+}
 
+.navbar-links a:hover {
+  color: black;
+}
+
+.navbar-links a::before {
+  content: "";
+  display: block;
+  height: 5px;
+  background-color: $primary-backround;
+
+  position: absolute;
+  top: 0;
+  width: 0%;
+
+  transition: all ease-in-out 250ms;
+
+}
+
+.navbar-links a:hover::before {
+  width: 100%;
 }
 
 .toggle-button {
@@ -56,6 +74,8 @@
   background-color: #373737;
   border-radius: 10px;
 }
+
+
 
 @media (max-width: 1000px) {
 
