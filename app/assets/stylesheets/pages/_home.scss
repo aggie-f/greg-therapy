@@ -46,6 +46,9 @@ body {
   &__text {
    // align-self: center;
    padding-right: 30px;
+   transform: translateY(20px);
+  // opacity: 0;
+  transition: 0.7s all ease-in-out;
 
     p {
     margin-top: 70px;
@@ -94,7 +97,14 @@ body {
     display:block;
 }
 
+.fade-in {
+  opacity: 0;
+  transition: opacity 250ms ease-in;
+}
 
+.fade-in.appear {
+  opacity: 1;
+}
 // review styling for grid//
 // .reviews-grid {
 //   display: grid;
