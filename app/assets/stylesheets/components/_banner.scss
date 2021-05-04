@@ -67,7 +67,7 @@
   }
 
   a:hover {
-  opacity: .5;
+    opacity: .5;
   }
 
 }
@@ -135,12 +135,22 @@
   }
 
   .banner-home {
-    height: 100vh;
+    height: 80vh;
   }
 
-  .banner-text h1 {
-    font-size: 1.75rem;
-    text-align: center;
+  .banner-text {
+    line-height: 1.6;
+
+    h1 {
+      font-size: 1.75rem;
+      text-align: center;
+    }
+
+    h2 {
+      font-size: 1.75rem;
+      text-align: center;
+      padding-top: 40px;
+    }
   }
 
   .banner-text__quote {
