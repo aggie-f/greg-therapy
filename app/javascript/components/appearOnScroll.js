@@ -1,6 +1,6 @@
-console.log("hello");
+// console.log("hello");
 const faders = document.querySelectorAll(".fade-in");
-console.log(faders);
+// console.log(faders);
 
 const appearOptions = {
   threshold: 0,
