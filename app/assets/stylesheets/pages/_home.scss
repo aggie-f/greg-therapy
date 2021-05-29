@@ -43,6 +43,16 @@ body {
     justify-content: space-around;
     flex-wrap: wrap;
 
+    a {
+    text-decoration: none;
+    color: $text-headlines;
+    }
+
+      a:focus, a:hover {
+      text-decoration: none;
+      color: $text-headlines;
+    }
+
     &__container {
       display: block;
       position: relative;
