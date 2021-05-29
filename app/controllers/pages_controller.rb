@@ -6,7 +6,7 @@ class PagesController < ApplicationController
     @reviews = Review.all
   end
 
-  def about
+  def zespol
   end
 
   def services
