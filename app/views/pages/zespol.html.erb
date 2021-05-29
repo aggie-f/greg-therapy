@@ -1,11 +1,31 @@
 <section class="banner-pages">
   <div class="banner-pages-title">
-    <h1>O MNIE</h1>
+    <h1>NASZ ZESPÓŁ</h1>
   </div>
 </section>
 
 <section class="container">
-  <div class="about-me-page">
+  <div class="team-list">
+    <div class="team-list__card">
+      <h4>Grzegorz Szczeblewski</h4>
+      <p>Psycholog i Psychoterapeuta</p>
+      <%= link_to "WIĘCEJ", zespol_Grzegorz_Szczeblewski_path, class: "btn-cards" %>
+    </div>
+    <div class=class="team-list__card">
+      <h4>Elżbieta Walczak</h4>
+      <p>Psycholożka i Terapeutka uzależnień</p>
+      <%= link_to "WIĘCEJ", zespol_path(anchor: 'ela'), class: "btn-cards" %>
+    </div>
+    <div class=class="team-list__card">
+      <h4>Donata Grodek</h4>
+      <p>Psycholożka, Psychoterapeutka i Terapeutka uzależnień</p>
+      <%= link_to "WIĘCEJ", zespol_path(anchor: 'donata'), class: "btn-cards" %>
+    </div>
+  </div>
+</section>
+
+<section class="container">
+  <div class="about-me-page" id="grzegorz">
     <div class="about-me-page_img">
       <img src="/assets/Greg_square.jpg" alt="Grzegorz Szczeblewski">
     </div>

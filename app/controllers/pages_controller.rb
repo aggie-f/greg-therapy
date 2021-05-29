@@ -9,6 +9,9 @@ class PagesController < ApplicationController
   def zespol
   end
 
+  def grzegorz_szczeblewski
+  end
+
   def services
   end
 

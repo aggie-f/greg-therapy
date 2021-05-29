@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   resources :reviews
 
   get 'zespol', to: 'pages#zespol'
+  get 'zespol/Grzegorz-Szczeblewski', to: 'pages#grzegorz_szczeblewski'
   get 'oferta', to: 'pages#oferta'
   get 'oferta/konsultacja', to: 'pages#konsultacja'
   get 'oferta/terapia', to: 'pages#terapia'

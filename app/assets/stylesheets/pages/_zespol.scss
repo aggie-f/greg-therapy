@@ -1,3 +1,15 @@
+.team-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-align: center;
+
+  &__card{
+    width: 30%;
+  }
+}
+
+
 .about-me-page {
   display: grid;
   grid-template-columns: 1fr 1fr;

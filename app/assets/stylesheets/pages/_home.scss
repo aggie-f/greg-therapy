@@ -19,6 +19,7 @@ body {
 
 .section-titles {
   text-align: center;
+  text-transform: uppercase;
   // padding-top: 2rem;
 }
 
@@ -35,9 +36,6 @@ body {
   background-color: #f3f3f3;
   padding: 40px;
 }
-
-
-
 
 .people {
     display: flex;
@@ -314,11 +312,6 @@ body {
     margin-top: 40px;
   }
 
-  .work-section {
-    background-color: #f3f3f3;
-    padding: 30px 20px;
-    text-align: left;
-  }
 
   .review-carousel__text {
     // margin: 0;
