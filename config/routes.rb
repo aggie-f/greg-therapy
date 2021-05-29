@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   resources :articles
   resources :reviews
 
-  get 'o_mnie', to: 'pages#o_mnie'
+  get 'zespol', to: 'pages#zespol'
   get 'oferta', to: 'pages#oferta'
   get 'oferta/konsultacja', to: 'pages#konsultacja'
   get 'oferta/terapia', to: 'pages#terapia'

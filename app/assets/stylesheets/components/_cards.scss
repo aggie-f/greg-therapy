@@ -2,7 +2,8 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   column-gap: 40px;
-  // justify-items: center;
+  row-gap: 20px;
+  justify-items: center;
 }
 
 .card {
@@ -27,6 +28,77 @@
 }
 
 .card img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 150px;
+  padding: 30px;
+}
+
+a {
+  text-decoration: none;
+  color: $text-headlines;
+}
+
+a:focus, a:hover {
+  text-decoration: none;
+  color: $text-headlines;
+}
+
+
+.cards2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 20px;
+  padding: 10px;
+}
+
+.card2 {
+  // box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  // border-radius: 5px;
+  border-color: #fff;
+  width: 200px;
+  position: relative;
+}
+
+.card2::after {
+  position: absolute;
+  z-index:-1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+
+  box-shadow: 0 0.5rem 3rem -0.25em rgba(0, 0, 0, 0.3);
+  transition: opacity 1.5s ease;
+}
+
+.card2:hover {
+  box-shadow: 0 0.5rem 3rem -0.25em rgba(0, 0, 0, 0.3);
+  // box-shadow: 0 0.125rem 0.25rem 0 rgba(0, 0, 0, 0.1);
+  transform: translateY(-0.35em) scale(1.02);
+}
+
+.card2:hover::after {
+  opacity: 1;
+}
+
+
+.card-info2 {
+  text-align: center;
+}
+
+.card-info2 h2 {
+  font-size: 1.25rem;
+  padding-bottom: 30px;
+  font-family:"Josefin Sans", "sans-serif";
+  color: $gray-light;
+  font-weight: 400;
+}
+
+.card2 img {
   display: block;
   margin-left: auto;
   margin-right: auto;
