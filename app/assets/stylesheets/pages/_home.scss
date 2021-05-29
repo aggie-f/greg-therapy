@@ -29,26 +29,20 @@ body {
   margin-bottom: 40px;
 }
 
-//**jak pracuje section**//
-.work-section {
+
+//**o nas section**//
+.about-us {
   background-color: #f3f3f3;
   padding: 40px;
 }
 
-//**o nas section**//
-.about-us__text {
-    transform: translateY(20px);
-    // opacity: 0;
-    transition: 0.7s all ease-in-out;
-    padding-bottom: 40px;
-    display: block;
-}
 
 
-.about-us__people {
+
+.people {
     display: flex;
-    justify-content: space-between;
-    // justify-content: space-around;
+    // justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
 
     &__container {
@@ -67,29 +61,33 @@ body {
     }
 }
 
-.about-us__people__container__middle {
+.people__container__middle {
     position: absolute;
-    top: 50%;
+    top: 35%;
     left: 50%;
     width: 50%;
     height: 50%;
     transform: translate(-50%, -50%);
-    text-align: center;
     transition: 0.5s ease;
     opacity: 0;
     display: flex;
     align-items: center;
     background: rgba(255, 255, 255, 0.85);
 
+
     &__text {
       color: #464654;
-      font-size: 16px;
-      padding: 16px 32px;
-      font-family: Josephin, sans-serif;
+      font-size: 12px;
+      text-align: center;
+      font-family: $headers-font;
+      font-weight: 200;
+      padding: 20px;
+      line-height: 1.4;
+
     }
 }
 
-.about-us__people {
+.people {
   &__container:hover,
   &__container:focus {
     transform: scale(1.5);
@@ -98,9 +96,22 @@ body {
 }
 
 
-.about-us__people__container:hover .about-us__people__container__middle{
+.people__container:hover .people__container__middle {
     opacity: 1;
 }
+
+
+.people__name {
+  text-align: center;
+  padding: 20px 0;
+  font-family: $headers-font;
+
+  p {
+    font-weight: 200;
+  }
+}
+
+
 
 //**biura section**//
 
@@ -136,6 +147,8 @@ body {
 
 .fade-in.appear {
   opacity: 1;
+  transform: translateY(20px);
+  transition: 0.7s all ease-in-out;
 }
 // review styling for grid//
 // .reviews-grid {
