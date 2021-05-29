@@ -37,19 +37,62 @@
 <!-- jak pracuje section-->
 <section>
   <div class="container">
-    <div class="work-section">
-      <div class="section-titles">
-        <h2>JAK PRACUJE</h2>
-        <hr />
-      </div>
-      <div>
-        <p>Pracuję w podejściu psychodynamicznym, które zostało opracowane na podstawie dorobku współczesnej psychiatrii oraz uznanych koncepcji psychoanalitycznych. Psychoterapia psychodynamiczna toczy się w oparciu o relację terapeutyczną czyli więź, jaka rozwija się pomiędzy pacjentem a terapeutą w trakcie trwania leczenia.
-        <br>
-        <br>
-        Psychoterapeuta psychodynamiczny nie daje dobrych rad lecz stara się pomóc pacjentowi w lepszym rozumieniu jego własnych myśli, zachowań, pragnień i uczuć. W tym procesie rolą psychoterapeuty jest towarzyszenie człowiekowi w poszukiwaniu lepszych sposobów rozwiązania jego problemów niż te, które do tej pory stosował, a także wskazywanie tego, czego sam nie mógł dostrzec.
-        <br>
-        <br>
-        Pacjent podczas terapii w gabinecie staje na drodze do lepszego poznania i zrozumienia siebie oraz wzmocnienia poczucia własnej wartości. Psychoterapia ma pomóc w przeżywaniu życia głębiej, bardziej świadomie, w doświadczaniu w pełni jego blasków i cieni.</p>
+    <div class="section-titles">
+      <h2>JAK PRACUJE</h2>
+      <hr />
+    </div>
+    <div>
+      <p>Pracuję w podejściu psychodynamicznym, które zostało opracowane na podstawie dorobku współczesnej psychiatrii oraz uznanych koncepcji psychoanalitycznych. Psychoterapia psychodynamiczna toczy się w oparciu o relację terapeutyczną czyli więź, jaka rozwija się pomiędzy pacjentem a terapeutą w trakcie trwania leczenia.
+      <br>
+      <br>
+      Psychoterapeuta psychodynamiczny nie daje dobrych rad lecz stara się pomóc pacjentowi w lepszym rozumieniu jego własnych myśli, zachowań, pragnień i uczuć. W tym procesie rolą psychoterapeuty jest towarzyszenie człowiekowi w poszukiwaniu lepszych sposobów rozwiązania jego problemów niż te, które do tej pory stosował, a także wskazywanie tego, czego sam nie mógł dostrzec.
+      <br>
+      <br>
+      Pacjent podczas terapii w gabinecie staje na drodze do lepszego poznania i zrozumienia siebie oraz wzmocnienia poczucia własnej wartości. Psychoterapia ma pomóc w przeżywaniu życia głębiej, bardziej świadomie, w doświadczaniu w pełni jego blasków i cieni.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="section-titles">
+      <h2>W czym mogę pomóc?</h2>
+      <hr />
+    </div>
+    <div class="offer-icons">
+      <div class="cards2">
+        <%= link_to oferta_konsultacja_path do %>
+          <div class="card2">
+            <img src="/assets/1.jpg" alt="">
+            <div class="card-info2 fade-in">
+              <h2>Konsultacja<br>Psychologiczna</h2>
+            </div>
+          </div>
+        <% end %>
+        <%= link_to oferta_konsultacja_path do %>
+          <div class="card2">
+            <img src="/assets/2.jpg" alt="">
+            <div class="card-info2 fade-in">
+              <h2>Psychoterapia <br>Indywidualna</h2>
+            </div>
+          </div>
+        <% end %>
+        <%= link_to oferta_konsultacja_path do %>
+          <div class="card2">
+            <img src="/assets/3.jpg" alt="">
+            <div class="card-info2 fade-in">
+              <h2>Pomoc w sytuacji<br>krzysowej</h2>
+            </div>
+          </div>
+        <% end %>
+        <%= link_to oferta_konsultacja_path do %>
+          <div class="card2">
+            <img src="/assets/5.png" alt="">
+            <div class="card-info2 fade-in">
+              <h2>Terapia par</h2>
+            </div>
+          </div>
+        <% end %>
       </div>
     </div>
   </div>
@@ -57,53 +100,44 @@
 
 <section>
   <div class="container">
-    <div class="work-section">
-      <div class="section-titles">
-        <h2>W czym mogę pomóc?</h2>
-        <hr />
-      </div>
-      <div class="offer-icons">
-        <div class="cards2">
-          <%= link_to oferta_konsultacja_path do %>
-            <div class="card2">
-              <img src="/assets/1.jpg" alt="">
-              <div class="card-info2 fade-in">
-                <h2>Konsultacja<br>Psychologiczna</h2>
-              </div>
-            </div>
-          <% end %>
-          <%= link_to oferta_konsultacja_path do %>
-            <div class="card2">
-              <img src="/assets/2.jpg" alt="">
-              <div class="card-info2 fade-in">
-                <h2>Psychoterapia <br>Indywidualna</h2>
-              </div>
-            </div>
-          <% end %>
-          <%= link_to oferta_konsultacja_path do %>
-            <div class="card2">
-              <img src="/assets/3.jpg" alt="">
-              <div class="card-info2 fade-in">
-                <h2>Pomoc w sytuacji<br>krzysowej</h2>
-              </div>
-            </div>
-          <% end %>
-          <%= link_to oferta_konsultacja_path do %>
-            <div class="card2">
-              <img src="/assets/5.png" alt="">
-              <div class="card-info2 fade-in">
-                <h2>Terapia par</h2>
-              </div>
-            </div>
-          <% end %>
-        </div>
-      </div>
+    <div class="section-titles">
+      <h2>CENNIK</h2>
+      <hr />
     </div>
+   s
+    <table id="cennik">
+      <tr>
+        <th>Usługa</th>
+        <th>Cena</th>
+      </tr>
+      <tr>
+        <td>Konsultacja psychologiczna</td>
+        <td>120 zł/50 min. </td>
+      </tr>
+      <tr>
+        <td>Psychoterapia indywidualna </td>
+        <td>120 zł/50 min. </td>
+      </tr>
+      <tr>
+        <td>Interwencja w sytuacji kryzysu </td>
+        <td>120 zł/50 min. </td>
+      </tr>
+      <tr>
+        <td>Terapia Par </td>
+        <td>120 zł/50 min. </td>
+      </tr>
+    </table>
+  </div>
   </div>
 </section>
 
-
-
-
+<section>
+  <div class="container">
+    <div class="section-titles">
+      <h2>KONTAKT</h2>
+      <hr />
+    </div>
+  </div>
+</section>
 
 
