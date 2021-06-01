@@ -9,7 +9,6 @@
   }
 }
 
-
 .about-me-page {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -21,6 +20,8 @@
 
 .about-me-page_text-1 {
   grid-area: text_one;
+  align-self: center;
+  jusify-items: center;
 }
 
 .about-me-page_text-2 {
@@ -39,8 +40,11 @@
   // border-radius: 50%;
 }
 
-.about-me-page h1 {
+.about-me-page h4 {
+  padding-top: 10px;
   margin-bottom: 10px;
+  font-size: 20px;
+  text-align: center;
 }
 
 

@@ -12,6 +12,9 @@ class PagesController < ApplicationController
   def grzegorz_szczeblewski
   end
 
+  def ela_walczak
+  end
+
   def services
   end
 
