@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   get 'zespol', to: 'pages#zespol'
   get 'zespol/Grzegorz-Szczeblewski', to: 'pages#grzegorz_szczeblewski'
   get 'zespol/Elzbieta-Walczak', to: 'pages#ela_walczak'
+  get 'zespol/Donata-Grodek', to: 'pages#donata_grodek'
   get 'oferta', to: 'pages#oferta'
   get 'oferta/konsultacja', to: 'pages#konsultacja'
   get 'oferta/terapia', to: 'pages#terapia'
