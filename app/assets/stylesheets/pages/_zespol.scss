@@ -1,12 +1,107 @@
 .team-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
   text-align: center;
+  column-gap: 20px;
+  row-gap: 60px;
 
-  &__card{
-    width: 30%;
+  &__card {
+    width: 300px;
   }
 
 }
 
+.team-list__card img {
+  display: block;
+  object-fit: cover;
+  width: 100%;
+}
+
+.team-list__card__title {
+  height: 100px;
+
+  p {
+    font-family: $headers-font;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 14px;
+  }
+}
+
+.team-list__card__offer {
+  background-color: #f3f3f3;
+  // margin: 0;
+  font-family: $headers-font;
+  // font-weight: 300;
+  padding: 20px;
+  height: 180px;
+  display: grid;
+  align-items: center;
+  place-self: center;
+  p {
+    margin: 0;
+    padding: 5px;
+  }
+}
+
+.team-list__card__btn {
+
+  color: white;
+  padding: 8px 24px;
+  // font-weight: bold;
+  background: $primary-backround;
+  transition: background 0.3s ease;
+  border: 1px solid $primary-backround;
+  cursor: pointer;
+
+  a {
+    color: white;
+  }
+
+  &:hover {
+    background: #fff;
+    border: 1px solid $primary-backround;
+    text-decoration: none;
+
+    a {
+    color: $primary-backround;
+    }
+  }
+}
+
+.break-line {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .team-list {
+
+    &__card {
+      width: 100%;
+
+      img {
+        padding-top: 16px;
+      }
+    }
+  }
+
+  .team-list__card__title {
+    height: 100px;
+
+      h4 {
+        font-size: 2rem;
+      }
+
+      p {
+        font-size: 1rem;
+      }
+  }
+
+  .break-line {
+    display: block;
+    height: 6px;
+    width: 80px;
+    background: #4e4190;
+  }
+}

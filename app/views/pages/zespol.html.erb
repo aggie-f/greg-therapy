@@ -4,22 +4,76 @@
   </div>
 </section>
 
+<!-- about us section  -->
+<section>
+  <div class="container">
+    <div class="about-us fade-in">
+      <div class="section-titles">
+        <h2>O NAS</h2>
+        <hr/>
+      </div>
+      <div class="about-us__text">
+        <p>Centrum Psychoterapii <strong>Psycho-Terapeutyczny.pl</strong> powstało w odpowiedzi na potrzebę stworzenia intymnego, przyjaznego i bezpiecznego miejsca zarówno dla psychoterapeutów oraz osób chcących skorzystać z specjalistycznej pomocy terapeutycznej i psychologicznej. Oddajemy do dyspozycji przestrzeń, w której każdy znajdzie dla siebie profesjonalną i adekwatną opiekę, gdzie będzie czuł się ważny i słuchany. Wysoki poziom świadczonych usług gwarantuje współpracujący ze sobą zespół psychologów i psychoterapeutów specjalizujących się w różnych dziedzinach oraz bogaty w wiedzę z kilku nurtów psychoterapeutycznych, Oferta kierowana jest do wszystkich, którzy doświadczają trudności, chcieliby lepiej rozumieć siebie i funkcjonować w relacji ze sobą, jak i innymi.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- team section  -->
 <section class="container">
   <div class="team-list">
     <div class="team-list__card">
-      <h4>Grzegorz Szczeblewski</h4>
-      <p>Psycholog i Psychoterapeuta</p>
-      <%= link_to "WIĘCEJ", zespol_Grzegorz_Szczeblewski_path, class: "btn-cards" %>
+      <div class="team-list__card__title">
+        <h4>Grzegorz Szczeblewski</h4>
+        <p>Psycholog - Psychoterapeuta</p>
+      </div>
+      <%= image_tag "Grzegorz_kwadrat.jpg", alt: "Grzegorz_Szczeblewski" %>
+      <div class="team-list__card__offer">
+        <p>Konsultacja Psychologiczna</p>
+        <p>Psychoterapia Indywidualna</p>
+        <p>Pomoc w sytuacji kryzysowej</p>
+        <p>Terapia Par</p>
+      </div>
+      <div class="team-list__card__btn">
+        <%= link_to "WIĘCEJ", zespol_Grzegorz_Szczeblewski_path %>
+      </div>
     </div>
-    <div class=class="team-list__card">
-      <h4>Elżbieta Walczak</h4>
-      <p>Psycholożka i Terapeutka uzależnień</p>
-      <%= link_to "WIĘCEJ", zespol_Elzbieta_Walczak_path, class: "btn-cards" %>
+
+    <hr class="break-line"/>
+
+    <div class="team-list__card">
+      <div class="team-list__card__title">
+        <h4>Elżbieta Walczak</h4>
+        <p>Psycholożka - Terapeutka uzależnień</p>
+      </div>
+      <%= image_tag "zespol1.jpg", alt: "Elżbieta Walczak" %>
+      <div class="team-list__card__offer">
+        <p>Konsultacja Psychologiczna</p>
+        <p>Pomoc w uzależnieniach</p>
+        <p>Pomoc w sytuacji kryzysowej</p>
+      </div>
+      <div class="team-list__card__btn">
+        <%= link_to "WIĘCEJ", zespol_Elzbieta_Walczak_path %>
+      </div>
     </div>
-    <div class=class="team-list__card">
-      <h4>Donata Grodek</h4>
-      <p>Psycholożka, Psychoterapeutka i Terapeutka uzależnień</p>
-      <%= link_to "WIĘCEJ", zespol_Donata_Grodek_path, class: "btn-cards" %>
+
+    <hr class="break-line"/>
+
+    <div class="team-list__card">
+      <div class="team-list__card__title">
+        <h4>Donata Grodek</h4>
+        <p>Psycholożka - Psychoterapeutka - Terapeutka uzależnień</p>
+      </div>
+      <%= image_tag "zespol2.jpg", alt: "Donata Grodek" %>
+      <div class="team-list__card__offer">
+        <p>Konsultacja Psychologiczna</p>
+        <p>Pomoc w uzależnieniach</p>
+        <p>Pomoc w sytuacji kryzysowej</p>
+        <p>Terapia par</p>
+      </div>
+      <div class="team-list__card__btn">
+        <%= link_to "WIĘCEJ", zespol_Donata_Grodek_path %>
+      </div>
     </div>
   </div>
 </section>
