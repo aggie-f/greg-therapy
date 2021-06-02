@@ -1,0 +1,137 @@
+<section class="banner-pages">
+  <div class="banner-pages-title">
+    <h1>Grzegorz Szczeblewski</h1>
+    <p>Psycholog - Psychoterapeuta</p>
+  </div>
+</section>
+
+<section class="container">
+  <div class="people-about" id="grzegorz">
+    <div class="people-about__img">
+      <img src="/assets/Greg_square.jpg" alt="Grzegorz Szczeblewski">
+    </div>
+    <div class=people-about__text>
+      <h4>Wykształcenie:</h4>
+      <p>Jestem absolwentem Szkoły Wyższej Psychologii Społecznej  Uniwersytetu Humanistycznospołecznego w Sopocie.
+        Ukończyłem studia magisterskie na Wydziale Psychologii/specjalizacja kliniczna i zdrowia. Aktualnie jestem
+        w trakcie szkolenia w Szkole Psychoterapii Psychodynamicznej  w Krakowskim Centrum Psychodynamicznym.</p>
+      <p>Doświadczenie jako psycholog zdobywałem m.in. w Szpitalu dla Nerwowo i Psychicznie Chorych w Starogardzie Gdańskim,
+        Wojewódzkim Szpitalu Psychiatrycznym w Gdańsku, Wojewódzkim Centrum Onkologii w Gdańsku oraz Centrum Psychoterapii
+        i Leczenia Uzależnień ANON w Koszalinie.</p>
+        <p>Nieustannie rozwijam się i doskonalę swoje kompetencje uczestnicząc w kursach specjalistycznych. Moja praca poddawana
+        jest stałej superwizji.</p>
+      <p>Jestem członkiem Polskiego Towarzystwa Psychoterapii Psychodynamicznej.</p>
+    </div>
+  </div>
+</section>
+
+<section class="container">
+  <div class="grey-box">
+    <p><em>W kontakcie z drugim człowiekiem ważne jest dla mnie nawiązanie szczerej i pełnej empatii relacji. Towarzyszę swoim klientom w kłopotach i kryzysach, które nie pozwalają im w pełni cieszyć się życiem. Odnajduję prawdziwą radość i satysfakcję pomagając w rozwoju oraz budowaniu nowych rozwiązań. Psychologia jest moją pasją a, praca z ludźmi moim powołaniem.</em></p>
+  </div>
+</section>
+
+<!-- jak pracuje section-->
+<section>
+  <div class="container">
+    <div class="section-titles">
+      <h2>JAK PRACUJE</h2>
+      <hr />
+    </div>
+    <div>
+      <p>Pracuję w podejściu psychodynamicznym, które zostało opracowane na podstawie dorobku współczesnej psychiatrii oraz uznanych koncepcji psychoanalitycznych. Psychoterapia psychodynamiczna toczy się w oparciu o relację terapeutyczną czyli więź, jaka rozwija się pomiędzy pacjentem a terapeutą w trakcie trwania leczenia.
+      <br>
+      <br>
+      Psychoterapeuta psychodynamiczny nie daje dobrych rad lecz stara się pomóc pacjentowi w lepszym rozumieniu jego własnych myśli, zachowań, pragnień i uczuć. W tym procesie rolą psychoterapeuty jest towarzyszenie człowiekowi w poszukiwaniu lepszych sposobów rozwiązania jego problemów niż te, które do tej pory stosował, a także wskazywanie tego, czego sam nie mógł dostrzec.
+      <br>
+      <br>
+      Pacjent podczas terapii w gabinecie staje na drodze do lepszego poznania i zrozumienia siebie oraz wzmocnienia poczucia własnej wartości. Psychoterapia ma pomóc w przeżywaniu życia głębiej, bardziej świadomie, w doświadczaniu w pełni jego blasków i cieni.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="section-titles">
+      <h2>W czym mogę pomóc?</h2>
+      <hr />
+    </div>
+    <div class="offer-icons">
+      <div class="cards">
+        <%= link_to oferta_konsultacja_path do %>
+          <div class="card shadow-cards">
+            <img src="/assets/1.jpg" alt="">
+            <div class="card-info fade-in">
+              <h2>Konsultacja<br>Psychologiczna</h2>
+            </div>
+          </div>
+        <% end %>
+        <%= link_to oferta_konsultacja_path do %>
+          <div class="card shadow-cards">
+            <img src="/assets/2.jpg" alt="">
+            <div class="card-info fade-in">
+              <h2>Psychoterapia <br>Indywidualna</h2>
+            </div>
+          </div>
+        <% end %>
+        <%= link_to oferta_konsultacja_path do %>
+          <div class="card shadow-cards">
+            <img src="/assets/3.jpg" alt="">
+            <div class="card-info fade-in">
+              <h2>Pomoc w sytuacji<br>krzysowej</h2>
+            </div>
+          </div>
+        <% end %>
+        <%= link_to oferta_konsultacja_path do %>
+          <div class="card shadow-cards">
+            <img src="/assets/5.png" alt="">
+            <div class="card-info fade-in">
+              <h2>Terapia par</h2>
+            </div>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="section-titles">
+      <h2>CENNIK</h2>
+      <hr />
+    </div>
+    <table id="cennik">
+      <tr>
+        <th>Usługa</th>
+        <th>Cena</th>
+      </tr>
+      <tr>
+        <td>Konsultacja psychologiczna</td>
+        <td>120 zł/50 min. </td>
+      </tr>
+      <tr>
+        <td>Psychoterapia indywidualna </td>
+        <td>120 zł/50 min. </td>
+      </tr>
+      <tr>
+        <td>Interwencja w sytuacji kryzysu </td>
+        <td>120 zł/50 min. </td>
+      </tr>
+      <tr>
+        <td>Terapia Par </td>
+        <td>120 zł/50 min. </td>
+      </tr>
+    </table>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="section-titles">
+      <h2>KONTAKT</h2>
+      <hr />
+    </div>
+    <%= render 'shared/kontakt-icons' %>
+  </div>
+</section>

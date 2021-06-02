@@ -10,6 +10,13 @@ html, body {
   overflow-x: hidden;
 }
 
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -55,7 +62,6 @@ section {
   display: flex;
   flex-direction: column;
 }
-
 
 
 @media (min-width: 40em) {

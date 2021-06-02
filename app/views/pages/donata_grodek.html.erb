@@ -1,0 +1,124 @@
+<section class="banner-pages">
+  <div class="banner-pages-title">
+    <h1>Donata Grodek</h1>
+    <p>Psycholożka - Psychoterapeutka - Terapeutka uzależnień</p>
+  </div>
+</section>
+
+<section class="container">
+  <div class="people-about">
+    <div class="people-about__img">
+      <img src="/assets/zespol2.jpg" alt="Elżbieta Walczak">
+    </div>
+    <div class="people-about__text">
+      <h4>Wykształcenie:</h4>
+      <p>Jestem psychologiem, członkiem nadzwyczajnym Wielkopolskiego Towarzystwa Terapii Systemowej WTTS, specjalizuję się w psychoterapii systemowej, ubiegam się o certyfikat Psychoterapeuty Systemowego zgodny z rozporządzeniem Ministra Zdrowia oraz certyfikat pedagogiki traumy/doradztwa specjalistycznego w zakresie traumy Towarzystwa DeGPT e.V. oraz BAG e.V. przy współpracy z Wielkopolskim Towarzystwem Terapii Systemowej.  Posiadam wieloletnie doświadczenie zawodowe w zakresie prowadzenia psychoterapii indywidualnej i grupowej osób dorosłych. Pracuje także z dziećmi i młodzieżą. Ukończyłam Systemową terapię dzieci i młodzieży. Dbając o swój rozwój zawodowy  uczestniczę w warsztatach, szkoleniach oraz superwizjach.</p>
+    </div>
+  </div>
+</section>
+
+<!-- <section class="container">
+  <div class="grey-box">
+    <p><em></em></p>
+  </div>
+</section> -->
+
+<!-- jak pracuje section-->
+<!-- <section>
+  <div class="container">
+    <div class="section-titles">
+      <h2>JAK PRACUJE</h2>
+      <hr />
+    </div>
+    <div>
+      <p></p>
+    </div>
+  </div> -->
+</section>
+
+<section>
+  <div class="container">
+    <div class="section-titles">
+      <h2>W czym mogę pomóc?</h2>
+      <hr />
+    </div>
+    <div class="offer-icons">
+      <div class="cards">
+        <%= link_to oferta_konsultacja_path do %>
+          <div class="card shadow-cards">
+            <img src="/assets/1.jpg" alt="">
+            <div class="card-info fade-in">
+              <h2>Konsultacja<br>Psychologiczna</h2>
+            </div>
+          </div>
+        <% end %>
+        <%= link_to oferta_uzaleznienia_path do %>
+          <div class="card shadow-cards">
+            <img src="/assets/4.png" alt="">
+            <div class="card-info fade-in">
+              <h2>Pomoc w <br>uzależnieniach</h2>
+            </div>
+          </div>
+        <% end %>
+        <%= link_to oferta_pomoc_kryzys_path do %>
+          <div class="card shadow-cards">
+            <img src="/assets/3.jpg" alt="">
+            <div class="card-info fade-in">
+              <h2>Pomoc w sytuacji<br>krzysowej</h2>
+            </div>
+          </div>
+        <% end %>
+        <%= link_to oferta_konsultacja_path do %>
+          <div class="card shadow-cards">
+            <img src="/assets/5.png" alt="">
+            <div class="card-info fade-in">
+              <h2>Terapia par</h2>
+            </div>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="section-titles">
+      <h2>CENNIK</h2>
+      <hr />
+    </div>
+    <table id="cennik">
+      <tr>
+        <th>Usługa</th>
+        <th>Cena</th>
+      </tr>
+      <tr>
+        <td>Konsultacja psychologiczna</td>
+        <td>120 zł/50 min. </td>
+      </tr>
+        <td>Pomoc w uzależnieniach</td>
+        <td>120 zł/50 min. </td>
+      </tr>
+      <tr>
+        <td>Interwencja w sytuacji kryzysu</td>
+        <td>120 zł/50 min. </td>
+      </tr>
+      <tr>
+      <tr>
+        <td>Terapia Par </td>
+        <td>120 zł/50 min. </td>
+      </tr>
+    </table>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="section-titles">
+      <h2>KONTAKT</h2>
+      <hr />
+    </div>
+    <%= render 'shared/kontakt-icons' %>
+  </div>
+</section>
+

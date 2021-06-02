@@ -19,6 +19,7 @@ body {
 
 .section-titles {
   text-align: center;
+  text-transform: uppercase;
   // padding-top: 2rem;
 }
 
@@ -36,14 +37,21 @@ body {
   padding: 40px;
 }
 
-
-
-
 .people {
     display: flex;
     // justify-content: space-between;
     justify-content: space-around;
     flex-wrap: wrap;
+
+    a {
+    text-decoration: none;
+    color: $text-headlines;
+    }
+
+      a:focus, a:hover {
+      text-decoration: none;
+      color: $text-headlines;
+    }
 
     &__container {
       display: block;
@@ -314,10 +322,9 @@ body {
     margin-top: 40px;
   }
 
-  .work-section {
-    background-color: #f3f3f3;
-    padding: 30px 20px;
-    text-align: left;
+  .about-us {
+    text-align: center;
+    padding: 40px 20px;
   }
 
   .review-carousel__text {
