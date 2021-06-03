@@ -45,6 +45,12 @@
     color: $text-headlines;
     border-color: $primary-backround;
   }
+
+  .toggle-button {
+    .bar {
+      background-color: $text-white;
+    }
+  }
 }
 
 .nav__list {
@@ -153,6 +159,17 @@
 
     .site-logo img {
       display: none;
+    }
+
+    .site-logo-white img {
+          display: none;
+    }
+
+    .toggle-button {
+
+      .bar {
+        background-color: $gray-light;
+      }
     }
   }
 
