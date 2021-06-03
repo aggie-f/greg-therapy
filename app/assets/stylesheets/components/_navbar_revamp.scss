@@ -138,6 +138,14 @@
   padding-top: 0.3rem;
 }
 
+.nav-scrolled {
+  // --text: #333;
+  // --text-inverse: #f4f4f4;
+  // --background: #f4f4f4;
+  color: $text-headlines;
+  background: $text-white;
+  box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
+}
 
 @media (max-width: 999px) {
 
