@@ -26,6 +26,8 @@ require("channels")
 import "bootstrap";
 import { hamburger } from '../components/navbar';
 import { appearOnScroll } from '../components/appearOnScroll';
+import { sectionOneObserver } from '../components/navbarOnScroll';
+
 // Internal imports, e.g:
 // import { initSelect2 } from '../components/init_select2';
 
