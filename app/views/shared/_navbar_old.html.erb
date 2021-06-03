@@ -1,0 +1,22 @@
+<nav>
+  <div class="logo">
+    <%= link_to root_path, class: "navbar-brand" do %>
+      <%= image_tag 'logo.png' %>
+    <% end %>
+  </div>
+  <div class="navbar-links">
+    <ul>
+      <li><%= link_to "nasz zespół", zespol_path, class: "menu-item" %></li>
+      <li><%= link_to "oferta", oferta_path, class: "menu-item" %></li>
+      <li><%= link_to "cennik", cennik_path, class: "menu-item" %></li>
+      <li><%= link_to "blog", articles_path, class: "menu-item" %></li>
+      <li><%= link_to "kontakt", kontakt_path, class: "menu-item" %></li>
+      <li><%= link_to "rezerwacja online", href="https://www.znanylekarz.pl/grzegorz-szczeblewski/psycholog-psychoterapeuta-terapeuta/koszalin", class: "btn-navbar" %></li>
+    </ul>
+  </div>
+  <a href="#" class="toggle-button">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+  </a>
+</nav>
