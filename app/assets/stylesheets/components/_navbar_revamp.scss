@@ -1,11 +1,10 @@
 .navbar-header {
-  --text: #f4f4f4;
-  --text-inverse: #333;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   padding: 2em 2em;
-  color: var(--text-inverse);
+  color: $text-headlines;
 
   .site-logo-white img {
       display: none;
@@ -18,17 +17,14 @@
 }
 
 .navbar-home {
-  --text: #f4f4f4;
-  --text-inverse: #333;
-  --background: transparent;
-  color: var(--text);
+  color: $text-white;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 999;
   transition: background 250ms ease-in;
-  background: var(--background);
+  background: transparent;
   position: absolute;
   width: 100%;
 
@@ -43,6 +39,12 @@
     .site-logo-white img {
       width: 300px;
     }
+
+    .nav__link--btn:hover {
+      background: $text-white;
+      color: $text-headlines;
+      border-color: $primary-backround;
+    }
 }
 
 
@@ -56,7 +58,6 @@
   li a {
     text-decoration: none;
     color: inherit;
-
   }
 }
 
@@ -92,19 +93,26 @@
           transform: scaleX(1);
 }
 
+.nav__link--btn {
+  border: 1.5px solid currentColor;
+  border-radius: 2em;
+  transition: background 250ms ease-in-out;
+  letter-spacing: 1px;
+  padding: 0.75em 1.5em;
+}
 
+.nav__link--btn:hover {
+  background: $primary-backround;
+  color: $text-white;
+  border-color: $primary-backround;
 
-// .btn-navbar {
-//   background: #white;
-//   color: $primary-backround;
-//   border: 1px solid $primary-backround;
-//   text-decoration: none;
-//   padding: 8px 24px;
-// }
+}
 
+.nav__link--btn::after {
+  display: none;
+}
 
 .toggle-button {
-  // position: absolute;
   top: 2rem;
   right: 2rem;
   display: none;
@@ -116,33 +124,18 @@
   .bar {
   height: 3px;
   width: 100%;
-  background-color: #373737;
+  background-color: $gray-light;
   border-radius: 10px;
   }
 
 }
 
-.nav__link--btn {
-  border: 1.5px solid currentColor;
-  border-radius: 2em;
-  margin-left: 1em;
-  transition: background 250ms ease-in-out;
-  letter-spacing: 1px;
-  padding: 0.75em 1.5em;
-}
-
-.nav__link--btn:hover {
-  background: var(--text);
-  color: var(--text-inverse);
-  border-color: var(--text);
-}
-
-.nav__link--btn::after {
-  display: none;
+.nav__list-btn {
+  padding-top: 0.4rem;
 }
 
 
-@media (max-width: 1000px) {
+@media (max-width: 999px) {
 
   .navbar-header {
     display: flex;
@@ -170,16 +163,34 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      color: $gray-light;
+      color: $text-headlines;;
 
       li {
         padding-bottom: 1rem;
       }
   }
 
+
+  .nav__list-btn {
+      padding-top: 1rem;
+    }
+
   .toggle-button {
       display: flex;
       position: absolute;
   }
 
+}
+
+@media (min-width: 1000px) and (max-width: 1264px) {
+
+    .navbar-header {
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        padding-bottom: 20px;
+      }
+    }
 }
