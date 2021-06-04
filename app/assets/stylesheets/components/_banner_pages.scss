@@ -24,8 +24,26 @@
     font-family: $headers-font;
     font-weight: 200;
     text-transform: uppercase;
-    font-size: 18px;
+    font-size: 1rem;
     padding-top: 10px;
     padding-bottom: 0;
+  }
+}
+
+@media (max-width: 576px) {
+
+  .banner-pages {
+     height: 200px;
+  }
+
+  .banner-pages-title {
+    h1 {
+      font-size: 2rem;
+    }
+
+    p {
+      font-size: 0.85rem;
+      margin: 0;
+    }
   }
 }
