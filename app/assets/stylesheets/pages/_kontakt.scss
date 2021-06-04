@@ -1,7 +1,9 @@
 .contact-icons {
-  justify-content: space-between;
-  margin-top: 20px;
-
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 20px;
+  padding: 10px;
 }
 
 .contact-way {
@@ -10,8 +12,7 @@
   display: flex;
   flex-direction: column;
   align-content: center;
-
-  transition: transform 1s ease;
+  // transition: transform 1s ease;
 
   p {
     font-weight: 200;
@@ -19,7 +20,7 @@
 
   img {
     width: 150px;
-  padding: 30px;
+    padding: 30px;
   }
 
   i {
@@ -37,8 +38,6 @@
     cursor: pointer;
   }
 }
-
-
 
 
 @media only screen and (max-width: 690px) {
