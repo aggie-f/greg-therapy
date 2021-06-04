@@ -33,22 +33,20 @@
 
 .banner-text {
   position: absolute;
-  top: 45%;
+  top: 50%;
   left: 50%;
   z-index: 2;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   color: white;
   text-align: center;
-  width: 50%;
-  // color: #464654;
   background: rgba(129, 130, 130, 0.8);
   // background: rgba(46, 49, 49, 0.8);
   padding: 40px;
 
 
   h1 {
-    font-size: 2.5rem;
+    font-size: 3rem;
   }
 
   h2 {
@@ -133,16 +131,17 @@
 
   .banner-text {
     line-height: 1.6;
+    top: 55%;
 
     h1 {
-      font-size: 1.75rem;
+      font-size: 2rem;
       text-align: center;
     }
 
     h2 {
-      font-size: 1.5rem;
+      font-size: 1.75rem;
       text-align: center;
-      padding-top: 40px;
+      // padding-top: 40px;
     }
   }
 }
@@ -151,10 +150,6 @@
 
   #section01 a {
     display: none;
-  }
-
-  .banner-home {
-    height:  100vh;
   }
 
   .banner-text {
@@ -167,65 +162,9 @@
     h2 {
       font-size: 1.25rem;
       text-align: center;
-      padding-top: 40px;
+      // padding-top: 40px;
     }
   }
 }
 
-
-
-// /* The hero image */
-// .banner-img {
-//   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("banner.jpg");
-//   height: auto;
-//   background-position: center;
-//   background-repeat: no-repeat;
-//   background-size: cover;
-//   padding: 100px 0;
-
-
-// }
-
-// .banner-title {
-
-//   color: white;
-//   padding: 20px;
-
-//   h1 {
-//     font-size: 2.5rem;
-//   }
-
-//   h2 {
-//     font-size: 2rem;
-//     font-weight: 300;
-//     margin-top: 10px;
-//   }
-// }
-
-
-// .banner-text {
-//   // position: absolute;
-//   top: 70%;
-//   color: white;
-//   padding: 20px;
-//   width: 80%;
-//   font-size: 1.15rem;
-//   font-weight: 200;
-
-//   p {
-//   margin-bottom: 0.5em;
-//   }
-
-// }
-
-// @media screen and (min-width: 1000px) {
-//   .banner-img  {
-//     height: 100vh;
-//     position: relative;
-//   }
-
-//   .banner-text {
-//     position: absolute;
-//   }
-// }
 

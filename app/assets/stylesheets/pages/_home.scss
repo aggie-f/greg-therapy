@@ -8,10 +8,6 @@ body {
   background-color: #fff;
 }
 
-// section {
-//   margin-bottom: 70px;
-// }
-
 //**titles**//
 .top {
   margin-top: 40px;
@@ -39,7 +35,6 @@ body {
 
 .people {
     display: flex;
-    // justify-content: space-between;
     justify-content: space-around;
     flex-wrap: wrap;
 
@@ -98,7 +93,7 @@ body {
 .people {
   &__container:hover,
   &__container:focus {
-    transform: scale(1.5);
+    transform: scale(1.3);
     z-index: 1;
   }
 }
@@ -307,6 +302,15 @@ body {
   .carousel-item img {
     height: auto;
   }
+
+  .people {
+    justify-content: space-evenly;
+  }
+
+  .people__container {
+    width: 50%;
+    padding: 1.25rem;
+  }
 }
 
 @media screen and (max-width: 576px) {
@@ -325,6 +329,14 @@ body {
   .about-us {
     text-align: center;
     padding: 40px 20px;
+  }
+
+  .people {
+    flex-direction: column;
+  }
+
+  .people__container {
+    width: 100%;
   }
 
   .review-carousel__text {
