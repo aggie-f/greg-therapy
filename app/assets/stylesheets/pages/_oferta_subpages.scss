@@ -1,0 +1,22 @@
+.banner-offer {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("purple.png");
+  height: 400px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.banner-offer-inner {
+  color: white;
+  // color: #464654;
+  // background: rgba(255, 255, 255, 0.85);
+  position: relative;
+  max-width: 50em;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  padding: 20px;
+  line-height: 1.6;
+}
