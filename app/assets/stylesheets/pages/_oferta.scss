@@ -16,7 +16,9 @@
    grid-template-areas:
    "photo_one text_one"
    "text_two photo_two"
-   "photo_three text_three";
+   "photo_three text_three"
+   "text_four photo_four"
+   "photo_five text_five";
 }
 
 .oferta_grid_photo_one {
@@ -43,6 +45,22 @@
   grid-area: text_three;
 }
 
+.oferta_grid_photo_four {
+  grid-area: photo_four;
+}
+
+.oferta_grid_text_four {
+  grid-area: text_four;
+}
+
+.oferta_grid_photo_five {
+  grid-area: photo_five;
+}
+
+.oferta_grid_text_five {
+  grid-area: text_five;
+}
+
 .oferta-btn {
   text-align: center;
   font-size: 20px;
@@ -65,6 +83,10 @@
    "text_two"
    "photo_two"
    "text_three"
-   "photo_three";
+   "photo_three"
+   "text_four"
+   "photo_four"
+   "text_five"
+   "photo_five";
  }
 }
