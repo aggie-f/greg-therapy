@@ -22,3 +22,25 @@
 // sectionOneObserver.observe(sectionOne);
 
 // export { sectionOneObserver };
+const navbarOnScroll = () => {
+  const navbar = document.querySelector('.navbar-home');
+  if (navbar) {
+    console.log(navbar);
+    window.addEventListener('scroll', () => {
+      if (window.scrollY >= window.innerHeight) {
+        navbar.classList.add('navbar__change--color');
+      } else {
+        navbar.classList.remove('navbar__change--color');
+      }
+    });
+  }
+}
+
+export { navbarOnScroll };
+
+$(function () {
+  $(document).scroll(function () {
+    var $nav = $(".navbar-fixed-top");
+    $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+  });
+});

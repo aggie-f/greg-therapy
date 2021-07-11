@@ -1,4 +1,4 @@
-<header class="navbar-header <%= yield(:navbar_class) %>">
+<header class="navbar-header container <%= yield(:navbar_class) %>">
   <%= link_to root_path, class: "site-logo-white" do %>
     <%= image_tag 'logo-white.png' %>
   <% end %>
@@ -12,13 +12,9 @@
       <li><%= link_to "blog", articles_path, class: "nav__link" %></li>
       <li><%= link_to "kontakt", kontakt_path, class: "nav__link" %></li>
       <li><%= link_to "wynajem gabietow", kontakt_path, class: "nav__link" %></li>
-      <li class=nav__list-btn><%= link_to "rezerwacja online", href="https://www.znanylekarz.pl/grzegorz-szczeblewski/psycholog-psychoterapeuta-terapeuta/koszalin", class: "nav__link--btn" %></li>
+      <!-- <li class=nav__list-btn><%= link_to "rezerwacja online", href="https://www.znanylekarz.pl/grzegorz-szczeblewski/psycholog-psychoterapeuta-terapeuta/koszalin", class: "nav__link--btn" %></li> -->
     </ul>
   </nav>
-  <!-- <nav>
-     <ul class="nav__list">
-     </ul -->
- <!--  </nav> -->
   <a href="#" class="toggle-button">
     <span class="bar"></span>
     <span class="bar"></span>

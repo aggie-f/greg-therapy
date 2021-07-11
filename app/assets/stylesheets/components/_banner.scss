@@ -2,9 +2,9 @@
 .banner-home {
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: 80vh;
   background-image: url("office1.jpg");
-  background-position: center;
+  background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -40,17 +40,17 @@
   transform: translate(-50%, -50%);
   color: white;
   text-align: center;
-  background: rgba(129, 130, 130, 0.8);
-  // background: rgba(46, 49, 49, 0.8);
-  padding: 40px;
+  // background: rgba(129, 130, 130, 0.8);
+  // padding: 30px;
+  // border-radius: 5px;
 
 
   h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
 
   h2 {
-    font-size: 2rem;
+    font-size: 1.75rem;
     font-weight: 300;
     margin-top: 10px;
   }
