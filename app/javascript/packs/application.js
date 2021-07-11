@@ -26,6 +26,7 @@ require("channels")
 import "bootstrap";
 import { hamburger } from '../components/navbar';
 import { appearOnScroll } from '../components/appearOnScroll';
+import { navbarOnScroll } from '../components/navbarOnScroll';
 import { sectionOneObserver } from '../components/navbarOnScroll';
 
 // Internal imports, e.g:
@@ -34,6 +35,7 @@ import { sectionOneObserver } from '../components/navbarOnScroll';
 
 document.addEventListener('turbolinks:load', () => {
   hamburger();
+  navbarOnScroll();
 });
 
 

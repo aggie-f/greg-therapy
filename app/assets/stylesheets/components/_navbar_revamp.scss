@@ -1,11 +1,13 @@
 .navbar-header {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   padding: 2em 2em;
   color: $text-headlines;
   position: relative;
+  width: 100%;
+
   .site-logo-white img {
       display: none;
     }
@@ -18,14 +20,14 @@
 
 .navbar-home {
   color: $text-white;
-  position: fixed;
-  // position: absolute;
+  position: sticky;
+  position: absolute;
   top: 0;
   left: 0;
   right: 0;
   z-index: 999;
   transition: background 250ms ease-in;
-  background: transparent;
+  background-color: transparent;
   width: 100%;
 
   .site-logo img {
@@ -51,6 +53,15 @@
       background-color: $text-white;
     }
   }
+
+  .navbar__change--color {
+    background-color: red;
+  }
+
+  .navbar-fixed-top.scrolled {
+    background-color: #9ccbd2 !important;
+    transition: background-color 500ms linear;
+}
 }
 
 .nav__list {
@@ -156,6 +167,7 @@
 
       img {
         padding-bottom: 20px;
+        margin-right: 30px;
       }
     }
 }
