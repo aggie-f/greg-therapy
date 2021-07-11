@@ -6,6 +6,10 @@
   column-gap: 20px;
   row-gap: 60px;
 
+  a {
+    text-decoration: none;
+  }
+
   &__card {
     width: 300px;
   }
@@ -49,24 +53,16 @@
 
   color: white;
   padding: 8px 24px;
-  // font-weight: bold;
+  font-weight: bold;
   background: $primary-backround;
   transition: background 0.3s ease;
   border: 1px solid $primary-backround;
   cursor: pointer;
 
-  a {
-    color: white;
-  }
-
   &:hover {
-    background: #fff;
+    background: white;
     border: 1px solid $primary-backround;
-    text-decoration: none;
-
-    a {
     color: $primary-backround;
-    }
   }
 }
 
