@@ -28,8 +28,9 @@
           <li>są niezadowolone z jakości swojego życia</li>
           <li>chcą się rozwijać – lepiej zrozumieć siebie i swoje zachowania</li>
         </ul>
-        <p class="text-center"><%= link_to "Przeczytaj więcej →", oferta_terapia_path, class:"read-more" %></p>
+        <!-- <p class="text-center"><%= link_to "Przeczytaj więcej →", oferta_terapia_path, class:"read-more" %></p> -->
         <div class="oferta-btn">
+          <%= link_to "Przeczytaj więcej", oferta_terapia_path, class: "btn-back" %>
           <%= link_to "Umów się na witytę", kontakt_path, class: "btn-cards" %>
         </div>
       </div>
@@ -51,9 +52,9 @@
           <li>czujesz, że potrzebujesz pomocy, ale nie wiesz jaka forma będzie dla Ciebie najkorzystniejsza, tzn. czy wybrać psychoterapię indywidualną, grupową czy może wcześniej udać się do lekarza psychiatry</li>
           <li>czujesz, że chciałbyś coś zmienić w swoim życiu, ale nie potrafisz tego nazwać i nie wiesz od czego zacząć.</li>
         </ul>
-        <p class="text-center"><%= link_to "Przeczytaj więcej →", oferta_konsultacja_path, class:"read-more" %></p>
       </div>
       <div class="oferta-btn">
+        <%= link_to "Przeczytaj więcej", oferta_konsultacja_path, class: "btn-back" %>
         <%= link_to "Umów się na witytę", kontakt_path, class: "btn-cards" %>
       </div>
     </div>
@@ -76,9 +77,9 @@
           <li>utratę pracy</li>
           <li>bardzo silny stres</li>
         </ul>
-        <p class="text-center"><%= link_to "Przeczytaj więcej →", oferta_pomoc_kryzys_path, class:"read-more" %></p>
       </div>
       <div class="oferta-btn">
+       <%= link_to "Przeczytaj więcej", oferta_pomoc_kryzys_path, class: "btn-back" %>
        <%= link_to "Umów się na witytę", kontakt_path, class: "btn-cards" %>
       </div>
     </div>
@@ -92,11 +93,17 @@
         <hr>
       </div>
       <div>
-        <p class="text-center">Zapewniamy nowoczesne i kompleksowe leczenie osobom borykającym się z różnego rodzaju uzależnieniami, zarówno w zakresie substancji psychoaktywnych, jak i uzależnień behawioralnych.
-        W leczeniu uzależnień niebywale istotne jest uwzględnienie indywidualnej historii danej osoby. Istnieje szereg czynników obciążających, które zwiększają ryzyko wystąpienia uzależnienia. Zalicza się do nich m.in. problemy rodzinne, nieporozumienia w bliskich relacjach, presję zawodową, kłopoty finansowe, wywodzenie się z rodziny, w której występuje wzorzec uzależnienia/współuzależnienia. Skuteczne przeciwdziałanie uzależnieniom polega nie tylko na utrzymywaniu abstynencji, ale dążeniu do poznania i wyeliminowania czynników, które powodują uzależnienia. Jest to możliwe w ramach pogłębionej psychoterapii.</p>
-        <p class="text-center"><%= link_to "Przeczytaj więcej →", oferta_uzaleznienia_path, class:"read-more" %></p>
+        <p class="text-center">Zapewniamy nowoczesne i kompleksowe leczenie osobom borykającym się z różnego rodzaju uzależnieniami,
+          zarówno w zakresie substancji psychoaktywnych, jak i uzależnień behawioralnych.
+          W leczeniu uzależnień niebywale istotne jest uwzględnienie indywidualnej historii danej osoby.
+          Istnieje szereg czynników obciążających, które zwiększają ryzyko wystąpienia uzależnienia.
+          Zalicza się do nich m.in. problemy rodzinne, nieporozumienia w bliskich relacjach, presję zawodową, kłopoty finansowe,
+          wywodzenie się z rodziny, w której występuje wzorzec uzależnienia/współuzależnienia. Skuteczne przeciwdziałanie uzależnieniom
+          polega nie tylko na utrzymywaniu abstynencji, ale dążeniu do poznania i wyeliminowania czynników, które powodują uzależnienia.
+          Jest to możliwe w ramach pogłębionej psychoterapii.</p>
       </div>
       <div class="oferta-btn">
+       <%= link_to "Przeczytaj więcej", oferta_uzaleznienia_path, class: "btn-back" %>
        <%= link_to "Umów się na witytę", kontakt_path, class: "btn-cards" %>
       </div>
     </div>
@@ -110,10 +117,16 @@
         <hr>
       </div>
       <div>
-        <p class="text-center">Związek dwojga osób może stawać przed rozmaitymi trudnościami jak np. niekończące się spory, ingerencja innych osób, wycofanie, zanik intymności, problemy natury seksualnej, zdrada, izolacja, niepewność co do przyszłości, agresja, niemożność przezwyciężenia traumatycznych doświadczeń i wiele innych. Te zjawiska często mają głębsze podłoże. Mogą wynikać z utrudnionej komunikacji w związku ale również z indywidualnych trudności każdej z osób. Trudno wtedy poradzić sobie z powstałym kryzysem ze względu na wzajemne zranienia, pretensje i oskarżenia. Nie udaje się usłyszeć, zrozumieć, dostrzec perspektywy drugiej osoby i wreszcie wprowadzić planu naprawczego. Poradzenie sobie w takich okolicznościach to wyzwanie nawet dla najbliższych sobie ludzi.</p>
-        <p class="text-center"><%= link_to "Przeczytaj więcej →", oferta_terapia_par_path, class:"read-more" %></p>
+        <p class="text-center">Związek dwojga osób może stawać przed rozmaitymi trudnościami jak np. niekończące się spory,
+        ingerencja innych osób, wycofanie, zanik intymności, problemy natury seksualnej, zdrada, izolacja, niepewność co do
+        przyszłości, agresja, niemożność przezwyciężenia traumatycznych doświadczeń i wiele innych. Te zjawiska często mają
+        głębsze podłoże. Mogą wynikać z utrudnionej komunikacji w związku ale również z indywidualnych trudności każdej z osób.
+        Trudno wtedy poradzić sobie z powstałym kryzysem ze względu na wzajemne zranienia, pretensje i oskarżenia. Nie udaje
+        się usłyszeć, zrozumieć, dostrzec perspektywy drugiej osoby i wreszcie wprowadzić planu naprawczego. Poradzenie sobie
+        w takich okolicznościach to wyzwanie nawet dla najbliższych sobie ludzi.</p>
       </div>
       <div class="oferta-btn">
+       <%= link_to "Przeczytaj więcej", oferta_terapia_par_path, class: "btn-back" %>
        <%= link_to "Umów się na witytę", kontakt_path, class: "btn-cards" %>
       </div>
     </div>
