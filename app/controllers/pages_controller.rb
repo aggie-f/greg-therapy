@@ -24,6 +24,9 @@ class PagesController < ApplicationController
   def terapia
   end
 
+  def gabinety
+  end
+
   def admin
     @reviews = Review.all
     @articles = Article.all

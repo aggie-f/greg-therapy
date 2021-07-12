@@ -15,6 +15,7 @@ Rails.application.routes.draw do
   get 'oferta/pomoc-kryzys', to: 'pages#pomoc_kryzys'
   get 'oferta/uzaleznienia', to: 'pages#uzaleznienia'
   get 'oferta/terapia-par', to: 'pages#terapia_par'
+  get 'gabinety', to: 'pages#gabinety'
   get 'cennik', to: 'pages#cennik'
   get 'blog', to: 'pages#articles'
   get 'kontakt', to: 'pages#kontakt'
