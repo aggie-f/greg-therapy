@@ -20,3 +20,39 @@
   padding: 20px;
   line-height: 1.6;
 }
+
+.contact-block {
+  background: $light-gray;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
+
+  h4 {
+    text-transform: uppercase;
+  }
+
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 20px;
+
+    a {
+      color: inherit;
+      font-size: 1.25rem;
+      color: $purple;
+      text-decoration: none;
+    }
+
+    i {
+      color: $purple;
+      margin-right: 10px;
+    }
+  }
+}
+
+
+.split-right {
+  padding: 20px;
+}
