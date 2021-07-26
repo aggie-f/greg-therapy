@@ -12,7 +12,8 @@
   display: flex;
   flex-direction: column;
   align-content: center;
-  // transition: transform 1s ease;
+  transition: transform 1s ease;
+  width: 300px;
 
   p {
     font-weight: 200;
