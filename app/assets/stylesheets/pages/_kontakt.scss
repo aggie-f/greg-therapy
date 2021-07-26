@@ -39,6 +39,27 @@
   }
 }
 
+.contact-info {
+  font-family: $headers-font;
+  font-weight: 200;
+  font-size: 1rem;
+  padding-bottom: 1em;
+}
+
+.map-responsive {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+
+    iframe {
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 100%;
+      position: absolute;
+    }
+}
 
 @media only screen and (max-width: 690px) {
   .contact-way {
@@ -46,3 +67,6 @@
     margin-bottom: 25px;
   }
 }
+
+
+
