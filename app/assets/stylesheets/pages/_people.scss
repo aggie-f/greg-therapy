@@ -45,7 +45,9 @@
     justify-items: center;
   }
 
-
+  &__grid-right {
+    place-self: center;
+  }
 }
 
 //Patrycja page
@@ -82,6 +84,33 @@
     grid-template-columns: 1fr;
     padding: 0 20px;
     text-align: center;
+  }
+
+  .team-contact {
+    &__grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-gap: 30px;
+      justify-items: center;
+    }
+
+    &__grid-left {
+      display: flex;
+      justify-content: center;
+    }
+
+    &__grid-right {
+      place-self: center;
+      text-align: center;
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .team-contact {
+    &__grid-left {
+      flex-direction: column;
+    }
   }
 }
 
