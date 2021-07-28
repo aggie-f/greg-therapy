@@ -87,17 +87,17 @@
 
 .menu-sub {
   position: absolute;
-  background: white;
   display: none;
-  width: 30%;
   text-align: left;
   color: $gray-light;
-  // left: 0;
+  background: #f3f3f3;
+  width: 300px;
+  margin-top: -2px;
+
 
   ul {
     display: flex;
     flex-direction: column;
-    // align-items: center;
     justify-content: center;
 
   }
@@ -114,19 +114,12 @@
 
   &__top {
     margin-top: 15px;
-    border-top: 1px solid $purple;
   }
 
   &__bottom {
     margin-bottom: 15px;
   }
 }
-
-.dropdown::after {
-    content: "+";
-    /* float: right; */
-    margin-left: 20px;
-  }
 
 nav li:hover .menu-sub {
   display: block;

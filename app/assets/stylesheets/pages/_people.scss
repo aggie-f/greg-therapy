@@ -1,8 +1,14 @@
-.grey-box p {
-  background-color: #f3f3f3;
+.grey-box {
   padding: 60px;
+  background-color: #f3f3f3;
   margin: 0;
-  text-align: center;
+
+  p {
+    padding: 10px 0px;
+    text-align: center;
+    font-style: italic;
+  }
+
 }
 
 .people-about {
@@ -29,11 +35,82 @@
   }
 }
 
+
+//contact
+.team-contact {
+  &__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+    justify-items: center;
+  }
+
+  &__grid-right {
+    place-self: center;
+  }
+}
+
+//Patrycja page
+.patrycja-oferta {
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-family: $headers-font;
+    font-weight: 300;
+    font-size: 1.25rem;
+    padding-bottom: 1em;
+    transition: transform 500ms;
+
+    li {
+      padding-bottom: 1em;
+    }
+  }
+
+  i {
+    margin-right: 5px;
+  }
+}
+
+.patrycja-experience {
+
+}
+
+
+
+
 @media screen and (max-width: 767px) {
   .people-about {
     grid-template-columns: 1fr;
     padding: 0 20px;
     text-align: center;
+  }
+
+  .team-contact {
+    &__grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-gap: 30px;
+      justify-items: center;
+    }
+
+    &__grid-left {
+      display: flex;
+      justify-content: center;
+    }
+
+    &__grid-right {
+      place-self: center;
+      text-align: center;
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .team-contact {
+    &__grid-left {
+      flex-direction: column;
+    }
   }
 }
 
