@@ -1,4 +1,4 @@
-.cards {
+.cards, .card-big {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -44,6 +44,32 @@
     }
 }
 
+
+.card-big {
+  border-color: #fff;
+  transition: transform 1s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+
+  &__left, &__right {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .card {
+    width: 300px;
+
+    img {
+      padding: 0;
+    }
+  }
+
+  p {
+    font-family: $headers-font;
+  }
+}
 
 // Box Shadow on cards //
 .shadow-cards {

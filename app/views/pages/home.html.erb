@@ -73,6 +73,25 @@
         </div>
       <% end %>
     </div>
+    <div class="card-big shadow-cards">
+      <%= link_to oferta_terapia_dzieci_path do %>
+      <div class="card-big">
+        <div class="card card-big__left">
+          <img src="/assets/6.png" alt="">
+          <div class="card-info fade-in">
+            <h2>Diagnoza i terapia dzieci</h2>
+          </div>
+        </div>
+        <div class="card-big__right">
+          <p>Ocena rozwoju psychoruchowego (KORP)</p>
+          <p>Ocena zachowania i emocji dziecka (KOZE)</p>
+          <p>Trening umiejętności społecznych (TUS)</p>
+          <p>Terapia pedagogiczna</p>
+          <p>Terapia zajęciowa</p>
+        </div>
+      </div>
+    </div>
+    <% end %>
   </div>
 </section>
 
@@ -210,76 +229,3 @@
     </div>
   </div>
 </section>
-
-
-<!-- product offer section --><!--possible delete-->
-<!-- <section id="section02" class="top">
-  <div class="container">
-    <div class="section-titles">
-      <h1>OFERTA</h1>
-      <hr />
-    </div>
-    <div class="cards">
-      <div class="card">
-        <img src="/assets/1.jpg" alt="">
-        <div class="card-info fade-in">
-          <h2>Konsultacja<br>Psychologiczna</h2>
-          <p>Dzięki konsultacji psychologicznej możliwe jest wstępne rozpoznanie sytuacji życiowej pacjenta oraz określenie jego problemów. Z tego względu stanowi ona stanowią wstęp do dalszego postępowania oraz terapii.</p>
-          <%= link_to "WIĘCEJ", oferta_konsultacja_path, class: "btn-cards" %>
-        </div>
-      </div>
-      <div class="card">
-        <img src="/assets/2.jpg" alt="">
-        <div class="card-info fade-in">
-          <h2>Psychoterapia <br>Indywidualna</h2>
-          <p>Stres i problemy o różnym charakterze stanowią nieodłączną część życia wielu z nas. Ich oddziaływanie jest jednak bardzo duże. W niektórych przypadkach stanowią one tak duże obciążenie, że niezbędna jest pomoc.</p>
-          <%= link_to "WIĘCEJ", oferta_terapia_path, class: "btn-cards" %>
-        </div>
-      </div>
-      <div class="card">
-        <img src="/assets/3.jpg" alt="">
-        <div class="card-info fade-in">
-          <h2>Pomoc w sytuacji<br>krzysowej</h2>
-          <p>Dzięki konsultacji psychologicznej możliwe jest wstępne rozpoznanie sytuacji życiowej pacjenta oraz określenie jego problemów. Z tego względu stanowi ona stanowią wstęp do dalszego postępowania oraz terapii.</p>
-          <%= link_to "WIĘCEJ", oferta_path, class: "btn-cards" %>
-        </div>
-      </div>
-      <div class="card">
-        <img src="/assets/4.png" alt="">
-        <div class="card-info fade-in">
-          <h2>Pomoc w uzależnieniach</h2>
-          <p>Zapewniamy nowoczesne i kompleksowe leczenie osobom borykającym się z różnego rodzaju uzależnieniami, zarówno w zakresie substancji psychoaktywnych, jak i uzależnień behawioralnych. </p>
-          <%= link_to "WIĘCEJ", oferta_path, class: "btn-cards" %>
-        </div>
-      </div>
-      <div class="card">
-        <img src="/assets/5.png" alt="">
-        <div class="card-info fade-in">
-          <h2>Terapia par</h2>
-          <p>Związek dwojga osób może stawać przed rozmaitymi trudnościami. Mogą wynikać z utrudnionej komunikacji w związku ale również z indywidualnych trudności każdej z osób.</p>
-          <%= link_to "WIĘCEJ", oferta_path, class: "btn-cards" %>
-        </div>
-      </div>
-    </div>
-  </div>
-</section> -->
-
-<!-- Reviews -->
-<!-- <section class="reviews container">
-  <div class="section-titles">
-        <h2>OPINIE NASZYCH KLIENTÓW</h2>
-        <hr/>
-  </div>
-  <div class="reviews-grid">
-    <% @reviews.each do |review| %>
-    <figure class="review">
-      <%= image_tag "leaf.jpg", alt: "Grzegorz_Szczeblewski", class: "review__photo" %>
-      <figcaption class="review__box">
-        <blockquote class="review__text">
-          <p><%= review.content %></p>
-        </blockquote>
-      </figcaption>
-    </figure>
-    <% end %>
-  </div>
-</section> -->
