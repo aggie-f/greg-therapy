@@ -18,7 +18,6 @@ Rails.application.routes.draw do
   get 'oferta/terapia-par', to: 'pages#terapia_par'
   get 'oferta/terapia-dzieci', to: 'pages#terapia_dzieci'
   get 'gabinety', to: 'pages#gabinety'
-  get 'cennik', to: 'pages#cennik'
   get 'blog', to: 'pages#articles'
   get 'kontakt', to: 'pages#kontakt'
   get 'admin', to: 'pages#admin'
