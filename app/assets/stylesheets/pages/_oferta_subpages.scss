@@ -70,3 +70,13 @@
 .split-right {
   padding: 20px;
 }
+
+.people-about__text {
+  .btn-cards {
+    color: white;
+  }
+
+  .btn-cards:hover {
+    color: $primary-backround;;
+  }
+}
