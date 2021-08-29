@@ -1,8 +1,8 @@
-.cards, .card-big {
+.cards {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  gap: 20px;
+  row-gap: 20px;
   padding: 10px;
 
   a {
@@ -19,7 +19,7 @@
 
 .card {
   border-color: #fff;
-  width: 200px;
+  width: 300px;
   padding-bottom: 20px;
   transition: transform 1s ease;
 
@@ -42,33 +42,6 @@
     color: $gray-light;
     font-weight: 400;
     }
-}
-
-
-.card-big {
-  border-color: #fff;
-  transition: transform 1s ease;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 40px;
-
-  &__left, &__right {
-    padding: 20px;
-    text-align: center;
-  }
-
-  .card {
-    width: 300px;
-
-    img {
-      padding: 0;
-    }
-  }
-
-  p {
-    font-family: $headers-font;
-  }
 }
 
 // Box Shadow on cards //

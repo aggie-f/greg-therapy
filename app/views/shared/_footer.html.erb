@@ -14,23 +14,14 @@
       <p><a href="mailto:gabinet@psycho-terapeutyczny.pl"><i class="far fa-envelope"></i> gabinet@psycho-terapeutyczny.pl</a></p>
       <p><a href="https://goo.gl/maps/dHAgUrewkDeaVZkb8"><i class="fas fa-map-marker-alt"></i> Znajdz nas</a></p>
     </div>
-    <!-- <div class="footer-menu">
-      <h2>NAJNOWSZE ARTYKUŁY</h2>
-      <ul>
-        <% articles = Article.all %>
-        <% articles.last(3).sort.reverse.each do |article| %>
-          <li><%= link_to article.title, article %></li>
-        <% end %>
-      </ul>
-    </div> -->
+
     <div class="footer-menu">
       <h2>MENU</h2>
       <ul>
         <li><%= link_to "Nasz zespół", zespol_path %></li>
         <li><%= link_to "Oferta", oferta_path %></li>
-        <li><%= link_to "Cennik", cennik_path %></li>
-        <li><%= link_to "Blog", articles_path %></li>
         <li><%= link_to "Umów wizytę", kontakt_path %></li>
+        <li><%= link_to "Wynajem gabinetów", gabinety_path %></li>
       </ul>
     </div>
     <% if user_signed_in? %>

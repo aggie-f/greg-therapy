@@ -68,7 +68,6 @@ body {
     top: 38%;
     left: 50%;
     transform: translate(-50%, -50%);
-    // // width: 50%;
     height: 50%;
     transition: 0.5s ease;
     opacity: 0;
@@ -227,16 +226,6 @@ body {
 
   .carousel-item img {
     height: auto;
-  }
-
-  .card-big {
-    gap: 0;
-    padding: 0;
-    margin-top: 20px;
-  }
-
-  .card-big__right {
-    padding: 0;
   }
 
 }
