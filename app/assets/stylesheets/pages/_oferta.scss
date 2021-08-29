@@ -16,7 +16,8 @@
    "text_two photo_two"
    "photo_three text_three"
    "text_four photo_four"
-   "photo_five text_five";
+   "photo_five text_five"
+   "text_six photo_six ";
 }
 
 .oferta_grid_photo_one {
@@ -57,6 +58,14 @@
 
 .oferta_grid_text_five {
   grid-area: text_five;
+}
+
+.oferta_grid_photo_six {
+  grid-area: photo_six;
+}
+
+.oferta_grid_text_six {
+  grid-area: text_six;
 }
 
 .oferta-btn {
