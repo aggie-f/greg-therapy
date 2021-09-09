@@ -1,14 +1,28 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Gabinet Psychoterapii - Psychoterapia i pomoc psychologiczna</title>
-    <meta name="description" content="Konsultacja Psychologiczna, Psychoterapia Indywidualna, Terapia par, Pomoc w sytuacji kryzysowej, Pomoc w uzależnieniach, Terapia dzieci." />
+    <title><%= meta_title %></title>
+    <meta name="description" content="<%= meta_description %>">
+
+    <!-- Facebook Open Graph data -->
+    <meta property="og:title" content="<%= meta_title %>" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="<%= request.original_url %>" />
+    <meta property="og:image" content="<%= meta_image %>" />
+    <meta property="og:description" content="<%= meta_description %>" />
+    <meta property="og:site_name" content="<%= meta_title %>" />
+
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
+    <%= favicon_link_tag asset_path('favicon.jpg') %>
 
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="turbolinks-visit-control" content="reload">
     <!-- Global site tag (gtag.js) - Google Analytics -->
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload', defer: true %>
+
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-D562E4C12B"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -17,9 +31,6 @@
 
       gtag('config', 'G-D562E4C12B');
     </script>
-    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-
-    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload', defer: true %>
   </head>
 
   <body>
