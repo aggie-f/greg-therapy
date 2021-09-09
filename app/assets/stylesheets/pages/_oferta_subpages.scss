@@ -80,3 +80,9 @@
     color: $primary-backround;;
   }
 }
+
+@media screen and (max-width: 576px) {
+  .banner-offer {
+    height: 470px;
+  }
+}
