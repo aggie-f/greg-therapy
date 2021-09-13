@@ -1,20 +1,40 @@
-<section class="banner-offer">
-  <div class="banner-offer-inner">
-    <h2>Konsultacja Psychologiczna</h2>
-    <p>Dzięki konsultacji psychologicznej możliwe jest wstępne rozpoznanie sytuacji życiowej pacjenta oraz określenie jego problemów. Z tego względu stanowi ona stanowią wstęp do dalszego postępowania oraz terapii.</p>
+<section class="banner-pages">
+  <div class="banner-pages-title">
+     <h1>Konsultacja Psychologiczna</h1>
   </div>
 </section>
 
 <section>
+  <div class="oferta-subpages container">
+    <div class="oferta-subpages_text text-center">
+      <p>
+        Dzięki konsultacji psychologicznej możliwe jest wstępne rozpoznanie sytuacji życiowej pacjenta oraz określenie jego problemów. Z tego względu stanowi ona stanowią wstęp do dalszego postępowania oraz terapii.
+      </p>
+      <h2>Ta forma pomocy sprawdzi się gdy:</h2>
+      <ul>
+        <li>znalazłeś się w sytuacji, z którą nie potrafisz sobie poradzić i potrzebujesz wsparcia</li>
+        <li>masz trudną sytuację i chcesz się zastanowić, co dalej</li>
+        <li>czujesz, że potrzebujesz pomocy, ale nie wiesz jaka forma będzie dla Ciebie najkorzystniejsza, tzn. czy wybrać psychoterapię indywidualną, grupową czy może wcześniej udać się do lekarza psychiatry</li>
+        <li>czujesz, że chciałbyś coś zmienić w swoim życiu, ale nie potrafisz tego nazwać i nie wiesz od czego zacząć.</li>
+      </ul>
+    </div>
+    <div class="oferta-subpages_photo">
+      <img src="/assets/konsultacja.jpg" alt="Psycholog - Konsultacja Psychologiczna">
+    </div>
+  </div>
+</section>
+
+<section class="section-subpages">
   <div class="container">
-    <div class="text-center">
-      <h4>Kto może skorzystać z konsultacji psychologicznych?</h4>
-      <p>Najprościej ujmując każdy, kto uważa, że jej potrzebuje. Rozmowa ze specjalistą pozwala na omówienie wszelkich problemów emocjonalnych, rodzinnych i życiowych. 
-      Może stanowić pierwszy krok na drodze do rozpoznania problemów oraz ich rozwiązania. Jest to jednorazowa usługa, która ma na celu poradę w zmaganiu się z problemami, 
+    <div class=" oferta-subpages_text text-center">
+      <h2>Kto może skorzystać z konsultacji psychologicznych?</h2>
+      <p>Najprościej ujmując każdy, kto uważa, że jej potrzebuje. Rozmowa ze specjalistą pozwala na omówienie wszelkich problemów emocjonalnych, rodzinnych i życiowych.
+      Może stanowić pierwszy krok na drodze do rozpoznania problemów oraz ich rozwiązania. Jest to jednorazowa usługa, która ma na celu poradę w zmaganiu się z problemami,
       jednak pełne rozpoznanie może wymagać od trzech do pięciu spotkań i ma na celu postanowienie diagnozy. Dzięki której pacjent może zostać poddany leczeniu.</p>
-      <h4>Jakie są przykładowe wskazania do skorzystania z konsultacji psychologicznej?</h4>
-      <p>Do najczęstszych przyczyn należą problemy z kontrolowaniem emocji, utrzymujący się zły nastrój, stresy, zaburzenia lękowe, problemy ze snem, trudności związane z relacjami interpersonalnymi, 
-      wypalenie zawodowe, kłopoty rodzinne lub zaburzenia emocjonalne. Powodem do skorzystania z pomocy specjalisty mogą być wszystkie problemy, które sprawiają, że pacjent odczuwa potrzebę wsparcia. 
+      <br>
+      <h2>Jakie są przykładowe wskazania do skorzystania z konsultacji psychologicznej?</h2>
+      <p>Do najczęstszych przyczyn należą problemy z kontrolowaniem emocji, utrzymujący się zły nastrój, stresy, zaburzenia lękowe, problemy ze snem, trudności związane z relacjami interpersonalnymi,
+      wypalenie zawodowe, kłopoty rodzinne lub zaburzenia emocjonalne. Powodem do skorzystania z pomocy specjalisty mogą być wszystkie problemy, które sprawiają, że pacjent odczuwa potrzebę wsparcia.
       W tym celu można zapisać się wizytę w moim gabinecie, mieszczącym się w Koszalinie.</p>
     </div>
   </div>
@@ -22,17 +42,24 @@
 
 <section>
   <div class="container">
-    <div class="split">
-      <div class="split-left">
-      <h4 class="text-center">Ta forma pomocy sprawdzi się gdy:</h4>
-      <ul>
-        <li>znalazłeś się w sytuacji, z którą nie potrafisz sobie poradzić i potrzebujesz wsparcia</li>
-        <li>masz trudną sytuację i chcesz się zastanowić, co dalej</li>
-        <li>czujesz, że potrzebujesz pomocy, ale nie wiesz jaka forma będzie dla Ciebie najkorzystniejsza, tzn. czy wybrać psychoterapię indywidualną, grupową czy może wcześniej udać się do lekarza psychiatry</li>
-        <li>czujesz, że chciałbyś coś zmienić w swoim życiu, ale nie potrafisz tego nazwać i nie wiesz od czego zacząć.</li>
-      </ul>
+    <div class="oferta-subpages">
+      <div class="oferta-subpages__people">
+        <div class="section-titles">
+          <h3>terapeuci:</h3>
+          <hr/>
+        </div>
+        <%= link_to zespol_donata_grodek_path do %>
+          <h4><i class="fas fa-chevron-right"></i>Donata Grodek</h4>
+        <%end%>
+        <%= link_to zespol_grzegorz_szczeblewski_path do %>
+          <h4><i class="fas fa-chevron-right"></i>Grzegorz Szczeblewski</h4>
+        <%end%>
+        <%= link_to zespol_elzbieta_walczak_path do %>
+          <h4><i class="fas fa-chevron-right"></i>Elżbieta Walczak</h4>
+        <%end%>
       </div>
-      <div class="split-right text-center">
+
+      <div class="oferta-subpages__contact text-center">
         <div class="contact-block">
           <h4>Umów się na wizytę:</h4>
           <div class="contact-block__list">
@@ -47,4 +74,3 @@
     </div>
   </div>
 </section>
-

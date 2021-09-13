@@ -19,6 +19,10 @@
   line-height: 1.6;
 }
 
+.section-subpages {
+  padding: 2rem 0;
+}
+
 .oferta-subpages {
   display: grid;
   justify-content: center;
@@ -31,7 +35,11 @@
     display: block;
     max-width: 100%;
   }
+}
 
+
+.oferta-subpages_text h2 {
+    font-size: 1.25rem;
 }
 
 .contact-block {
@@ -104,6 +112,22 @@
 
   .btn-cards:hover {
     color: $primary-backround;;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+
+  .section-subpages {
+    padding: 0;
+  }
+
+  .oferta-subpages {
+    grid-template-columns: 1fr;
+    row-gap: 40px;
+
+    img {
+      padding: 1rem 0;
+    }
   }
 }
 
