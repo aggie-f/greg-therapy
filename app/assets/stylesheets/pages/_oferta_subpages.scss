@@ -9,8 +9,6 @@
 
 .banner-offer-inner {
   color: white;
-  // color: #464654;
-  // background: rgba(255, 255, 255, 0.85);
   position: relative;
   max-width: 50em;
   top: 50%;
@@ -21,8 +19,27 @@
   line-height: 1.6;
 }
 
-.oferta-item {
-  padding: 30px;
+.section-subpages {
+  padding: 2rem 0;
+}
+
+.oferta-subpages {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 60px;
+
+  img {
+    display: block;
+    max-width: 100%;
+  }
+}
+
+
+.oferta-subpages_text h2 {
+    font-size: 1.25rem;
 }
 
 .contact-block {
@@ -56,19 +73,36 @@
   }
 }
 
-.split-left {
+.oferta-subpages__people {
   padding: 20px;
   text-align: center;
   text-decoration: none;
+
+  h4 {
+    font-family: $headers-font;
+    font-weight: 300;
+    transition: font-weight 0.3s ease;
+    padding-bottom: 16px;
+  }
+
+  h4:hover {
+    font-weight: 600;
+    color: $purple;
+  }
+
+  i {
+    margin-right: 16px;
+    color: $purple;
+  }
 
   a {
     text-decoration: none;
     color: inherit;
   }
-}
 
-.split-right {
-  padding: 20px;
+  a:hover {
+    cursor: pointer;
+  }
 }
 
 .people-about__text {
@@ -78,6 +112,22 @@
 
   .btn-cards:hover {
     color: $primary-backround;;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+
+  .section-subpages {
+    padding: 0;
+  }
+
+  .oferta-subpages {
+    grid-template-columns: 1fr;
+    row-gap: 40px;
+
+    img {
+      padding: 1rem 0;
+    }
   }
 }
 

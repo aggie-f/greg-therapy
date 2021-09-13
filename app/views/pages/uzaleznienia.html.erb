@@ -1,25 +1,40 @@
 <section class="banner-pages">
   <div class="banner-pages-title">
-     <h2>Pomoc w uzależnieniach</h2>
+     <h1>Pomoc w uzależnieniach</h1>
   </div>
 </section>
 
 <section>
-  <div class="container">
-    <div class="text-center">
+  <div class="oferta-subpages container">
+    <div class="oferta-subpages_text">
       <p>Zapewniamy nowoczesne i kompleksowe leczenie osobom borykającym się z różnego rodzaju uzależnieniami, zarówno w zakresie substancji psychoaktywnych, jak i uzależnień behawioralnych. W leczeniu uzależnień niebywale istotne jest uwzględnienie indywidualnej historii danej osoby. Istnieje szereg czynników obciążających, które zwiększają ryzyko wystąpienia uzależnienia. Zalicza się do nich m.in. problemy rodzinne, nieporozumienia w bliskich relacjach, presję zawodową, kłopoty finansowe, wywodzenie się z rodziny, w której występuje wzorzec uzależnienia/współuzależnienia. Skuteczne przeciwdziałanie uzależnieniom polega nie tylko na utrzymywaniu abstynencji, ale dążeniu do poznania i wyeliminowania czynników, które powodują uzależnienia. Jest to możliwe w ramach pogłębionej psychoterapii.</p>
+    </div>
+    <div class="oferta-subpages_photo">
+      <img src="/assets/addiction.jpg" alt="Pomoc w uzależnieniach">
     </div>
   </div>
 </section>
 
 <section>
   <div class="container">
-    <div class="split">
-      <div class="split-left">
-        <h4 class="text-center">Terapeuci:</h4>
-
+    <div class="oferta-subpages">
+      <div class="oferta-subpages__people">
+        <div class="section-titles">
+          <h3>terapeuci:</h3>
+          <hr/>
+        </div>
+        <%= link_to zespol_donata_grodek_path do %>
+          <h4><i class="fas fa-chevron-right"></i>Donata Grodek</h4>
+        <%end%>
+        <%= link_to zespol_grzegorz_szczeblewski_path do %>
+          <h4><i class="fas fa-chevron-right"></i>Grzegorz Szczeblewski</h4>
+        <%end%>
+        <%= link_to zespol_elzbieta_walczak_path do %>
+          <h4><i class="fas fa-chevron-right"></i>Elżbieta Walczak</h4>
+        <%end%>
       </div>
-      <div class="split-right text-center">
+
+      <div class="oferta-subpages__contakt text-center">
         <div class="contact-block">
           <h4>Umów się na wizytę:</h4>
           <div class="contact-block__list">
@@ -34,4 +49,3 @@
     </div>
   </div>
 </section>
-
