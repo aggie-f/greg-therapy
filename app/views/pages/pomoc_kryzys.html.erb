@@ -1,24 +1,48 @@
 <section class="banner-pages">
   <div class="banner-pages-title">
-     <h2>Pomoc w sytuacji kryzysu</h2>
+     <h1>Pomoc w sytuacji kryzysu</h1>
+  </div>
+</section>
+
+<section>
+  <div class="oferta-subpages container">
+    <div class="oferta-subpages_text">
+      <h4 class="text-center">Ta forma pomocy psychologicznej jest skierowana do osób, które przeżyły:</h4>
+      <ul>
+        <li>śmierć bliskiej osoby;</li>
+        <li>chorobę własnej lub choroby bliskiej osoby;</li>
+        <li>wypadek;</li>
+        <li>rozpad związku;</li>
+        <li>utratę pracy;</li>
+        <li>bardzo silny stres.</li>
+      </ul>
+    </div>
+    <div class="oferta-subpages_photo">
+      <img src="/assets/pomoc.jpg" alt="Pomoc w sytuacji kryzysu">
+    </div>
   </div>
 </section>
 
 <section>
   <div class="container">
-    <div class="split">
-      <div class="split-left">
-        <h4 class="text-center">Ta forma pomocy psychologicznej jest skierowana do osób, które przeżyły:</h4>
-        <ul>
-          <li>śmierć bliskiej osoby;</li>
-          <li>chorobę własnej lub choroby bliskiej osoby;</li>
-          <li>wypadek;</li>
-          <li>rozpad związku;</li>
-          <li>utratę pracy;</li>
-          <li>bardzo silny stres.</li>
-        </ul>
+    <div class="oferta-subpages">
+      <div class="oferta-subpages__people">
+        <div class="section-titles">
+          <h3>terapeuci:</h3>
+          <hr/>
+        </div>
+        <%= link_to zespol_donata_grodek_path do %>
+          <h4><i class="fas fa-chevron-right"></i>Donata Grodek</h4>
+        <%end%>
+        <%= link_to zespol_grzegorz_szczeblewski_path do %>
+          <h4><i class="fas fa-chevron-right"></i>Grzegorz Szczeblewski</h4>
+        <%end%>
+        <%= link_to zespol_elzbieta_walczak_path do %>
+          <h4><i class="fas fa-chevron-right"></i>Elżbieta Walczak</h4>
+        <%end%>
       </div>
-      <div class="split-right text-center">
+
+      <div class="oferta-subpages__contakt text-center">
         <div class="contact-block">
           <h4>Umów się na wizytę:</h4>
           <div class="contact-block__list">
