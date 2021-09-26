@@ -16,7 +16,6 @@ body {
 .section-titles {
   text-align: center;
   text-transform: uppercase;
-  // padding-top: 2rem;
 }
 
 .section-titles hr {
@@ -31,6 +30,17 @@ body {
 .about-us {
   background-color: #f3f3f3;
   padding: 40px;
+}
+
+.home-contact {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+
+  &__text {
+    width: 350px;
+  }
 }
 
 .people {
@@ -219,6 +229,10 @@ body {
 }
 
 @media screen and (max-width: 1000px) {
+
+  .home-contact__text {
+    padding-bottom: 30px;
+  }
 
   .card {
     padding-top: 20px;
