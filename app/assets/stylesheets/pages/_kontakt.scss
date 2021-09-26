@@ -62,6 +62,45 @@
     }
 }
 
+.contact-block {
+  background: $light-gray;
+  padding: 20px;
+  border: 5px solid $purple;
+  border-radius: 5px;
+  box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
+
+  h4 {
+    text-transform: uppercase;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 20px;
+
+    a, p {
+      color: inherit;
+      font-size: 1.25rem;
+      color: $purple;
+      text-decoration: none;
+      font-family: $headers-font;
+      font-weight: 300;
+      transition: font-weight 0.3s ease;
+      }
+
+    a:hover {
+      font-weight: 600;
+    }
+
+    i {
+      color: $purple;
+      margin-right: 10px;
+    }
+  }
+}
+
+
 @media only screen and (max-width: 690px) {
   .contact-way {
     width: 100%;
