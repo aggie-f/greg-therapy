@@ -1,7 +1,7 @@
 <section class="banner-pages">
   <div class="banner-pages-title">
     <h1>Donata Grodek</h1>
-    <p>Psycholożka - Psychoterapeutka - Terapeutka uzależnień</p>
+    <p>Psycholożka - Psychoterapeutka</p>
   </div>
 </section>
 
@@ -52,6 +52,14 @@
             </div>
           </div>
         <% end %>
+        <%= link_to oferta_terapia_path do %>
+          <div class="card shadow-cards">
+            <img src="/assets/icon-terapia.jpg" alt="Psychoterapia Indywidualna">
+            <div class="card-info fade-in">
+              <h2>Psychoterapia <br>Indywidualna</h2>
+            </div>
+          </div>
+        <% end %>
         <%= link_to oferta_uzaleznienia_path do %>
           <div class="card shadow-cards">
             <img src="/assets/icon-uzaleznienia.png" alt="Pomoc w uzależnieniach">
@@ -94,7 +102,11 @@
       </tr>
       <tr>
         <td>Konsultacja psychologiczna</td>
-        <td>130 zł / 1h </td>
+        <td>100 zł / 45min </td>
+      </tr>
+      <tr>
+        <td>Psychoterapia indywidualna </td>
+        <td>130 zł / 50 min. </td>
       </tr>
         <td>Pomoc w uzależnieniach</td>
         <td>130 zł / 1h </td>
@@ -106,7 +118,7 @@
       <tr>
       <tr>
         <td>Terapia Par </td>
-        <td>130 zł / 1h </td>
+        <td>200 zł / 1.5h </td>
       </tr>
     </table>
   </div>
