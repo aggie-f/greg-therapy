@@ -10,6 +10,7 @@ Rails.application.routes.draw do
   get 'zespol/elzbieta-walczak', to: 'pages#ela_walczak'
   get 'zespol/donata-grodek', to: 'pages#donata_grodek'
   get 'zespol/patrycja-barabasz', to: 'pages#patrycja_barabasz'
+  get 'zespol/kamila-czarnuch', to: 'pages#kamila_czarnuch'
   get 'oferta', to: 'pages#oferta'
   get 'oferta/konsultacja', to: 'pages#konsultacja'
   get 'oferta/terapia', to: 'pages#terapia'

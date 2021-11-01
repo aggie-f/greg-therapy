@@ -15,6 +15,9 @@ class PagesController < ApplicationController
   def ela_walczak
   end
 
+  def kamila_czarnuch
+  end
+
   def services
   end
 
