@@ -53,11 +53,6 @@ body {
       color: $text-headlines;
     }
 
-    a:focus, a:hover {
-    text-decoration: none;
-    color: $text-headlines;
-    }
-
     &__container {
       display: block;
       position: relative;
@@ -98,13 +93,7 @@ body {
     }
 }
 
-.people {
-  &__container:hover,
-  &__container:focus {
-    transform: scale(1.3);
-    z-index: 1;
-  }
-}
+
 
 
 .people__container:hover .people__container__middle {
@@ -228,6 +217,22 @@ body {
   }
 }
 
+@media screen and (min-width: 1001px) {
+  .people {
+    a:focus, a:hover {
+    text-decoration: none;
+    color: $text-headlines;
+    }
+  }
+
+  .people {
+    &__container:hover,
+    &__container:focus {
+      transform: scale(1.3);
+      z-index: 1;
+    }
+  }
+}
 @media screen and (max-width: 1000px) {
 
   .home-contact__text {
@@ -278,3 +283,5 @@ body {
     padding: 0 60px;
   }
 }
+
+
