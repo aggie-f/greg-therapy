@@ -1,0 +1,165 @@
+<section class="banner-pages">
+  <div class="banner-pages-title">
+    <h1>Aleksandra Stępień</h1>
+    <p>Psychoterapeutka</p>
+  </div>
+</section>
+
+<section class="container">
+  <div class="people-about">
+    <div class="people-about__img">
+      <img src="/assets/Aleksandra_Stepien.jpg" alt="Aleksanra Stępień - psychoterapeuta">
+    </div>
+    <div class="people-about__text">
+      <p>
+        Jestem dyplomowaną konsultantką psychoterapeutyczną, a także psychoterapeutką w
+trakcie międzynarodowego kursu mistrzowskiego w nurcie Transkulturowej Psychoterapii
+Pozytywnej. Jestem członkinią World Association for Positive and Transcultural
+Psychotherapy.
+Ukończyłam studia humanistyczne na Uniwersytecie Jagiellońskim w Krakowie. Od
+kilkunastu lat pracuję z młodzieżą jako wychowawczyni, nauczycielka języka polskiego i
+języka angielskiego oraz doradczyni zawodowa i personalna w liceum.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- jak pracuje section-->
+<section>
+  <div class="container">
+    <div class="section-titles">
+      <h2>JAK PRACUJE</h2>
+      <hr />
+    </div>
+    <div>
+      <p>
+        Pracując w nurcie transkulturowej psychoterapii pozytywnej, opieram się na koncepcji
+“positum”, która uwzględnia holistyczne postrzeganie człowieka, bierze pod uwagę nie tylko
+jego choroby i problemy, ale także jego potencjalności, zdolności i nieuświadomione zasoby.
+Ważny aspektem terapii stanowi budowanie bezpiecznej i wspierającej relacji z terapeutą.
+Pomagam głównie nastolatkom, młodzieży, młodym dorosłym we budowaniu poczucia
+własnej wartości, definiowaniu swojej tożsamości, w podejmowaniu decyzji zawodowych i
+prywatnych. Wspieram rodziców w wyzwaniach wychowawczych oraz rodziny w
+rozwiązywaniu konfliktów.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="section-titles">
+      <h2>W czym mogę pomóc?</h2>
+      <hr />
+    </div>
+    <div class="offer-icons">
+      <div class="cards">
+        <%= link_to oferta_konsultacja_path do %>
+          <div class="card shadow-cards">
+            <img src="/assets/icon-konsultacja.jpg" alt="Konsultacja Psychologiczna">
+            <div class="card-info fade-in">
+              <h2>Konsultacja<br>Psychologiczna</h2>
+            </div>
+          </div>
+        <% end %>
+        <%= link_to oferta_terapia_path do %>
+          <div class="card shadow-cards">
+            <img src="/assets/icon-terapia.jpg" alt="Psychoterapia Indywidualna">
+            <div class="card-info fade-in">
+              <h2>Psychoterapia <br>Indywidualna</h2>
+            </div>
+          </div>
+        <% end %>
+        <%= link_to oferta_terapia_par_path do %>
+          <div class="card shadow-cards">
+            <img src="/assets/icon-pary.png" alt="Terapia Par">
+            <div class="card-info fade-in">
+              <h2>Terapia par</h2>
+            </div>
+          </div>
+        <% end %>
+        <div class="card shadow-cards">
+          <img src="/assets/icon-rodzina.png" alt="Terapia Rodzin">
+          <div class="card-info fade-in">
+            <h2>Terapia rodzin</h2>
+          </div>
+        </div>
+        <div class="card shadow-cards">
+          <img src="/assets/icon-coach.png" alt="Coaching kariery">
+          <div class="card-info fade-in">
+            <h2>Doradztwo zawodowe <br>(coaching kariery)</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="section-titles">
+      <h2>CENNIK</h2>
+      <hr />
+    </div>
+    <table id="cennik">
+      <tr>
+        <th>Usługa</th>
+        <th>Cena</th>
+      </tr>
+      <tr>
+        <td>Konsultacja psychologiczna</td>
+        <td>120 zł / 50min </td>
+      </tr>
+      <tr>
+        <td>Psychoterapia indywidualna </td>
+        <td>120 zł / 50 min. </td>
+      </tr>
+      <tr>
+        <td>Terapia par</td>
+        <td>170 zł / 1,5 h </td>
+      </tr>
+      <tr>
+        <td>Terapia rodzin</td>
+        <td>170 zł / 1,5 h </td>
+      </tr>
+      <tr>
+        <td>Doradztwo zawodowe (coaching kariery)</td>
+        <td>120 zł / 50 min </td>
+      </tr>
+    </table>
+  </div>
+</section>
+
+<section class="team-contact">
+  <div class="container">
+    <div class="section-titles">
+      <h2>Umów wizytę</h2>
+      <hr />
+    </div>
+    <div class="team-contact__grid">
+      <div class="team-contact__grid-left">
+        <div class="contact-way shadow-cards">
+          <i class="fas fa-phone"></i>
+          <p><a href="tel://+48600809161">Aleksandra Stępień<br>+48600809161</a></p>
+        </div>
+        <div class="contact-way shadow-cards">
+          <i class="far fa-envelope"></i>
+          <p><a href="mailto:kamila.czarnuch@o2.pl">gabinet@psycho-terapeutyczny.pl</a></p>
+        </div>
+        <div class="contact-way shadow-cards">
+          <i class="far fa-map"></i>
+          <p><strong>Adres:</strong></p>
+          <p><a href="https://goo.gl/maps/dHAgUrewkDeaVZkb8">Centrum Psychoterapii<br>Dębowa 29<br>75-900 Koszalin</a></p>
+        </div>
+      </div>
+      <div class="team-contact__grid-right">
+        <p>Zapraszamy na wizyty po wcześniejszej rejestracji telefonicznej bądź konsultacji mailowej.</p>
+        <p>W razie nie odbierania telefonu, prosimy o wiadomość SMS, a oddzwonimy.</p>
+        <div class="map-responsive">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d583.697936139031!2d16.22568482930438!3d54.183763998760234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4701cd34b152c0f1%3A0xc65cc48d61b76476!2sCentrum%20Psychoterapii%20psycho-terapeutyczny.pl!5e0!3m2!1sen!2suk!4v1627473859742!5m2!1sen!2suk" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
