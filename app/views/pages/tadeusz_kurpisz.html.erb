@@ -1,24 +1,46 @@
 <section class="banner-pages">
   <div class="banner-pages-title">
-    <h1>Dominika Lisiecka</h1>
-    <p>Psychoterapeutka - Terapeutka uzależnień i współuzależnień </p>
+    <h1>Tadeusz Kurpisz</h1>
+    <p>Psychoterapeuta - Specjalista psychoterapii uzależnień</p>
   </div>
 </section>
 
 <section class="container">
   <div class="people-about">
     <div class="people-about__img">
-      <img src="/assets/Dominika_Lisiecka.jpg" alt="Dominika Lisiecka - psychoterapeutka, leczenie uzależnień i współuzależnień">
+      <img src="/assets/Tadeusz_Kurpisz.jpg" alt="Tadeusz Kurpisz - Psychoterapeuta - Specjalista psychoterapii uzależnień">
     </div>
     <div class="people-about__text">
       <p>
-        Jestem absolwentką studiów magisterskich na Wydziale Humanistycznym Politechniki Koszalińskiej oraz specjalistą psychoterapii uzależnień w procesie certyfikacji w Instytucie Edukacji i Terapii w Poznaniu akredytowanego przez Krajowe Biuro ds. Przeciwdziałania Narkomanii. Rozpoczęłam również proces certyfikacyjny  w obszarze dialogu motywującego uzyskując tytuł Terapeuty Motywującego Polskiego Instytutu Dialogu Motywującego (PIDM).
-        <br>
-        Pracuję w oparciu o standardy terapii poznawczo-behawioralnej. Nurt ten zapewnia plan terapii oraz metody o potwierdzonej skuteczności leczenia. Proces terapeutyczny odbieram jako wspólną drogę, w której moją rolą jest aktywne towarzyszenie drugiej osobie, aż do momentu odzyskania psychicznej równowagi oraz osiągnięcia zamierzonych celów, które pomagam osiągnąć moim pacjentom.
-        <br>
-        <br>
-        Doświadczenie zawodowe zdobywałam pracując z osobami uzależnionymi i współuzależnionymi w Ośrodku Interwencji Kryzysowej w Koszalinie oraz w Fundacji „Klucz Nadziei” w Rogowie. Obecnie pracuję w Centrum Psychoterapii i Leczenia Uzależnień ANON w Koszalinie.
-        Stale staram się podnosić swoją wiedzę oraz umiejętności uczestnicząc w szkoleniach, warsztatach oraz konferencjach naukowych. Pracę terapeutyczną poddaję regularnej superwizji. W pracy kieruję się kodeksem etyki zawodowej.
+        Ukończyłem wyższe studia magisterskie na kierunku pedagogika resocjalizacyjna.
+Jestem certyfikowanym specjalistą psychoterapii uzależnień. Egzamin certyfikacyjny został
+przeprowadzony przez Krajowe Biuro ds. Przeciwdziałania Narkomanii przy akredytacji
+Ministerstwa Zdrowia. Posiadam wieloletnie doświadczenie w pracy z osobami
+uzależnionymi.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- jak pracuje section-->
+<section>
+  <div class="container">
+    <div class="section-titles">
+      <h2>JAK PRACUJĘ</h2>
+      <hr />
+    </div>
+    <div>
+      <p>
+        Ze względu na rozległość i złożoność problemów osoby uzależnionej proponowany
+przeze mnie system udzielania pomocy obejmuje wiele elementów. Związane jest to z
+dążeniem do zwiększenia zdolności do trwałego utrzymywania abstynencji, zwiększeniem
+zdolności do rozwiązywania problemów osobistych oraz rozwijaniem zdolności do
+prowadzenia zdrowego i konstruktywnego sposobu życia. W relacji terapeutycznej łączę
+różne nurty psychoterapeutyczne. W pracy klinicznej nie trzymam się ściśle jednej
+konkretnej orientacji teoretycznej. Czasami łączę różne podejścia w celu optymalnego ich
+wykorzystania dla dobra pacjenta.
+Pomagam osobom uzależnionym od narkotyków oraz alkoholu. Zajmuję się również
+uzależnieniami behawioralnymi – hazard, siecioholizm itp.
       </p>
     </div>
   </div>
@@ -50,12 +72,24 @@
         <% end %>
         <%= link_to oferta_pomoc_kryzys_path do %>
           <div class="card shadow-cards">
-            <img src="/assets/icon-kryzys.jpg" alt="Pomoc w sytuacji kryzysowej">
+            <img src="/assets/icon-kryzys.jpg" alt="omoc w sytuacji kryzysowej">
             <div class="card-info fade-in">
               <h2>Pomoc w sytuacji<br>kryzysowej</h2>
             </div>
           </div>
         <% end %>
+        <div class="card shadow-cards">
+            <div class="card-info fade-in">
+              <h2>Diagnostyka</h2>
+            </div>
+            <div class="card-info fade-in">
+              <h2>Terapia systemowa</h2>
+            </div>
+            <div class="card-info fade-in">
+              <h2>Terapia grupowa</h2>
+            </div>
+          </div>
+
       </div>
     </div>
   </div>
@@ -74,15 +108,27 @@
       </tr>
       <tr>
         <td>Psychoterapia indywidualna </td>
-        <td>120 zł / 50 min. </td>
+        <td>120 zł / 1h </td>
       </tr>
       <tr>
-        <td>Pomoc w uzależnieniach i współuzależniach</td>
-        <td>120 zł / 50min </td>
+        <td>Pomoc w uzależnieniach</td>
+        <td>120 zł / 1h </td>
       </tr>
       <tr>
         <td>Interwencja w sytuacji kryzysu</td>
-        <td>120 zł / 50min </td>
+        <td>120 zł / 1h </td>
+      </tr>
+       <tr>
+        <td>Diagnostyka</td>
+        <td>Proszę o kontakt </td>
+      </tr>
+      <tr>
+        <td>Terapia Grupowa </td>
+        <td>Proszę o kontakt </td>
+      </tr>
+      <tr>
+        <td>Terapia systemowa </td>
+        <td>Proszę o kontakt </td>
       </tr>
     </table>
   </div>
@@ -98,11 +144,11 @@
       <div class="team-contact__grid-left">
         <div class="contact-way shadow-cards">
           <i class="fas fa-phone"></i>
-          <p><a href="tel://+48602417102">Dominika Lisiecka<br>+48602417102</a></p>
+          <p><a href="tel://+48506422727">Tadeusz Kurpisz<br>+48506422727</a></p>
         </div>
         <div class="contact-way shadow-cards">
           <i class="far fa-envelope"></i>
-          <p><a href="mailto:dlisiecka82@gmail.com">dlisiecka82@gmail.com</a></p>
+          <p><a href="mailto:tadeuszkurpisz@o2.pl">tadeuszkurpisz@o2.pl</a></p>
         </div>
         <div class="contact-way shadow-cards">
           <i class="far fa-map"></i>
