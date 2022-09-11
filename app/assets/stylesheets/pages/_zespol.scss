@@ -3,15 +3,17 @@
   flex-wrap: wrap;
   justify-content: space-evenly;
   text-align: center;
-  column-gap: 20px;
-  row-gap: 60px;
+  gap: 30px;
+
 
   a {
     text-decoration: none;
   }
 
   &__card {
-    width: 400px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
   }
 
 }
@@ -22,29 +24,24 @@
   width: 100%;
 }
 
-.team-list__card__title {
+.team-list__card__box {
+  background-color: #f3f3f3;
+  padding: 20px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 
   p {
     font-family: $headers-font;
     font-weight: 300;
-    text-transform: uppercase;
-    font-size: 14px;
+    padding: 0;
   }
 }
 
-.team-list__card__offer {
-  background-color: #f3f3f3;
-  font-family: $headers-font;
-  padding: 20px;
-  height: 200px;
-  display: grid;
-  align-items: center;
-  place-self: center;
-  p {
-    margin: 0;
-    padding: 5px;
-  }
-}
 
 .team-list__card__btn {
 
@@ -55,6 +52,8 @@
   transition: background 0.3s ease;
   border: 1px solid $primary-backround;
   cursor: pointer;
+  border-radius: 5px;
+  width: 220px;
 
   &:hover {
     background: white;
@@ -63,8 +62,10 @@
   }
 }
 
-.break-line {
-  display: none;
+@media screen and (max-width: 1000px) {
+  .team-list__card {
+    width: 300px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -76,10 +77,14 @@
       img {
         padding-top: 16px;
       }
+
     }
   }
 
-  .team-list__card__title {
+  .team-list__card__box {
+
+      height: 220px;
+      justify-content: center;
 
       h4 {
         font-size: 2rem;
