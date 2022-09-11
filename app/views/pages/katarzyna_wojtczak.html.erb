@@ -1,0 +1,152 @@
+<section class="banner-pages">
+  <div class="banner-pages-title">
+    <h1>Katarzyna Wojtczak</h1>
+    <p>Psychoterapeutka</p>
+  </div>
+</section>
+
+<section class="container">
+  <div class="people-about" id="katarzyna">
+    <div class="people-about__img">
+      <img src="/assets/Katarzyna_Wojtczak.jpg" alt="Katarzyna Wojtczak - psychoterapeuta">
+    </div>
+    <div class=people-about__text>
+      <p>Jestem psychoterapeutką na ostatnim etapie międzynarodowego kursu mistrzowskiego w nurcie Transkulturowej Psychoterapii Pozytywnej, kończącego się uzyskaniem Europejskiego Certyfikatu Psychoterapeuty (ECP).</p>
+      <p>Jako dyplomowany psychotraumatolog posiadam umiejętności niezbędne do pracy z osobami, które przeżywają stres traumatyczny powstały na skutek różnych zdarzeń losowych. Na sesjach wykorzystuję też wiedzę zdobytą w Studium Podejścia i Terapii Skoncentrowanej na Rozwiązaniach.</p>
+      <p>W zakresie przygotowania do prowadzenia mediacji ukończyłam szkolenie specjalistyczne z mediacji rodzinnych i rozwodowych. Jestem członkiem World Association for Positive Psychotherapy (WAPP), Międzynarodowej Federacji Psychoterapii (IFP), a także Polskiego Towarzystwa Psychoterapii Stosowanej (PTPS). </p>
+    </div>
+  </div>
+</section>
+
+<!-- jak pracuje section-->
+<section>
+  <div class="container">
+    <div class="section-titles">
+      <h2>JAK PRACUJĘ</h2>
+      <hr />
+    </div>
+    <div>
+      <p>Psychoterapia pozytywna ukierunkowana jest na pomoc w rozwijaniu wewnętrznego potencjału człowieka. Celem terapii jest pobudzenie drzemiących w każdym człowieku naturalnych mechanizmów uzdrawiających, zgodnie z podejściem holistycznym i pojęciem „positum”, które oznacza „to wszystko, co jest nam dane” a więc nie tylko choroby i ograniczenia, ale również zdolności i zasoby psychologiczne.
+      <br>
+      <br>
+      Na sesjach używa się zrozumiałego języka, czasem sięga do opowieści i humoru, żeby otworzyć przed rozmówcą nowe perspektywy i dać możliwość zdystansowania się do problemów. Swoją pracę poddaję superwizji u certyfikowanego psychoterapeuty i trenera WIP.
+      <br>
+      <br>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="section-titles">
+      <h2>W czym mogę pomóc?</h2>
+      <hr />
+    </div>
+    <div class="offer-icons">
+      <div class="cards">
+        <%= link_to oferta_terapia_path do %>
+          <div class="card shadow-cards">
+            <img src="/assets/icon-terapia.jpg" alt="Psychoterapia Indywidualna">
+            <div class="card-info fade-in">
+              <h2>Psychoterapia <br>Indywidualna</h2>
+            </div>
+          </div>
+        <% end %>
+        <%= link_to oferta_pomoc_kryzys_path do %>
+          <div class="card shadow-cards">
+            <img src="/assets/icon-kryzys.jpg" alt="pomoc w sytuacji kryzysowej">
+            <div class="card-info fade-in">
+              <h2>Pomoc w sytuacji<br>kryzysowej</h2>
+            </div>
+          </div>
+        <% end %>
+        <%= link_to oferta_terapia_par_path do %>
+          <div class="card shadow-cards">
+            <img src="/assets/icon-pary.png" alt="Terapia Par">
+            <div class="card-info fade-in">
+              <h2>Terapia par</h2>
+            </div>
+          </div>
+        <% end %>
+        <div class="card ">
+            <div class="card-info fade-in">
+              <h2>Terapia rodzin</h2>
+              <h2>Mediacja</h2>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="section-titles">
+      <h2>CENNIK</h2>
+      <hr />
+    </div>
+    <table id="cennik">
+      <tr>
+        <th>Usługa</th>
+        <th>Cena</th>
+      </tr>
+      <tr>
+        <td>Psychoterapia indywidualna </td>
+        <td>130 zł / 50 min. </td>
+      </tr>
+      <tr>
+        <td>Interwencja w sytuacji kryzysu </td>
+        <td>130 zł / 50 min. </td>
+      </tr>
+      <tr>
+        <td>Terapia Par </td>
+        <td>180 zł / 80 min </td>
+      </tr>
+      <tr>
+        <td>Terapia Rodzin </td>
+        <td>180 zł / 80 min </td>
+      </tr>
+      <tr>
+        <td>Mediacja </td>
+        <td>Proszę o kontakt</td>
+      </tr>
+    </table>
+  </div>
+</section>
+
+<section class="team-contact">
+  <div class="container">
+    <div class="section-titles">
+      <h2>Umów wizytę</h2>
+      <hr />
+    </div>
+    <div class="team-contact__grid">
+      <div class="team-contact__grid-left">
+        <div class="contact-way shadow-cards">
+          <i class="fas fa-phone"></i>
+          <p><a href="tel://+48792001116">Katarzyna Wojtczak<br>+48792001116</a></p>
+        </div>
+        <div class="contact-way shadow-cards">
+          <i class="far fa-envelope"></i>
+          <p><a href="mailto:kontakt@przystannazmiane.pl">kontakt@przystannazmiane.pl</a></p>
+        </div>
+        <div class="contact-way shadow-cards">
+          <i class="fas fa-globe"></i>
+          <p><a href="https://www.przystannazmiane.pl">www.przystannazmiane.pl</a></p>
+        </div>
+        <div class="contact-way shadow-cards">
+          <i class="far fa-map"></i>
+          <p><strong>Adres:</strong></p>
+          <p><a href="https://goo.gl/maps/dHAgUrewkDeaVZkb8">Centrum Psychoterapii<br>Dębowa 29<br>75-900 Koszalin</a></p>
+        </div>
+      </div>
+      <div class="team-contact__grid-right">
+        <p>Zapraszamy na wizyty po wcześniejszej rejestracji telefonicznej bądź konsultacji mailowej.</p>
+        <p>W razie nie odbierania telefonu, prosimy o wiadomość SMS, a oddzwonimy.</p>
+        <div class="map-responsive">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d583.697936139031!2d16.22568482930438!3d54.183763998760234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4701cd34b152c0f1%3A0xc65cc48d61b76476!2sCentrum%20Psychoterapii%20psycho-terapeutyczny.pl!5e0!3m2!1sen!2suk!4v1627473859742!5m2!1sen!2suk" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
