@@ -72,6 +72,14 @@
           </div>
         </div>
       <% end %>
+       <%= link_to zespol_robert_krzyzanowski_path do %>
+        <div class="card shadow-cards">
+          <img src="/assets/icon-gender.png" alt="">
+          <div class="card-info fade-in">
+            <h2>Terapia<br>seksuologiczna</h2>
+          </div>
+        </div>
+      <% end %>
     </div>
   </div>
 </section>
@@ -258,6 +266,23 @@
           <div class="people__name">
             <h4>Katarzyna Wojtczak</h4>
             <p>Psychoterapeutka</p>
+          </div>
+        <% end %>
+      </div>
+
+      <div class="people__container">
+        <%= link_to zespol_robert_krzyzanowski_path do %>
+          <%= image_tag "Robert_Krzyzanowski.jpg", alt: "Robert Krzyżanowski - Psycholog, Seksuolog" %>
+          <div class="people__container__middle">
+            <div class="people__container__middle__text">
+              <p>Konsultacja Psychologiczna</p>
+              <p>Terapia seksuologiczna</p>
+              <p>Terapia par</p>
+            </div>
+          </div>
+          <div class="people__name">
+            <h4>Robert Krzyżanowski</h4>
+            <p>Psycholog, <br> Seksuolog</p>
           </div>
         <% end %>
       </div>
