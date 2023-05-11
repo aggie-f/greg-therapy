@@ -10,11 +10,11 @@
     color: $text-headlines;
   }
 
-  a:focus, a:hover {
+  a:focus,
+  a:hover {
     text-decoration: none;
     color: $text-headlines;
   }
-
 }
 
 .card {
@@ -38,10 +38,10 @@
   h2 {
     font-size: 1.25rem;
     padding-bottom: 30px;
-    font-family:"Josefin Sans", "sans-serif";
+    font-family: "Josefin Sans", "sans-serif";
     color: $gray-light;
     font-weight: 400;
-    }
+  }
 }
 
 // Box Shadow on cards //
@@ -51,7 +51,7 @@
 
 .shadow-cards::after {
   position: absolute;
-  z-index:-1;
+  z-index: -1;
   top: 0;
   left: 0;
   right: 0;
@@ -72,3 +72,15 @@
   opacity: 1;
 }
 
+.cards-no-icon {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.25rem;
+  font-family: "Josefin Sans", "sans-serif";
+  color: #373737;
+  font-weight: 400;
+}
+.card-no-icon {
+  border-color: #4e4190;
+  border-radius: 5px;
+}
