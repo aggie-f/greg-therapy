@@ -58,6 +58,11 @@
   }
 }
 
+.categories-list {
+  display: flex;
+  justify-content: space-around;
+}
+
 @media screen and (max-width: 1000px) {
   .team-list__card {
     width: 300px;
@@ -93,5 +98,9 @@
     height: 6px;
     width: 80px;
     background: #4e4190;
+  }
+
+  .categories-list {
+    flex-direction: column;
   }
 }

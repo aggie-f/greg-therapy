@@ -72,14 +72,22 @@
           </div>
         </div>
       <% end %>
-       <%= link_to zespol_robert_krzyzanowski_path do %>
-        <div class="card shadow-cards">
-          <img src="/assets/icon-gender.png" alt="">
-          <div class="card-info fade-in">
-            <h2>Terapia<br>seksuologiczna</h2>
-          </div>
+      <%= link_to zespol_robert_krzyzanowski_path do %>
+      <div class="card shadow-cards">
+        <img src="/assets/icon-gender.png" alt="">
+        <div class="card-info fade-in">
+          <h2>Terapia<br>seksuologiczna</h2>
         </div>
-      <% end %>
+      </div>
+    <% end %>
+    <%= link_to zespol_magdalena_luczyk_path do %>
+      <div class="card shadow-cards">
+        <img src="/assets/icon-diet.png" alt="">
+        <div class="card-info fade-in">
+          <h2>Psychodietetyka</h2>
+        </div>
+      </div>
+    <% end %>
     </div>
   </div>
 </section>
@@ -301,6 +309,26 @@
           <div class="people__name">
             <h4>Małgorzata Radziwołek</h4>
             <p>Coach, <br>Hipnoterapeutka, <br> Pedagog</p>
+          </div>
+        <% end %>
+      </div>
+
+      <div class="people__container">
+        <%= link_to zespol_magdalena_luczyk_path do %>
+          <%= image_tag "Magdalena_Luczyk.jpg", alt: "Magdalena Łuczyk - Terapeuta, Dietetyk kliniczny, Logopeda, Trener TUS, Neurologopeda, Oligofrenopedagog" %>
+          <div class="people__container__middle">
+            <div class="people__container__middle__text">
+              <p>Terapeuta</p>
+              <p>Dietetyk kliniczny</p>
+              <p>Logopeda</p>
+              <p>Trener TUS</p>
+              <p>Neurologopeda</p>
+              <p>Oligofrenopedagog</p>
+            </div>
+          </div>
+          <div class="people__name">
+            <h4>Magdalena Łuczyk</h4>
+            <p>Terapeuta, Dietetyk kliniczny, Logopeda, Trener TUS, Neurologopeda, Oligofrenopedagog</p>
           </div>
         <% end %>
       </div>
