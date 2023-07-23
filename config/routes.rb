@@ -17,6 +17,7 @@ Rails.application.routes.draw do
   get 'zespol/katarzyna-wojtczak', to: 'pages#katarzyna_wojtczak'
   get 'zespol/robert-krzyzanowski', to: 'pages#robert_krzyzanowski'
   get 'zespol/malgorzata-radziwolek', to: 'pages#malgorzata_radziwolek'
+  get 'zespol/magdalena-luczyk', to: 'pages#magdalena_luczyk'
   get 'oferta', to: 'pages#oferta'
   get 'oferta/konsultacja', to: 'pages#konsultacja'
   get 'oferta/terapia', to: 'pages#terapia'
