@@ -1,22 +1,25 @@
 <section class="banner-pages">
   <div class="banner-pages-title">
-    <h1>Tadeusz Kurpisz</h1>
-    <p>Psychoterapeuta - Specjalista psychoterapii uzależnień</p>
+    <h1>Anetta Idziorek</h1>
+    <p>Psychoterapeutka</p>
   </div>
 </section>
 
 <section class="container">
   <div class="people-about">
     <div class="people-about__img">
-      <img src="/assets/Tadeusz_Kurpisz.jpg" alt="Tadeusz Kurpisz - Psychoterapeuta - Specjalista psychoterapii uzależnień">
+      <img src="/assets/Anetta_Idziorek.jpg" alt="Anetta Idziorek - Psychoterapeutka">
     </div>
     <div class="people-about__text">
       <p>
-        Ukończyłem wyższe studia magisterskie na kierunku pedagogika resocjalizacyjna.
-Jestem certyfikowanym specjalistą psychoterapii uzależnień. Egzamin certyfikacyjny został
-przeprowadzony przez Krajowe Biuro ds. Przeciwdziałania Narkomanii przy akredytacji
-Ministerstwa Zdrowia. Posiadam wieloletnie doświadczenie w pracy z osobami
-uzależnionymi.
+      Jestem psychoterapeutką, pracującą w nurcie Transkulturowej
+      Psychoterapii Pozytywnej, kończę międzynarodowy kurs
+      mistrzowski; członkinią World Association for Positive and
+      Transcultural Psychoterapy. Mam wszechstronne
+      wykształcenie humanistyczne. Ukończyłam filologię polską z
+      przygotowaniem pedagogicznym, filozofię i etykę oraz
+      oligofrenopedagogikę. Od wielu lat pracuję z młodzieżą
+      licealną jako nauczycielka i wychowawczyni.
       </p>
     </div>
   </div>
@@ -31,16 +34,16 @@ uzależnionymi.
     </div>
     <div>
       <p>
-        Ze względu na rozległość i złożoność problemów osoby uzależnionej proponowany
-przeze mnie system udzielania pomocy obejmuje wiele elementów. Związane jest to z
-dążeniem do zwiększenia zdolności do trwałego utrzymywania abstynencji, zwiększeniem
-zdolności do rozwiązywania problemów osobistych oraz rozwijaniem zdolności do
-prowadzenia zdrowego i konstruktywnego sposobu życia. W relacji terapeutycznej łączę
-różne nurty psychoterapeutyczne. W pracy klinicznej nie trzymam się ściśle jednej
-konkretnej orientacji teoretycznej. Czasami łączę różne podejścia w celu optymalnego ich
-wykorzystania dla dobra pacjenta.
-Pomagam osobom uzależnionym od narkotyków oraz alkoholu. Zajmuję się również
-uzależnieniami behawioralnymi – hazard, siecioholizm itp.
+      Moja praca opiera się na narzędziach, jakie daje
+      Transkulturowa Psychoterapia Pozytywna. To nurt
+      psychoterapii, w którym ważna jest wewnętrzna równowaga i
+      samoświadomość. Preferuję holistyczne podejście do
+      człowieka, który, oprócz problemów, przynosi na terapię także
+      swoje zasoby i potencjalności, często nieuświadomione. A
+      moim zadaniem jest je odkryć i doprowadzić do wewnętrznej
+      harmonii.
+      Pracuję z młodzieżą, nastolatkami i ich rodzinami, lecz także z
+      dorosłymi indywidualnie i w terapii par.
       </p>
     </div>
   </div>
@@ -62,14 +65,14 @@ uzależnieniami behawioralnymi – hazard, siecioholizm itp.
           </div>
         </div>
       <% end %>
-        <%= link_to oferta_terapia_path do %>
-          <div class="card shadow-cards">
-            <img src="/assets/icon-terapia.jpg" alt="Psychoterapia Indywidualna">
-            <div class="card-info fade-in">
-              <h2>Psychoterapia <br>Indywidualna</h2>
-            </div>
+        
+        <div class="card shadow-cards">
+          <img src="/assets/icon-terapia.jpg" alt="Psychoterapia Indywidualna">
+          <div class="card-info fade-in">
+            <h2>Terapia <br>Indywidualna</h2>
           </div>
-        <% end %>
+        </div>
+        
         <%= link_to oferta_pomoc_kryzys_path do %>
           <div class="card shadow-cards">
             <img src="/assets/icon-kryzys.jpg" alt="omoc w sytuacji kryzysowej">
@@ -78,6 +81,7 @@ uzależnieniami behawioralnymi – hazard, siecioholizm itp.
             </div>
           </div>
         <% end %>
+
         <%= link_to oferta_terapia_par_path do %>
           <div class="card shadow-cards">
             <img src="/assets/icon-pary.png" alt="Terapia Par">
@@ -86,14 +90,14 @@ uzależnieniami behawioralnymi – hazard, siecioholizm itp.
             </div>
           </div>
         <% end %>
+
         <div class="card shadow-cards">
-            <div class="card-info fade-in">
-              <h2>Terapia systemowa</h2>
-            </div>
-            <div class="card-info fade-in">
-              <h2>Terapia grupowa</h2>
-            </div>
+          <img src="/assets/icon-pary.png" alt="">
+          <div class="card-info fade-in">
+            <h2>Terapia rodzin</h2>
           </div>
+        </div>
+        
 
       </div>
     </div>
@@ -112,28 +116,24 @@ uzależnieniami behawioralnymi – hazard, siecioholizm itp.
         <th>Cena</th>
       </tr>
       <tr>
-        <td>Konsultacja psychologiczna </td>
-        <td>140 zł / 50min </td>
+        <td>Konsultacja psychologiczna</td>
+        <td>120 zł / 1h</td>
       </tr>
       <tr>
-        <td>Psychoterapia indywidualna </td>
-        <td>140 zł / 50min </td>
+        <td>Terapia indywidualna</td>
+        <td>120 zł / 50min</td>
       </tr>
       <tr>
-        <td>Interwencja w sytuacji kryzysu</td>
-        <td>150 zł / 50min </td>
+        <td>Terapia Par</td>
+        <td>180 zł / 1,5h</td>
+      </tr>
+       <tr>
+        <td>Terapia Rodzin</td>
+        <td>180 zł / 1,5h</td>
       </tr>
       <tr>
-        <td>Terapia Par </td>
-        <td>200 zł / 60min </td>
-      </tr>
-      <tr>
-        <td>Terapia Grupowa </td>
-        <td>Proszę o kontakt </td>
-      </tr>
-      <tr>
-        <td>Terapia systemowa </td>
-        <td>Proszę o kontakt </td>
+        <td>Pomoc w sytuacji kryzysowej</td>
+        <td>120 zł / 50min</td>
       </tr>
     </table>
   </div>
@@ -149,11 +149,11 @@ uzależnieniami behawioralnymi – hazard, siecioholizm itp.
       <div class="team-contact__grid-left">
         <div class="contact-way shadow-cards">
           <i class="fas fa-phone"></i>
-          <p><a href="tel://+48506422727">Tadeusz Kurpisz<br>+48506422727</a></p>
+          <p><a href="tel://+48602290416">Anetta Idziorek<br>+48602290416</a></p>
         </div>
         <div class="contact-way shadow-cards">
           <i class="far fa-envelope"></i>
-          <p><a href="mailto:tadeuszkurpisz@o2.pl">tadeuszkurpisz@o2.pl</a></p>
+          <p><a href="mailto:anettaidziorek@wp.pl">anettaidziorek@wp.pl</a></p>
         </div>
         <div class="contact-way shadow-cards">
           <i class="far fa-map"></i>
