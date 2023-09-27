@@ -1,28 +1,46 @@
 <section class="banner-pages">
   <div class="banner-pages-title">
-    <h1>Dominika Lisiecka</h1>
-    <p>Psychoterapeutka - Terapeutka uzależnień i współuzależnień </p>
+    <h1>Tamara Pieczerer</h1>
+    <p>Terapeutka Recall Healing</p>
   </div>
 </section>
 
 <section class="container">
   <div class="people-about">
     <div class="people-about__img">
-      <img src="/assets/Dominika_Lisiecka.jpg" alt="Dominika Lisiecka - psychoterapeutka, leczenie uzależnień i współuzależnień">
+      <img src="/assets/Tamara_Pieczerer.jpg" alt="Tamara Pieczerer - Terapeutka Recall Healing">
     </div>
     <div class="people-about__text">
       <p>
-        Jestem absolwentką studiów magisterskich na Wydziale Humanistycznym Politechniki Koszalińskiej oraz specjalistą psychoterapii uzależnień w procesie certyfikacji w Instytucie Edukacji i Terapii w Poznaniu akredytowanego przez Krajowe Biuro ds. Przeciwdziałania Narkomanii. Rozpoczęłam również proces certyfikacyjny  w obszarze dialogu motywującego uzyskując tytuł Terapeuty Motywującego Polskiego Instytutu Dialogu Motywującego (PIDM).
-        <br>
-        Pracuję w oparciu o standardy terapii poznawczo-behawioralnej. Nurt ten zapewnia plan terapii oraz metody o potwierdzonej skuteczności leczenia. Proces terapeutyczny odbieram jako wspólną drogę, w której moją rolą jest aktywne towarzyszenie drugiej osobie, aż do momentu odzyskania psychicznej równowagi oraz osiągnięcia zamierzonych celów, które pomagam osiągnąć moim pacjentom.
-        <br>
-        <br>
-        Doświadczenie zawodowe zdobywałam pracując z osobami uzależnionymi i współuzależnionymi w Ośrodku Interwencji Kryzysowej w Koszalinie oraz w Fundacji „Klucz Nadziei” w Rogowie. Obecnie pracuję w Centrum Psychoterapii i Leczenia Uzależnień ANON w Koszalinie.
-        Stale staram się podnosić swoją wiedzę oraz umiejętności uczestnicząc w szkoleniach, warsztatach oraz konferencjach naukowych. Pracę terapeutyczną poddaję regularnej superwizji. W pracy kieruję się kodeksem etyki zawodowej.
+      Nazywam się Tamara Pieczerer i jestem specjalistką od
+      psychosomatyki, certyfikowaną Facylitatorką
+      Międzynarodowego Instytutu Recall Healing (&quot;Uzdrawianie
+      wspomnieniami&quot;). Życiowe okoliczności spowodowały, że
+      spędziłam ostatnie 20 lat swojego życia w Rosji, gdzie
+      szkoliłam sie jako gesztalt i grupowy terapeuta. Ostatecznie
+      zatrzymałam się na pracy, ktora pomaga wyjaśnić i usunąć
+      psychoemocjonalne przyczyny różnych chorób. W Rosji
+      prowadziłam własną Pracownię Psychologiczną &quot;Zebra&quot; w
+      Niżnym Nowogrodzie (od 2015 roku). Każdego roku
+      przeprowadzam około 700 konsultacji w podejściu, które
+      integruje osiągnięcia współczesnej psychosomatyki. Mam na
+      koncie setki i dziesiątki wykładów, szkoleń, kursów i projektów
+      społecznych. Moje główne wartości w pracy z ludźmi to służba i
+      etyka.
       </p>
     </div>
   </div>
 </section>
+
+<section class="container">
+  <div class="grey-box">
+    <p><em>Pracuję w unikalnej, kompleksowej technice Recall Healing,
+    która pozwala zidentyfikować przyczynę choroby w traumie
+    psycho-emocjonalnej, uruchamiając w ten sposób procesy
+    samoregulacji organizmu.</em></p>
+  </div>
+</section>
+
 
 <section>
   <div class="container">
@@ -32,22 +50,21 @@
     </div>
     <div class="offer-icons">
       <div class="cards">
-        <%= link_to oferta_terapia_path do %>
-          <div class="card shadow-cards">
-            <img src="/assets/icon-terapia.jpg" alt="Psychoterapia Indywidualna">
-            <div class="card-info fade-in">
-              <h2>Psychoterapia <br>Indywidualna</h2>
-            </div>
+        
+        <div class="card shadow-cards">
+          <img src="/assets/icon-terapia.jpg" alt="Psychoterapia Indywidualna">
+          <div class="card-info fade-in">
+            <h2>Terapia <br>Indywidualna</h2>
           </div>
-        <% end %>
-        <%= link_to oferta_uzaleznienia_path do %>
-          <div class="card shadow-cards">
-            <img src="/assets/icon-uzaleznienia.png" alt="Pomoc w uzależnieniach">
-            <div class="card-info fade-in">
-              <h2>Pomoc w <br>uzależnieniach</h2>
-            </div>
+        </div>
+        
+        <div class="card shadow-cards">
+          <img src="/assets/icon-pary.png" alt="">
+          <div class="card-info fade-in">
+            <h2>Terapia rodzinna</h2>
           </div>
-        <% end %>
+        </div>
+
         <%= link_to oferta_pomoc_kryzys_path do %>
           <div class="card shadow-cards">
             <img src="/assets/icon-kryzys.jpg" alt="Pomoc w sytuacji kryzysowej">
@@ -73,16 +90,20 @@
         <th>Cena</th>
       </tr>
       <tr>
-        <td>Psychoterapia indywidualna </td>
-        <td>150 zł / 50 min. </td>
+        <td>Terapia indywidualna </td>
+        <td>150 zł / 60 min. </td>
       </tr>
       <tr>
-        <td>Pomoc w uzależnieniach i współuzależniach</td>
-        <td>150 zł / 50min </td>
+        <td/>
+        <td>300 zł / 120 min. </td>  
+      </tr>
+      <tr>
+        <td>Terapia rodzinna</td>
+        <td>250 zł / 90 min</td>
       </tr>
       <tr>
         <td>Interwencja w sytuacji kryzysu</td>
-        <td>160 zł / 50min </td>
+        <td>150 zł / 60 min</td>
       </tr>
     </table>
   </div>
@@ -98,11 +119,11 @@
       <div class="team-contact__grid-left">
         <div class="contact-way shadow-cards">
           <i class="fas fa-phone"></i>
-          <p><a href="tel://+48602417102">Dominika Lisiecka<br>+48602417102</a></p>
+          <p><a href="tel://+48508739514">Tamara Pieczerer<br>+48508739514</a></p>
         </div>
         <div class="contact-way shadow-cards">
           <i class="far fa-envelope"></i>
-          <p><a href="mailto:dlisiecka82@gmail.com">dlisiecka82@gmail.com</a></p>
+          <p><a href="mailto:0811t@op.pl">0811t@op.pl</a></p>
         </div>
         <div class="contact-way shadow-cards">
           <i class="far fa-map"></i>
