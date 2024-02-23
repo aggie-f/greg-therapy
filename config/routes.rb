@@ -22,6 +22,7 @@ Rails.application.routes.draw do
   get 'zespol/tamara-pieczerer', to: 'pages#tamara_pieczerer'
   get 'zespol/piotr-sekula', to: 'pages#piotr_sekula'
   get 'zespol/katarzyna-maria-zawadzka', to: 'pages#katarzyna_zawadzka'
+  get 'zespol/weronika-jackiewicz', to: 'pages#weronika_jackiewicz'
   get 'oferta', to: 'pages#oferta'
   get 'oferta/konsultacja', to: 'pages#konsultacja'
   get 'oferta/terapia', to: 'pages#terapia'
