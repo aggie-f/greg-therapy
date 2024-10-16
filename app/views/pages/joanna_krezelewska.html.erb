@@ -1,0 +1,168 @@
+<section class="banner-pages">
+  <div class="banner-pages-title">
+    <h1>Joanna Krężelewska</h1>
+    <p>Psycholog</p>
+  </div>
+</section>
+
+<section class="container">
+  <div class="people-about">
+    <div class="people-about__img">
+      <img src="/assets/Joanna_Krezelewska.jpg" alt="Joanna Krężelewska - Psycholog">
+    </div>
+    <div class="people-about__text">
+      <p>Jestem absolwentką psychologii na Uniwersytecie Gdańskim. W czasie studiów
+      zrealizowałam dwie ścieżki specjalizacyjne – psychologię kliniczną oraz psychologię sądową
+      i zagrożeń społecznych. Ukończyłam również studia humanistyczne na Uniwersytecie
+      Mikołaja Kopernika w Toruniu.</p> 
+      <p>Doświadczenie zawodowe zdobywałam m.in. w Środkowopomorskim Centrum Zdrowia
+      Psychicznego MEDiSON w Koszalinie oraz w Oddziale Diagnostycznym Aresztu Śledczego
+      w Koszalinie. Pracowałam jako psycholog szkolny w I Liceum Ogólnokształcącym im. St.
+      Dubois w Koszalinie. Obecnie jestem psychologiem w Powiatowej Poradni Psychologiczno-Pedagogicznej w Koszalinie.</p>
+      <p>W ramach studiów podyplomowych uzupełniam warsztat zawodowy o umiejętność
+      prowadzenia terapii rodzinnej i małżeńskiej w nurcie systemowym z uwzględnieniem terapii
+      narracyjnej, ericksonowskiej oraz skoncentrowanej na zasobach. Kończę również studia
+      pedagogiczne.</p>
+      <p>Stale poszerzam swoją wiedzę i kompetencje, biorąc udział w wielu przedsięwzięciach, jak
+      m.in. współpraca przy organizacji Kongresu Polskiego Towarzystwa Neuropsychologicznego
+      czy udział w szkoleniu organizowanym przez Polski Instytut Traumy.</p>
+      <p>Jako sądowy kurator społeczny pracuję w II Zespole Kuratorskiej Służy Sądowej do
+      Wykonywania Orzeczeń w Sprawach Rodzinnych i Nieletnich przy Sądzie Rejonowym w
+      Koszalinie. Sprawuję nadzory opiekuńcze w sprawach o ograniczenie władzy rodzicielskiej,
+      nadzory nad sposobem realizowania leczenia odwykowego przez osoby dorosłe oraz nadzory
+      nad nieletnimi, którzy weszli w konflikt z prawem. Zostałam powołana do składu
+      organizacyjnego Ośrodka Kuratorskiego nr 1 przy Sądzie Rejonowym w Koszalinie, gdzie
+      pracuję jako psycholog i kurator-wychowawca.</p>
+      <p>Jestem wiceprezeską Stowarzyszenia „Razem Mocni”. Od lat wolontaryjnie angażuję się w
+      pomoc osobom potrzebującym wsparcia psychologicznego, ucząc ich skutecznych technik
+      radzenia sobie z trudnymi sytuacjami i pomagając im zmienić wzorce zachowań.</p>
+    </div>
+  </div>
+</section>
+
+<!-- jak pracuje section-->
+<section>
+  <div class="container">
+    <div class="section-titles">
+      <h2>JAK PRACUJĘ</h2>
+      <hr />
+    </div>
+    <div>
+    <p>Wyzwaniem w procesie zdrowienia jest pomoc pacjentowi w przywróceniu władzy nad
+    ciałem i umysłem – nad własnym „ja”. Dla mnie najgłębszym sensem psychologii jest
+    możliwość zmiany. Zmiany sposobu myślenia, reagowania, przeżywania. Zmiany złego na
+    dobre, ale też dobrego na lepsze. I w tym właśnie procesie wspieram moich pacjentów.</p>
+    
+    <p>Z pacjentem indywidualnym pracuję w ujęciu integracyjnym. Pozwala mi to na indywidualne
+    i elastyczne podejście do konkretnego problemu danej osoby z uwzględnieniem
+    specyficznych, często złożonych okoliczności. Z rodziną pracuję w nurcie systemowym.
+    Wśród moich zainteresowań szczególne miejsce znajdują trauma, fobia społeczna i
+    zaburzenia rozwojowe wieku nastoletniego.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="section-titles">
+      <h2>W czym mogę pomóc?</h2>
+      <hr />
+    </div>
+    <div class="offer-icons">
+    <div class="cards">
+      <%= link_to oferta_konsultacja_path do %>
+        <div class="card shadow-cards">
+          <img src="/assets/icon-konsultacja.jpg" alt="Konsultacja Psychologiczna">
+          <div class="card-info fade-in">
+            <h2>Konsultacja<br>Psychologiczna</h2>
+          </div>
+        </div>
+      <% end %>
+      
+      <%= link_to oferta_pomoc_kryzys_path do %>
+        <div class="card shadow-cards">
+          <img src="/assets/icon-kryzys.jpg" alt="pomoc w sytuacji kryzysowej">
+          <div class="card-info fade-in">
+            <h2>Pomoc w sytuacji<br>kryzysowej</h2>
+          </div>
+        </div>
+      <% end %>
+      </div>
+      <div class="cards-no-icon">
+        <div class="card-info card-no-icon">
+          <h2>Terapia Indywidualna</h2>
+        </div>
+        <div class="card-info card-no-icon">
+          <h2>Pomoc w uzależnieniach</h2>
+        </div>
+        <div class="card-info card-no-icon">
+          <h2>Nastolatek w kryzysie</h2>
+        </div>
+        <div class="card-info card-no-icon">
+          <h2>Terapia rodzin</h2>
+        </div>  
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="section-titles">
+      <h2>CENNIK</h2>
+      <hr />
+    </div>
+    <table id="cennik">
+      <tr>
+        <th>Usługa</th>
+        <th>Cena</th>
+      </tr>
+      <tr>
+        <td>Konsultacja psychologiczna</td>
+        <td>150 zł / 50 min. </td>
+      </tr>
+      <tr>
+        <td>Sesje indywidualne</td>
+        <td>150 zł / 50 min. </td>
+      </tr>
+      <tr>
+        <td>Interwencja w sytuacji kryzysu</td>
+        <td>150 zł / 50 min. </td>
+      </tr>
+    </table>
+  </div>
+</section>
+
+<section class="team-contact">
+  <div class="container">
+    <div class="section-titles">
+      <h2>Umów wizytę</h2>
+      <hr />
+    </div>
+    <div class="team-contact__grid">
+      <div class="team-contact__grid-left">
+        <div class="contact-way shadow-cards">
+          <i class="fas fa-phone"></i>
+          <p><a href="tel://+48600216704">Joanna Krężelewska<br>+48600216704</a></p>
+        </div>
+        <div class="contact-way shadow-cards">
+          <i class="far fa-envelope"></i>
+          <p><a href="mailto:gabinet@psycho-terapeutyczny.pl">gabinet@psycho-terapeutyczny.pl</a></p>
+        </div>
+        <div class="contact-way shadow-cards">
+          <i class="far fa-map"></i>
+          <p><strong>Adres:</strong></p>
+          <p><a href="https://goo.gl/maps/dHAgUrewkDeaVZkb8">Centrum Psychoterapii<br>Dębowa 29<br>75-900 Koszalin</a></p>
+        </div>
+      </div>
+      <div class="team-contact__grid-right">
+        <p>Zapraszamy na wizyty po wcześniejszej rejestracji telefonicznej bądź konsultacji mailowej.</p>
+        <p>W razie nie odbierania telefonu, prosimy o wiadomość SMS, a oddzwonimy.</p>
+        <div class="map-responsive">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d583.697936139031!2d16.22568482930438!3d54.183763998760234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4701cd34b152c0f1%3A0xc65cc48d61b76476!2sCentrum%20Psychoterapii%20psycho-terapeutyczny.pl!5e0!3m2!1sen!2suk!4v1627473859742!5m2!1sen!2suk" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
