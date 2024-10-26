@@ -23,7 +23,6 @@ Rails.application.routes.draw do
   get 'zespol/katarzyna-maria-zawadzka', to: 'pages#katarzyna_zawadzka'
   get 'zespol/marta-moszko', to: 'pages#marta_moszko'
   get 'zespol/edyta-konopacka', to: 'pages#edyta_konopacka'
-  get 'zespol/alina-gordieieva', to: 'pages#alina_gordieieva'
   get 'zespol/joanna-krezelewska', to: 'pages#joanna_krezelewska'
   get 'oferta', to: 'pages#oferta'
   get 'oferta/konsultacja', to: 'pages#konsultacja'
