@@ -20,7 +20,6 @@ Rails.application.routes.draw do
   get 'zespol/magdalena-luczyk', to: 'pages#magdalena_luczyk'
   get 'zespol/anetta-idziorek', to: 'pages#anetta_idziorek'
   get 'zespol/tamara-pieczerer', to: 'pages#tamara_pieczerer'
-  get 'zespol/piotr-sekula', to: 'pages#piotr_sekula'
   get 'zespol/katarzyna-maria-zawadzka', to: 'pages#katarzyna_zawadzka'
   get 'zespol/marta-moszko', to: 'pages#marta_moszko'
   get 'zespol/edyta-konopacka', to: 'pages#edyta_konopacka'
